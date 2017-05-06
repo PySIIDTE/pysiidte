@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 ##############################################################################
 # Nuevo pysiidte probando a llevarme todas las funciones esenciales          #
