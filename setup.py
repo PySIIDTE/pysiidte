@@ -4,5 +4,5 @@ from setuptools import setup
 setup(
     name='pysiidte',
     version='0.1',
-    scripts=['pysiidte.py']
+    scripts=['pysiidte']
 )
