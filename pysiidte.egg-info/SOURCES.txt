@@ -1,0 +1,6 @@
+pysiidte.py
+setup.py
+pysiidte.egg-info/PKG-INFO
+pysiidte.egg-info/SOURCES.txt
+pysiidte.egg-info/dependency_links.txt
+pysiidte.egg-info/top_level.txt
