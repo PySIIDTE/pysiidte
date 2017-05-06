@@ -1,4 +1,4 @@
-pysiidte.py
+pysiidte
 setup.py
 pysiidte.egg-info/PKG-INFO
 pysiidte.egg-info/SOURCES.txt
