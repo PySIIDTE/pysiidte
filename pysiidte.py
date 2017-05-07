@@ -23,6 +23,8 @@ from lxml import etree
 from signxml import XMLSigner, XMLVerifier, methods
 import logging
 import collections
+from SOAPpy import SOAPProxy
+from bs4 import BeautifulSoup as bs
 
 _logger = logging.getLogger(__name__)
 
@@ -165,6 +167,17 @@ stamp = """<TED version="1.0"><DD><RE/><TD/><F/>\
 <TD/><RNG><D/><H/></RNG><FA/><RSAPK><M/><E/></RSAPK>\
 <IDK/></DA><FRMA algoritmo="SHA1withRSA"/></CAF><TSTED/></DD>\
 <FRMT algoritmo="SHA1withRSA"/></TED>"""
+connection_status = {
+    '0': 'Upload OK',
+    '1': 'El remitente no tiene permiso para enviar',
+    '2': 'Error en tamaño del archivo (muy grande o muy chico)',
+    '3': 'Archivo cortado (tamaño <> al parámetro size)',
+    '5': 'No está autenticado',
+    '6': 'Empresa no autorizada a enviar archivos',
+    '7': 'Esquema Invalido',
+    '8': 'Firma del Documento',
+    '9': 'Sistema Bloqueado',
+    'Otro': 'Error Interno.', }
 
 
 def sign_seed(privkey, cert):
@@ -207,19 +220,72 @@ def create_template_seed(method):
     return call
 
 
-# @sign_seed(privkey, cert)
-# @create_template_seed
-# def get_seed(mode):
-#     """
-#     Funcion usada en autenticacion en SII
-#     Obtencion de la semilla desde el SII.
-#     Basada en función de ejemplo mostrada en el sitio edreams.cl
-#      @author: Daniel Blanco Martin (daniel[at]blancomartin.cl)
-#      @version: 2015-04-01
-#     """
-#     url = server_url[mode] + 'CrSeed.jws?WSDL'
-#     ns = 'urn:' + server_url[mode] + 'CrSeed.jws'
-#     _server = SOAPProxy(url, ns)
-#     root = etree.fromstring(_server.getSeed())
-#     seed = root[0][0].text
-#     return seed
+def get_token(seed, mode):
+    """
+    Funcion usada en autenticacion en SII
+    Obtencion del token a partir del envio de la semilla firmada
+    Basada en función de ejemplo mostrada en el sitio edreams.cl
+    @author: Daniel Blanco Martin (daniel[at]blancomartin.cl)
+    @version: 2016-06-01
+    """
+    url = server_url[mode] + 'GetTokenFromSeed.jws?WSDL'
+    ns = 'urn:' + server_url[mode] + 'GetTokenFromSeed.jws'
+    _server = SOAPProxy(url, ns)
+    tree = etree.fromstring(seed)
+    ss = etree.tostring(tree, pretty_print=True, encoding='iso-8859-1')
+    aa = _server.getToken(ss)
+    respuesta = etree.fromstring(aa)
+    token = respuesta[0][0].text
+    return token
+
+
+def sii_token(mode, privkey, cert):
+    @sign_seed(privkey, cert)
+    @create_template_seed
+    def get_seed(mode):
+        """
+        Funcion usada en autenticacion en SII
+        Obtencion de la semilla desde el SII.
+        Basada en función de ejemplo mostrada en el sitio edreams.cl
+         @author: Daniel Blanco Martin (daniel[at]blancomartin.cl)
+         @version: 2015-04-01
+        """
+        url = server_url[mode] + 'CrSeed.jws?WSDL'
+        ns = 'urn:' + server_url[mode] + 'CrSeed.jws'
+        _server = SOAPProxy(url, ns)
+        root = etree.fromstring(_server.getSeed())
+        seed = root[0][0].text
+        return seed
+
+    return get_token(get_seed(mode), mode)
+
+# example:
+# print sii_token('SIIHOMO', privkey, cert)
+
+def analyze_sii_result(sii_result, sii_message, sii_receipt):
+    _logger.info(
+        'analizando sii result: {} - message: {} - receipt: {}'.format(
+            sii_result, sii_message, sii_receipt))
+    if not sii_result or not sii_message or not sii_receipt:
+        return sii_result
+    soup_message = bs(sii_message, 'xml')
+    soup_receipt = bs(sii_receipt, 'xml')
+    _logger.info(soup_message)
+    _logger.info(soup_receipt)
+    if soup_message.ESTADO.text == '2':
+        raise UserError(
+            'Error code: 2: {}'.format(soup_message.GLOSA_ERR.text))
+    if soup_message.ESTADO.text in ['SOK', 'CRT', 'PDR', 'FOK', '-11']:
+        return 'Proceso'
+    elif soup_message.ESTADO.text in ['RCH', 'RFR', 'RSC', 'RCT']:
+        return 'Rechazado'
+    elif soup_message.ESTADO.text in ['RLV']:
+        return 'Reparo'
+    elif soup_message.ESTADO.text in ['EPR', 'DNK']:
+        if soup_receipt.ACEPTADOS.text == soup_receipt.INFORMADOS.text:
+            return 'Aceptado'
+        if soup_receipt.REPAROS.text >= '1':
+            return 'Reparo'
+        if soup_receipt.RECHAZADOS.text >= '1':
+            return 'Rechazado'
+    return sii_result
