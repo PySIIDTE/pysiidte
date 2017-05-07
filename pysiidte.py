@@ -18,13 +18,14 @@ __author__ = "Daniel Blanco Martín (daniel@blancomartin.cl)"
 __copyright__ = "Copyright (C) 2015-2017 Blanco Martín y Asoc. EIRL - BMyA S.A."
 __license__ = "AGPL 3.0"
 
+import collections
+import logging
 import ssl
+
+from bs4 import BeautifulSoup as bs
 from lxml import etree
 from signxml import XMLSigner, XMLVerifier, methods
-import logging
-import collections
 from SOAPpy import SOAPProxy
-from bs4 import BeautifulSoup as bs
 
 _logger = logging.getLogger(__name__)
 
@@ -262,6 +263,7 @@ def sii_token(mode, privkey, cert):
 # example:
 # print sii_token('SIIHOMO', privkey, cert)
 
+
 def analyze_sii_result(sii_result, sii_message, sii_receipt):
     _logger.info(
         'analizando sii result: {} - message: {} - receipt: {}'.format(
@@ -289,3 +291,22 @@ def analyze_sii_result(sii_result, sii_message, sii_receipt):
         if soup_receipt.RECHAZADOS.text >= '1':
             return 'Rechazado'
     return sii_result
+
+
+def remove_plurals_xml(xml):
+    for k in pluralizeds:
+        print k
+        xml = xml.replace('<%s>' % k, '').replace('</%s>' % k, '')
+    return xml
+
+
+def create_template_doc(doc):
+    """
+    Creacion de plantilla xml para envolver el DTE
+    Previo a realizar su firma (1)
+    @author: Daniel Blanco Martin (daniel[at]blancomartin.cl)
+    @version: 2016-06-01
+    """
+    xml = '''<DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
+    {}</DTE>'''.format(doc)
+    return xml
