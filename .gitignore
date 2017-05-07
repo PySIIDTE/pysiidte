@@ -12,9 +12,9 @@ __pycache__/
 # Distribution / packaging
 .Python
 env/
-# build/
+build/
 develop-eggs/
-# dist/
+dist/
 downloads/
 eggs/
 .eggs/
@@ -23,9 +23,9 @@ lib64/
 parts/
 sdist/
 var/
-# *.egg-info/
+*.egg-info/
 .installed.cfg
-# *.egg
+*.egg
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
