@@ -23,8 +23,6 @@ import subprocess
 import warnings
 import sys
 
-
-
 setup(
     name='pysiidte',
     version='0.1',
@@ -48,7 +46,9 @@ setup(
         ':python_version == "2.7"': ['enum34 >= 1.0.4'],
         ':python_version == "3.3"': ['enum34 >= 1.0.4']
     },
-    packages=find_packages(exclude=['test']),
+    # packages=find_packages(exclude=['test']),
+    # packages=['pysiidte'],
+    py_modules=['pysiidte'],
     platforms=['MacOS X', 'Posix'],
     zip_safe=False,
     include_package_data=True,
