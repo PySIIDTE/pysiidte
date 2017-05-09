@@ -26,6 +26,7 @@ import ssl
 from bs4 import BeautifulSoup as bs
 from lxml import etree
 from signxml import XMLSigner, XMLVerifier, methods
+
 from SOAPpy import SOAPProxy
 
 _logger = logging.getLogger(__name__)
@@ -311,3 +312,33 @@ def create_template_doc(doc):
     xml = '''<DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
     {}</DTE>'''.format(doc)
     return xml
+
+
+def char_replace(text):
+    """
+    Funcion para reemplazar caracteres especiales
+    Esta funcion sirve para salvar bug en libreDTE con los recortes de
+    giros que están codificados en utf8 (cuando trunca, trunca la
+    codificacion)
+    @author: Daniel Blanco Martin (daniel[at]blancomartin.cl)
+    @version: 2016-07-31
+    """
+    special_chars = [
+        [u'á', 'a'],
+        [u'é', 'e'],
+        [u'í', 'i'],
+        [u'ó', 'o'],
+        [u'ú', 'u'],
+        [u'ñ', 'n'],
+        [u'Á', 'A'],
+        [u'É', 'E'],
+        [u'Í', 'I'],
+        [u'Ó', 'O'],
+        [u'Ú', 'U'],
+        [u'Ñ', 'N']]
+    for char in special_chars:
+        try:
+            text = text.replace(char[0], char[1])
+        except:
+            pass
+    return text
