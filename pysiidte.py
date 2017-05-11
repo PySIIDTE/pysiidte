@@ -242,18 +242,13 @@ def get_token(seed, mode):
         try:
             aa = client.service.getToken(ss)
         except:
-            i -= 1
             continue
+        finally:
+            i -= 1
     try:
         soup = bs(aa, 'xml')
         token = soup.TOKEN.text
         return token
-        # aa = client.service.getToken(ss)
-        # respuesta = etree.fromstring(aa)
-        # print respuesta
-        # soup = bs(respuesta, 'XM==L')
-        # token = soup.TOKEN.text
-        # return token
     except:
         _logger.info('Error de conexion a %s' % url)
         # _logger.info('El error es: %s' % e)
@@ -281,8 +276,9 @@ def sii_token(mode, privkey, cert):
             try:
                 seed_xml = client.service.getSeed()
             except:
-                i -= 1
                 continue
+            finally:
+                i -= 1
         try:
             soup = bs(seed_xml, 'xml')
             seed = soup.SEMILLA.text
