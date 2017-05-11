@@ -41,6 +41,8 @@ setup(
         # 'certifi >= 2015.11.20.1',
         'signxml',
         'logging',
+        'suds',
+        'bs4',
     ],
     extras_require={
         ':python_version == "2.7"': ['enum34 >= 1.0.4'],

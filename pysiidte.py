@@ -22,15 +22,17 @@ __license__ = "AGPL 3.0"
 import collections
 import logging
 import ssl
+import traceback
 
 from bs4 import BeautifulSoup as bs
 from lxml import etree
 from signxml import XMLSigner, XMLVerifier, methods
 
 from SOAPpy import SOAPProxy
+from suds.client import Client
 
 _logger = logging.getLogger(__name__)
-
+retries = 1000
 ssl._create_default_https_context = ssl._create_unverified_context
 
 server_url = {
@@ -227,19 +229,37 @@ def get_token(seed, mode):
     """
     Funcion usada en autenticacion en SII
     Obtencion del token a partir del envio de la semilla firmada
-    Basada en función de ejemplo mostrada en el sitio edreams.cl
     @author: Daniel Blanco Martin (daniel[at]blancomartin.cl)
-    @version: 2016-06-01
+    @version: 2017-05-10
     """
     url = server_url[mode] + 'GetTokenFromSeed.jws?WSDL'
-    ns = 'urn:' + server_url[mode] + 'GetTokenFromSeed.jws'
-    _server = SOAPProxy(url, ns)
+    client = Client(url)
     tree = etree.fromstring(seed)
     ss = etree.tostring(tree, pretty_print=True, encoding='iso-8859-1')
-    aa = _server.getToken(ss)
-    respuesta = etree.fromstring(aa)
-    token = respuesta[0][0].text
-    return token
+    aa, i = None, retries
+    while aa is None and i > 0:
+        _logger.info('getToken: Intento {}'.format(retries + 1 - i))
+        try:
+            aa = client.service.getToken(ss)
+        except:
+            i -= 1
+            continue
+    try:
+        soup = bs(aa, 'xml')
+        token = soup.TOKEN.text
+        return token
+        # aa = client.service.getToken(ss)
+        # respuesta = etree.fromstring(aa)
+        # print respuesta
+        # soup = bs(respuesta, 'XM==L')
+        # token = soup.TOKEN.text
+        # return token
+    except:
+        _logger.info('Error de conexion a %s' % url)
+        # _logger.info('El error es: %s' % e)
+        raise ValueError(u'''Hay un problema de conectividad al servidor \
+del SII:\n %s \nPor favor, intente conectarse en unos minutos.
+(No se pudo obtener el token)''' % url)
 
 
 def sii_token(mode, privkey, cert):
@@ -247,23 +267,32 @@ def sii_token(mode, privkey, cert):
     @create_template_seed
     def get_seed(mode):
         """
-        Funcion usada en autenticacion en SII
-        Obtencion de la semilla desde el SII.
-        Basada en función de ejemplo mostrada en el sitio edreams.cl
-         @author: Daniel Blanco Martin (daniel[at]blancomartin.cl)
-         @version: 2015-04-01
+        Funcion usada en autenticacion en SII, obtención de la semilla
+        se discontinúa el método usado con SOAPPy por poco eficiente y
+        con existencia de muchos errores (2015-04-01)
+        @author: Daniel Blanco Martin (daniel[at]blancomartin.cl)
+        @version: 2017-05-10
         """
         url = server_url[mode] + 'CrSeed.jws?WSDL'
-        ns = 'urn:' + server_url[mode] + 'CrSeed.jws'
-        _server = SOAPProxy(url, ns)
-        root = etree.fromstring(_server.getSeed())
-        seed = root[0][0].text
-        return seed
-
+        seed_xml, i = None, retries
+        client = Client(url)
+        while seed_xml is None and i > 0:
+            _logger.info('getSeed: Intento {}'.format(retries + 1 - i))
+            try:
+                seed_xml = client.service.getSeed()
+            except:
+                i -= 1
+                continue
+        try:
+            soup = bs(seed_xml, 'xml')
+            seed = soup.SEMILLA.text
+            return seed
+        except:
+            _logger.info('Error de conexion a %s' % url)
+            raise ValueError(u'''Hay un problema de conectividad al servidor \
+del SII: \n%s. \nPor favor, intente conectarse en unos minutos.
+(no se pudo obtener la semilla)''' % url)
     return get_token(get_seed(mode), mode)
-
-# example:
-# print sii_token('SIIHOMO', privkey, cert)
 
 
 def analyze_sii_result(sii_result, sii_message, sii_receipt):
@@ -342,3 +371,7 @@ def char_replace(text):
         except:
             pass
     return text
+
+
+# from ctest.certs import *
+# print sii_token('SIIHOMO', pk, ct)
