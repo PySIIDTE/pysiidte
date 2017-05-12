@@ -368,6 +368,20 @@ def char_replace(text):
             pass
     return text
 
+tag_replace01 = ['TotOpExe', 'TotOpIVARec', 'CodIVANoRec',
+                 'TotOpIVARetTotal', 'TotIVARetTotal',
+                 'TotOpIVARetParcial', 'TotIVARetParcial',
+                 'TotOpIVANoRetenido', 'TotIVANoRetenido',
+                 'TotOpIVANoRec', 'TotMntIVANoRec',
+                 'TotOpIVAUsoComun', 'TotCredIVAUsoComun',
+                 'TotIVAUsoComun', 'TotImpSinCredito']
+tag_replace_1 = ['TpoImp', 'TotOpIVARec', 'TotIVANoRec']
+tag_replace02 = ['CodIVANoRec', 'MntIVANoRec', 'IVAUsoComun',
+                 'MntSinCred', 'IVANoRetenido', 'IVARetTotal',
+                 'IVARetParcial']
+tag_replace_2 = ['TpoDocRef', 'FolioDocRef', 'TpoImp', 'TasaImp',
+                 'IVANoRec']
+tag_round = ['MntExe', 'MntNeto', 'MntIva', 'MntImp']
 
 # from ctest.certs import *
 # print sii_token('SIIHOMO', pk, ct)
