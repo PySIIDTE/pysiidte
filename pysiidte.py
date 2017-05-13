@@ -374,13 +374,13 @@ tag_replace01 = ['TotOpExe', 'TotOpIVARec', 'CodIVANoRec',
                  'TotOpIVANoRetenido', 'TotIVANoRetenido',
                  'TotOpIVANoRec', 'TotMntIVANoRec',
                  'TotOpIVAUsoComun', 'TotCredIVAUsoComun',
-                 'TotIVAUsoComun', 'TotImpSinCredito']
-tag_replace_1 = ['TpoImp', 'TotOpIVARec', 'TotIVANoRec']
+                 'TotIVAUsoComun', 'TotImpSinCredito', 'CodImp', 'TotMntImp']
+tag_replace_1 = ['TpoImp', 'TotOpIVARec', 'TotIVANoRec', 'TotOtrosImp']
 tag_replace02 = ['CodIVANoRec', 'MntIVANoRec', 'IVAUsoComun',
                  'MntSinCred', 'IVANoRetenido', 'IVARetTotal',
-                 'IVARetParcial']
+                 'IVARetParcial', 'OtrosImp', 'CodImp', 'MntImp', 'TasaImp']
 tag_replace_2 = ['TpoDocRef', 'FolioDocRef', 'TpoImp', 'TasaImp',
-                 'IVANoRec']
+                 'IVANoRec', 'OtrosImp']
 tag_round = ['MntExe', 'MntNeto', 'MntIva', 'MntImp']
 
 # from ctest.certs import *
