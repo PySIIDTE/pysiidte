@@ -68,7 +68,7 @@ normalize_tags['RznSocRecep'] = [100, u'Razón social o nombre receptor']
 normalize_tags['NumId'] = [20]
 normalize_tags['Nacionalidad'] = [3]
 normalize_tags['IdAdicRecep'] = [20]
-normalize_tags['GiroRecep'] = [40, u'variable con giro del receptor']
+normalize_tags['GiroRecep'] = [40, u'giro del receptor']
 normalize_tags['Contacto'] = [80]
 normalize_tags['CorreoRecep'] = [80, u'variable correo del receptor']
 normalize_tags['DirRecep'] = [70, u'dirección del receptor']
@@ -183,6 +183,36 @@ connection_status = {
     '8': 'Firma del Documento',
     '9': 'Sistema Bloqueado',
     'Otro': 'Error Interno.', }
+
+
+def char_replace(text):
+    """
+    Funcion para reemplazar caracteres especiales
+    Esta funcion sirve para salvar bug en libreDTE con los recortes de
+    giros que están codificados en utf8 (cuando trunca, trunca la
+    codificacion)
+    @author: Daniel Blanco Martin (daniel[at]blancomartin.cl)
+    @version: 2016-07-31
+    """
+    special_chars = [
+        [u'á', 'a'],
+        [u'é', 'e'],
+        [u'í', 'i'],
+        [u'ó', 'o'],
+        [u'ú', 'u'],
+        [u'ñ', 'n'],
+        [u'Á', 'A'],
+        [u'É', 'E'],
+        [u'Í', 'I'],
+        [u'Ó', 'O'],
+        [u'Ú', 'U'],
+        [u'Ñ', 'N']]
+    for char in special_chars:
+        try:
+           text = text.replace(char[0], char[1])
+        except:
+            pass
+    return text
 
 
 def sign_seed(privkey, cert):
@@ -339,42 +369,14 @@ def create_template_doc(doc):
     return xml
 
 
-def char_replace(text):
-    """
-    Funcion para reemplazar caracteres especiales
-    Esta funcion sirve para salvar bug en libreDTE con los recortes de
-    giros que están codificados en utf8 (cuando trunca, trunca la
-    codificacion)
-    @author: Daniel Blanco Martin (daniel[at]blancomartin.cl)
-    @version: 2016-07-31
-    """
-    special_chars = [
-        [u'á', 'a'],
-        [u'é', 'e'],
-        [u'í', 'i'],
-        [u'ó', 'o'],
-        [u'ú', 'u'],
-        [u'ñ', 'n'],
-        [u'Á', 'A'],
-        [u'É', 'E'],
-        [u'Í', 'I'],
-        [u'Ó', 'O'],
-        [u'Ú', 'U'],
-        [u'Ñ', 'N']]
-    for char in special_chars:
-        try:
-            text = text.replace(char[0], char[1])
-        except:
-            pass
-    return text
-
 tag_replace01 = ['TotOpExe', 'TotOpIVARec', 'CodIVANoRec',
                  'TotOpIVARetTotal', 'TotIVARetTotal',
                  'TotOpIVARetParcial', 'TotIVARetParcial',
                  'TotOpIVANoRetenido', 'TotIVANoRetenido',
                  'TotOpIVANoRec', 'TotMntIVANoRec',
                  'TotOpIVAUsoComun', 'TotCredIVAUsoComun',
-                 'TotIVAUsoComun', 'TotImpSinCredito', 'CodImp', 'TotMntImp']
+                 'TotIVAUsoComun', 'TotImpSinCredito', 'CodImp', 'TotMntImp',
+                 'TpoImp']
 tag_replace_1 = ['TpoImp', 'TotOpIVARec', 'TotIVANoRec', 'TotOtrosImp']
 tag_replace02 = ['CodIVANoRec', 'MntIVANoRec', 'IVAUsoComun',
                  'MntSinCred', 'IVANoRetenido', 'IVARetTotal',
