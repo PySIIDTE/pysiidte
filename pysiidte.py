@@ -378,7 +378,7 @@ tag_replace01 = ['TotOpExe', 'TotOpIVARec', 'CodIVANoRec',
                  'TotIVAUsoComun', 'TotImpSinCredito', 'CodImp', 'TotMntImp',
                  'TpoImp', 'TasaImp']
 tag_replace_1 = ['TpoImp', 'TotOpIVARec', 'TotIVANoRec', 'TotOtrosImp']
-tag_replace02 = ['CodIVANoRec', 'MntIVANoRec','MntSinCred', 'IVANoRetenido',
+tag_replace02 = ['CodIVANoRec', 'MntIVANoRec', 'IVANoRetenido',
                  'IVARetTotal', 'IVARetParcial', 'OtrosImp', 'CodImp', 'MntImp',
                  'TasaImp', 'TpoImp', 'uTasaImp', 'MntNeto', 'MntIVA']
 tag_replace_2 = ['TpoDocRef', 'FolioDocRef', 'TpoImp', 'TasaImp',
