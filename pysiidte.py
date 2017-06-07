@@ -378,10 +378,9 @@ tag_replace01 = ['TotOpExe', 'TotOpIVARec', 'CodIVANoRec',
                  'TotIVAUsoComun', 'TotImpSinCredito', 'CodImp', 'TotMntImp',
                  'TpoImp', 'TasaImp']
 tag_replace_1 = ['TpoImp', 'TotOpIVARec', 'TotIVANoRec', 'TotOtrosImp']
-tag_replace02 = ['CodIVANoRec', 'MntIVANoRec', 'IVANoRetenido', 'IVAUsoComun',
-                 'IVARetTotal', 'IVARetParcial', 'OtrosImp', 'CodImp', 'MntImp',
-                 'MntSinCred', 'TasaImp', 'TpoImp', 'uTasaImp', 'MntNeto',
-                 'MntIVA']
+tag_replace02 = ['CodIVANoRec', 'MntIVANoRec', 'IVANoRetenido', 'IVARetTotal',
+                 'IVARetParcial', 'OtrosImp', 'CodImp', 'MntImp', 'TasaImp',
+                 'TpoImp', 'uTasaImp', 'MntIVA']
 tag_replace_2 = ['TpoDocRef', 'FolioDocRef', 'TpoImp', 'TasaImp',
                  'IVANoRec', 'OtrosImp']
 tag_round = ['MntExe', 'MntNeto', 'MntIva', 'MntImp']
