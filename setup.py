@@ -31,7 +31,7 @@ setup(
     author='Daniel Blanco Martín',
     author_email='daniel@blancomartin.cl',
     description='Utilidades para firma y conexión SII Chile',
-    long_description=open('README.rst').read(),
+    long_description=open('README.md').read(),
     install_requires=[
         # 'lxml >= 3.6.0, < 3.7',
         # 'defusedxml >= 0.4.1, < 0.5',
