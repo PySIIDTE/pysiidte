@@ -26,9 +26,8 @@ import traceback
 
 from bs4 import BeautifulSoup as bs
 from lxml import etree
-from signxml import XMLSigner, XMLVerifier, methods
+from signxml import XMLSigner, methods
 
-from SOAPpy import SOAPProxy
 from suds.client import Client
 
 _logger = logging.getLogger(__name__)
@@ -209,7 +208,7 @@ def char_replace(text):
         [u'Ñ', 'N']]
     for char in special_chars:
         try:
-           text = text.replace(char[0], char[1])
+            text = text.replace(char[0], char[1])
         except:
             pass
     return text
@@ -332,7 +331,7 @@ def analyze_sii_result(sii_result, sii_message, sii_receipt):
     _logger.info(soup_message)
     _logger.info(soup_receipt)
     if soup_message.ESTADO.text == '2':
-        raise UserError(
+        raise ValueError(
             'Error code: 2: {}'.format(soup_message.GLOSA_ERR.text))
     if soup_message.ESTADO.text in ['SOK', 'CRT', 'PDR', 'FOK', '-11']:
         return 'Proceso'
