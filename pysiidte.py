@@ -22,7 +22,6 @@ __license__ = "AGPL 3.0"
 import collections
 import logging
 import ssl
-import traceback
 
 from bs4 import BeautifulSoup as bs
 from lxml import etree
