@@ -1,3 +1,4 @@
+pyOpenSSL==17.0.0
 cryptography<1.9,>=1.8
 signxml>=2.2.6
 logging

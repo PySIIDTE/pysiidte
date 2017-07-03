@@ -37,7 +37,7 @@ setup(
         # 'defusedxml >= 0.4.1, < 0.5',
         # 'eight >= 0.3.0, < 0.4',
         'cryptography < 1.9, >=1.8',
-        # 'pyOpenSSL >= 16.0.0, < 17',
+        'pyOpenSSL == 17.0.0',
         # 'certifi >= 2015.11.20.1',
         'signxml >= 2.2.6',
         'logging',
