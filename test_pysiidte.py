@@ -10,5 +10,8 @@
 # or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
 # for more details.
 import pysiidte
-print pysiidte.server_url
 
+
+def test_char_replace():
+    total = pysiidte.char_replace('á')
+    assert total == 'a'
