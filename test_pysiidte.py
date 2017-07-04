@@ -13,5 +13,5 @@ import pysiidte
 
 
 def test_char_replace():
-    total = pysiidte.char_replace('á')
+    total = pysiidte.char_replace(u'á')
     assert total == 'a'
