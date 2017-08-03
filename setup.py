@@ -38,7 +38,7 @@ setup(
         # 'eight >= 0.3.0, < 0.4',
         # 'pyOpenSSL == 17.0.0',
         'cryptography == 1.8',
-        'pyOpenSSL >= 0.15.1, < 18',
+        'pyOpenSSL >= 0.15.1, < 17',
         # 'certifi >= 2015.11.20.1',
         'signxml >= 2.2.6',
         'logging',
