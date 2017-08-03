@@ -1,5 +1,5 @@
 pyOpenSSL >= 0.15.1, < 18
-cryptography >= 1.8, < 1.10
+cryptography == 1.8
 signxml>=2.2.6
 logging
 suds
