@@ -1,6 +1,6 @@
 pyOpenSSL==17.0.0
 cryptography>=1.9
-signxml>=2.2.6
+signxml>=2.4
 logging
 suds
 bs4

@@ -39,7 +39,7 @@ setup(
         'cryptography > 1.9',
         'pyOpenSSL == 17.0.0',
         # 'certifi >= 2015.11.20.1',
-        'signxml >= 2.2.6',
+        'signxml >= 2.4',
         'logging',
         'suds',
         'bs4',
