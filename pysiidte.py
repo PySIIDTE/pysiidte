@@ -20,6 +20,7 @@ __copyright__ = "Copyright (C) 2015-2017 Blanco Martín y Asoc. EIRL - BMyA S.A.
 __license__ = "AGPL 3.0"
 
 import collections
+import hashlib
 import logging
 import ssl
 
@@ -211,6 +212,48 @@ def char_replace(text):
         except:
             pass
     return text
+
+
+def digest(data):
+    """
+    Funcion para obtener digest en la firma
+    @author: Daniel Blanco Martin (daniel[at]blancomartin.cl)
+    @version: 2015-03-01
+    """
+    sha1 = hashlib.new('sha1', data)
+    return sha1.digest()
+
+
+def get_tag_digest(xml, tag, coding='ISO-8859-1'):
+    """
+    Función para obtener el digest del tag EnvioDTE
+    :param xml: el documento a extraer el tag
+    :param tag: nro de tag (en el documento)
+    :param coding: codificacion (default iso-8859-1)
+    :return: digest remoto del documento
+    @author: Daniel Blanco Martin (daniel[at]blancomartin.cl)
+    @version: 2017-08-07
+    """
+    xmle = etree.fromstring(xml.decode(coding).replace(
+        '<?xml version="1.0" encoding="{}"?>'.format(coding), ''))
+    root = etree.tostring(xmle[tag])
+    return base64.b64encode(
+        digest(etree.tostring(etree.fromstring(root), method="c14n")))
+
+
+def check_digest(xml):
+    """
+    Funcion para comparar los digest
+    @author: Daniel Blanco Martin (daniel[at]blancomartin.cl)
+    @version: 2017-08-07
+    :param xml:
+    :return:
+    """
+    rdig = str(bs(xml, 'xml').find_all('DigestValue')[-1].text)
+    _logger.info('Remote Digest: {}'.format(rdig))
+    ldig = get_tag_digest(xml, 0)
+    _logger.info('Local Digest: {}'.format(ldig))
+    return rdig == ldig
 
 
 def sign_seed(privkey, cert):
