@@ -3,9 +3,16 @@
 |File                |Date                          |
 |--------------------|------------------------------|
 |README.md           |11 de septiembre de 2016 10:18|
-|README.rst          |03 de julio de 2017 13:45     |
-|pysiidte.py         |                              |
+|pysiidte.py         |Marzo 2017 - Biblioteca       |
 |setup.py            |                              |
+|test_pysiidte.py    |Junio 2017 Tests de cobertura |
+|CONTRIBUTORS.md     |Agosto 2017 Contributors      |
+|AGREEMENT.md        |-- EN PREPARACION: ACUERDO DE LICENCIA PARA CONTRIBUTORS QUE HAGAN PULL REQUEST|
+|requirements.txt    |Mayo 2017 Para instalar con PIP|
+|ctest (folder)      |No incluida en el proyecto. Para test de cobertura con firma|
+
+
+
 
 [TOC]
 
