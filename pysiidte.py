@@ -195,10 +195,10 @@ def soup_text(type_tag):
             tag = soup.find(type_tag).text
             return tag
         except:
-            _logger.info('Error de conexion a %s' % url)
+            _logger.info(u'Error de conexión al servidor')
             raise ValueError(u'''Hay un problema de conectividad al servidor \
-        del SII:\n %s \nPor favor, intente conectarse en unos minutos.
-        (No se pudo obtener el %s)''' % (url, type_tag))
+del SII. Por favor, intente conectarse en unos minutos.
+(No se pudo obtener el %s)''' % type_tag)
     return inner
 
 
