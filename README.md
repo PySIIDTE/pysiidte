@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/PySIIDTE/pysiidte.svg?branch=master)](https://travis-ci.org/PySIIDTE/pysiidte)
+
 |File                |Date                          |
 |--------------------|------------------------------|
 |README.md           |11 de septiembre de 2016 10:18|
