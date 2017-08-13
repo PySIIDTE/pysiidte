@@ -1,7 +1,7 @@
-hashlib
-pyOpenSSL==0.15.1
-cryptography==1.9
-signxml>=2.4
-logging
-suds
 bs4
+cryptography==1.9
+# hashlib
+logging
+pyOpenSSL==0.15.1
+signxml>=2.4
+suds
