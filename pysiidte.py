@@ -184,6 +184,24 @@ connection_status = {
     'Otro': 'Error Interno.', }
 
 
+def soup_text(type_tag):
+    """
+    :param type: TOKEN o SEMILLA
+    :return:
+    """
+    def inner(method):
+        try:
+            soup = bs(method, 'xml')
+            tag = soup.find(type_tag).text
+            return tag
+        except:
+            _logger.info('Error de conexion a %s' % url)
+            # _logger.info('El error es: %s' % e)
+            raise ValueError(u'''Hay un problema de conectividad al servidor \
+        del SII:\n %s \nPor favor, intente conectarse en unos minutos.
+        (No se pudo obtener el %s)''' % (url, type_tag))
+    inner()
+
 def char_replace(text):
     """
     Funcion para reemplazar caracteres especiales
@@ -296,6 +314,7 @@ def create_template_seed(method):
     return call
 
 
+@soup_text('TOKEN')
 def get_token(seed, mode):
     """
     Funcion usada en autenticacion en SII
@@ -316,21 +335,13 @@ def get_token(seed, mode):
             continue
         finally:
             i -= 1
-    try:
-        soup = bs(aa, 'xml')
-        token = soup.TOKEN.text
-        return token
-    except:
-        _logger.info('Error de conexion a %s' % url)
-        # _logger.info('El error es: %s' % e)
-        raise ValueError(u'''Hay un problema de conectividad al servidor \
-del SII:\n %s \nPor favor, intente conectarse en unos minutos.
-(No se pudo obtener el token)''' % url)
+    return aa
 
 
 def sii_token(mode, privkey, cert):
     @sign_seed(privkey, cert)
     @create_template_seed
+    @soup_text('SEMILLA')
     def get_seed(mode):
         """
         Funcion usada en autenticacion en SII, obtención de la semilla
@@ -350,15 +361,7 @@ def sii_token(mode, privkey, cert):
                 continue
             finally:
                 i -= 1
-        try:
-            soup = bs(seed_xml, 'xml')
-            seed = soup.SEMILLA.text
-            return seed
-        except:
-            _logger.info('Error de conexion a %s' % url)
-            raise ValueError(u'''Hay un problema de conectividad al servidor \
-del SII: \n%s. \nPor favor, intente conectarse en unos minutos.
-(no se pudo obtener la semilla)''' % url)
+        return seed_xml
     return get_token(get_seed(mode), mode)
 
 
