@@ -1,3 +1,4 @@
+base64
 bs4
 cryptography==1.9
 # hashlib
