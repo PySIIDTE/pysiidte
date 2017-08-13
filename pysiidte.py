@@ -363,22 +363,22 @@ def sii_token(mode, privkey, cert):
 
 
 def analyze_sii_result(sii_result, sii_message, sii_receipt):
-    _logger.info(
-        'analizando sii result: {} - message: {} - receipt: {}'.format(
-            sii_result, sii_message, sii_receipt))
+    _logger.info('analizando sii result')
+    result_dict = {
+        'Proceso': ['SOK', 'CRT', 'PDR', 'FOK', '-11'],
+        'Rechazado': ['RCH', 'RFR', 'RSC', 'RCT'],
+        'Reparo': ['RLV'],
+        'check_receipt': ['EPR', 'DNK'],
+        'check_glosa': ['2'], }
+    status = False
     try:
         soup_message = bs(sii_message, 'xml')
         _logger.info(soup_message)
-        if soup_message.ESTADO.text == '2':
-            raise ValueError(
-                'Error code: 2: {}'.format(soup_message.GLOSA_ERR.text))
-        if soup_message.ESTADO.text in ['SOK', 'CRT', 'PDR', 'FOK', '-11']:
-            return 'Proceso'
-        elif soup_message.ESTADO.text in ['RCH', 'RFR', 'RSC', 'RCT']:
-            return 'Rechazado'
-        elif soup_message.ESTADO.text in ['RLV']:
-            return 'Reparo'
-        elif soup_message.ESTADO.text in ['EPR', 'DNK']:
+        for key, values in result_dict.iteritems():
+            if soup_message.ESTADO.text in values:
+                status = key
+                break
+        if status == 'check_receipt':
             try:
                 soup_receipt = bs(sii_receipt, 'xml')
                 _logger.info(soup_receipt)
@@ -390,6 +390,9 @@ def analyze_sii_result(sii_result, sii_message, sii_receipt):
                     return 'Rechazado'
             except:
                 pass
+        elif status == 'check_glosa':
+            raise ValueError(
+                'Error code: 2: {}'.format(soup_message.GLOSA_ERR.text))
         return sii_result
     except:
         return False
