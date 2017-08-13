@@ -184,22 +184,21 @@ connection_status = {
     'Otro': 'Error Interno.', }
 
 
-def soup_text(type_tag):
+def soup_text(xml, type_tag):
     """
+    :param xml: xml obtenido
     :param type: TOKEN o SEMILLA
     :return:
     """
-    def inner(func):
-        try:
-            soup = bs(func, 'xml')
-            tag = soup.find(type_tag).text
-            return tag
-        except:
-            _logger.info(u'Error de conexión al servidor')
-            raise ValueError(u'''Hay un problema de conectividad al servidor \
+    try:
+        soup = bs(xml, 'xml')
+        tag = soup.find(type_tag).text
+        return tag
+    except:
+        _logger.info(u'Error de conexión al servidor')
+        raise ValueError(u'''Hay un problema de conectividad al servidor \
 del SII. Por favor, intente conectarse en unos minutos.
 (No se pudo obtener el %s)''' % type_tag)
-    return inner
 
 
 def char_replace(text):
@@ -314,7 +313,6 @@ def create_template_seed(method):
     return call
 
 
-@soup_text('TOKEN')
 def get_token(seed, mode):
     """
     Funcion usada en autenticacion en SII
@@ -335,13 +333,12 @@ def get_token(seed, mode):
             continue
         finally:
             i -= 1
-    return aa
+    return soup_text(aa, 'TOKEN')
 
 
 def sii_token(mode, privkey, cert):
     @sign_seed(privkey, cert)
     @create_template_seed
-    @soup_text('SEMILLA')
     def get_seed(mode):
         """
         Funcion usada en autenticacion en SII, obtención de la semilla
@@ -362,7 +359,7 @@ def sii_token(mode, privkey, cert):
             finally:
                 i -= 1
         return seed_xml
-    return get_token(get_seed(mode), mode)
+    return soup_text(get_token(get_seed(mode), mode), 'TOKEN')
 
 
 def analyze_sii_result(sii_result, sii_message, sii_receipt):
