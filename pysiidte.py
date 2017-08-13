@@ -26,6 +26,7 @@ import ssl
 
 from bs4 import BeautifulSoup as bs
 from lxml import etree
+from __future__ import print_function
 from signxml import XMLSigner, methods
 from suds.client import Client
 
@@ -392,7 +393,7 @@ def analyze_sii_result(sii_result, sii_message, sii_receipt):
 
 def remove_plurals_xml(xml):
     for k in pluralizeds:
-        print k
+        print(k)
         xml = xml.replace('<%s>' % k, '').replace('</%s>' % k, '')
     return xml
 
