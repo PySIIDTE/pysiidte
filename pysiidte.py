@@ -9,16 +9,6 @@
 # WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTIBILITY
 # or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
 # for more details.
-
-"""
-Módulo auxiliares y para realizar conexión, firma y servicios
-relacionados don Documentos Tributarios Electrónicos del SII
-(Servicio de Impuestos Internos) de Chile
-"""
-__author__ = "Daniel Blanco Martín (daniel@blancomartin.cl)"
-__copyright__ = "Copyright (C) 2015-2017 Blanco Martín y Asoc. EIRL - BMyA S.A."
-__license__ = "AGPL 3.0"
-
 from __future__ import print_function
 import collections
 import hashlib
@@ -29,6 +19,16 @@ from bs4 import BeautifulSoup as bs
 from lxml import etree
 from signxml import XMLSigner, methods
 from suds.client import Client
+
+"""
+Módulo auxiliares y para realizar conexión, firma y servicios
+relacionados don Documentos Tributarios Electrónicos del SII
+(Servicio de Impuestos Internos) de Chile
+"""
+__author__ = "Daniel Blanco Martín (daniel@blancomartin.cl)"
+__copyright__ = "Copyright (C) 2015-2017 Blanco Martín y Asoc. EIRL - BMyA S.A."
+__license__ = "AGPL 3.0"
+
 
 _logger = logging.getLogger(__name__)
 retries = 1000
