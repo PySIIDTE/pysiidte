@@ -16,12 +16,13 @@ __author__ = "Daniel Blanco Martín (daniel@blancomartin.cl)"
 __copyright__ = "Copyright (C) 2015-2017 Blanco Martín y Asoc. EIRL - BMyA S.A."
 __license__ = "AGPL 3.0"
 
-from setuptools import setup, find_packages
 import glob
 import os
 import subprocess
-import warnings
 import sys
+import warnings
+
+from setuptools import find_packages, setup
 
 setup(
     name='pysiidte',
@@ -37,6 +38,7 @@ setup(
         # 'defusedxml >= 0.4.1, < 0.5',
         # 'eight >= 0.3.0, < 0.4',
         # 'pyOpenSSL == 17.0.0',
+        'hashlib',
         'cryptography >= 1.9',
         'pyOpenSSL == 0.15.1',
         # 'certifi >= 2015.11.20.1',

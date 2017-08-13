@@ -27,7 +27,6 @@ import ssl
 from bs4 import BeautifulSoup as bs
 from lxml import etree
 from signxml import XMLSigner, methods
-
 from suds.client import Client
 
 _logger = logging.getLogger(__name__)
