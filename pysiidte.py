@@ -189,18 +189,18 @@ def soup_text(type_tag):
     :param type: TOKEN o SEMILLA
     :return:
     """
-    def inner(method):
+    def inner(func):
         try:
-            soup = bs(method, 'xml')
+            soup = bs(func, 'xml')
             tag = soup.find(type_tag).text
             return tag
         except:
             _logger.info('Error de conexion a %s' % url)
-            # _logger.info('El error es: %s' % e)
             raise ValueError(u'''Hay un problema de conectividad al servidor \
         del SII:\n %s \nPor favor, intente conectarse en unos minutos.
         (No se pudo obtener el %s)''' % (url, type_tag))
-    inner()
+    return inner
+
 
 def char_replace(text):
     """
