@@ -366,29 +366,34 @@ def analyze_sii_result(sii_result, sii_message, sii_receipt):
     _logger.info(
         'analizando sii result: {} - message: {} - receipt: {}'.format(
             sii_result, sii_message, sii_receipt))
-    if not sii_result or not sii_message or not sii_receipt:
-        return sii_result
-    soup_message = bs(sii_message, 'xml')
-    soup_receipt = bs(sii_receipt, 'xml')
-    _logger.info(soup_message)
-    _logger.info(soup_receipt)
-    if soup_message.ESTADO.text == '2':
-        raise ValueError(
-            'Error code: 2: {}'.format(soup_message.GLOSA_ERR.text))
-    if soup_message.ESTADO.text in ['SOK', 'CRT', 'PDR', 'FOK', '-11']:
-        return 'Proceso'
-    elif soup_message.ESTADO.text in ['RCH', 'RFR', 'RSC', 'RCT']:
-        return 'Rechazado'
-    elif soup_message.ESTADO.text in ['RLV']:
-        return 'Reparo'
-    elif soup_message.ESTADO.text in ['EPR', 'DNK']:
-        if soup_receipt.ACEPTADOS.text == soup_receipt.INFORMADOS.text:
-            return 'Aceptado'
-        if soup_receipt.REPAROS.text >= '1':
-            return 'Reparo'
-        if soup_receipt.RECHAZADOS.text >= '1':
+    try:
+        soup_message = bs(sii_message, 'xml')
+        _logger.info(soup_message)
+        if soup_message.ESTADO.text == '2':
+            raise ValueError(
+                'Error code: 2: {}'.format(soup_message.GLOSA_ERR.text))
+        if soup_message.ESTADO.text in ['SOK', 'CRT', 'PDR', 'FOK', '-11']:
+            return 'Proceso'
+        elif soup_message.ESTADO.text in ['RCH', 'RFR', 'RSC', 'RCT']:
             return 'Rechazado'
-    return sii_result
+        elif soup_message.ESTADO.text in ['RLV']:
+            return 'Reparo'
+        elif soup_message.ESTADO.text in ['EPR', 'DNK']:
+            try:
+                soup_receipt = bs(sii_receipt, 'xml')
+                _logger.info(soup_receipt)
+                if soup_receipt.ACEPTADOS.text == soup_receipt.INFORMADOS.text:
+                    return 'Aceptado'
+                if soup_receipt.REPAROS.text >= '1':
+                    return 'Reparo'
+                if soup_receipt.RECHAZADOS.text >= '1':
+                    return 'Rechazado'
+            except:
+                pass
+        return sii_result
+    except:
+        return False
+
 
 
 def remove_plurals_xml(xml):
