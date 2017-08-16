@@ -21,4 +21,3 @@ omit =
     */build/*
     */dist/*
     *__init__.py
-
