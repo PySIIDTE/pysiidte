@@ -1,8 +1,20 @@
 # Config file .coveragerc
 
+[run]
+branch = True
+source = pysiidte
+
 [report]
 include =
     */pysiidte/pysiidte/*
+
+exclude_lines =
+    if self.debug:
+    pragma: no cover
+    raise NotImplementedError
+    if __name__ == .__main__.:
+ignore_errors = True
+
 
 omit =
     */ctest/*
@@ -10,9 +22,3 @@ omit =
     */dist/*
     *__init__.py
 
-# Regexes for lines to exclude from consideration
-exclude_lines =
-    # Have to re-enable the standard pragma
-    pragma: no cover
-    # Don't complain about null context checking
-    if context is None:
