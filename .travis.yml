@@ -3,8 +3,9 @@ python:
     - "2.7"
 
 install:
+    - pip install codecov
     - python setup.py install
-    - pip install codecov==2.0.9
+
 
 env:
     CODECLIMATE_REPO_TOKEN: 55ed01a01462b84bfc64eb958b07be5dc69c8c6f26fc47599846029a09e466c1
