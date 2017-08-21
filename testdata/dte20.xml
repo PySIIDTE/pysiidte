@@ -1,0 +1,1027 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<EnvioDTE xmlns="http://www.sii.cl/SiiDte" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sii.cl/SiiDte EnvioDTE_v10.xsd" version="1.0">
+<SetDTE ID="BMyA_Odoo_SetDoc">
+<Caratula version="1.0">
+<RutEmisor>76201224-3</RutEmisor>
+<RutEnvia>23841194-7</RutEnvia>
+<RutReceptor>60803000-K</RutReceptor>
+<FchResol>2014-01-20</FchResol>
+<NroResol>0</NroResol>
+<TmstFirmaEnv>2017-05-06T02:34:00</TmstFirmaEnv>
+<SubTotDTE>
+<TpoDTE>56</TpoDTE>
+<NroDTE>1</NroDTE>
+</SubTotDTE>
+<SubTotDTE>
+<TpoDTE>34</TpoDTE>
+<NroDTE>16</NroDTE>
+</SubTotDTE>
+<SubTotDTE>
+<TpoDTE>61</TpoDTE>
+<NroDTE>3</NroDTE>
+</SubTotDTE>
+</Caratula>
+<DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
+    <Documento ID="F125T34"><Encabezado><IdDoc><TipoDTE>34</TipoDTE><Folio>125</Folio><FchEmis>2017-05-06</FchEmis><FmaPago>1</FmaPago><FchVenc>2017-05-06</FchVenc></IdDoc><Emisor><RUTEmisor>76201224-3</RUTEmisor><RznSoc>Soc de Servicios Blanco Mart&#237;n EIRL</RznSoc><GiroEmis>Empresas de Servicios Integrales de Inform&#225;tica</GiroEmis><Telefono>+56228400990</Telefono><CorreoEmisor>dteb2b@blancomartin.cl</CorreoEmisor><Acteco>726000</Acteco><DirOrigen>Apoquindo 6410 Of 212</DirOrigen><CmnaOrigen>Las Condes</CmnaOrigen><CiudadOrigen>Santiago</CiudadOrigen></Emisor><Receptor><RUTRecep>77771710-3</RUTRecep><RznSocRecep>Comercial Blanco Ltda</RznSocRecep><GiroRecep>Otras Actividades Empresariales N.C.P.</GiroRecep><DirRecep>Av. Las Condes 8173 </DirRecep><CmnaRecep>Las Condes</CmnaRecep><CiudadRecep>Santiago</CiudadRecep></Receptor><Totales><MntExe>120000</MntExe><MntTotal>120000</MntTotal></Totales></Encabezado><Detalle><NroLinDet>1</NroLinDet><IndExe>1</IndExe><NmbItem>SERVICIO DE CERTIFICACI&#211;N DIGITAL</NmbItem><DscItem>SERVICIO DE CERTIFICACI&#211;N DIGITAL /SSL PARA SITIO www.cartoys.cl</DscItem><QtyItem>3.0</QtyItem><UnmdItem>Unit</UnmdItem><PrcItem>40000</PrcItem><MontoItem>120000</MontoItem></Detalle>
+<TED version="1.0"><DD><RE>76201224-3</RE><TD>34</TD><F>125</F><FE>2017-05-06</FE><RR>77771710-3</RR><RSR>Comercial Blanco Ltda</RSR><MNT>120000</MNT><IT1>SERVICIO DE CERTIFICACI&#211;N DIGITAL</IT1><CAF version="1.0"><DA><RE>76201224-3</RE><RS>SOCIEDAD DE SERVICIOS HECTOR DANIEL BLAN</RS><TD>34</TD><RNG><D>121</D><H>220</H></RNG><FA>2017-04-26</FA><RSAPK><M>ma4Cvxgs3qf2wcdobhhfTXzPuyOP8KB35QaPS3aGLGD+CwPPX6CR98evD1Pns5u8wmzffLvSt81fmKJT0vTtaQ==</M><E>Aw==</E></RSAPK><IDK>100</IDK></DA><FRMA algoritmo="SHA1withRSA">v0ui8EKsMMz6fvNwv9DdCHo+jPtdIhDOWrYjSCx8uHBotEsGVAtphuBIIlPHQteRASo4t289QZjpPhXPv4Xm3Q==</FRMA></CAF><TSTED>2017-05-06T02:33:31</TSTED></DD><FRMT algoritmo="SHA1withRSA">HVTTiFT5xlBx6FQZbQV1iaShicUfHVozPgO4cI3K0vF9LxXYazo34+1rNO5zvgCVY/QbluFSoMzfELePr+uxNw==</FRMT></TED><TmstFirma>2017-05-06T02:33:31</TmstFirma>
+</Documento>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#F125T34"><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>8kXXVp/mL4x3KPlbGISGreLk/8Y=</DigestValue></Reference></SignedInfo><SignatureValue>AHw0sGd6WAS1UDkuBL1QwSVaBqN+EpvQ/WcE9PWSuorPjbhkxMKq58UwqAnPN+CH
+CJ7rn3TEV1u/kJE0nCKkF6DNLpJHPPNPLsHEcBSX4VS4bsT+f/HeF5vD3wnGinoP
+MoSKX0SrShpcepIpHTeNLcSFo2jrBadKom2l6vv7eqyJTz095BwbjVPE6pGYVBjP
+pRPvwhUoDWXBljnVyuaHahApAB1R3VznfkjCPvHpteffak0uzjYtoD3Z8D4F7GB/
+yvbT5ZKIleprJ2Y+tI4IE0+ZvBF1hBrInNjaYXjeUrXLG44yAa9PFeJkt+KjhR7a
+WdYqkqFi155woelbsS43ZA==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pU7BPmslKMc3Vy0K/9ExNgZ5XVuTRM+giug69ACipba9o+anS1xdKYEI7dX6a2kD
+9IwQ1o8vK6/uSIYZfnJ0zl9f/8tKRj+6UMWik4gLMY7qUzX2vS5/NEA1iQCrDYGG
+YnXwkAM7UmZyc/ShIt1+VWBwpKbBMTwqJAioiO5V7iIsMRMeHcdTULMKtahEsgz4
+VA0UvxZKo0URg5y3Z0wcwmiGz30056CCDOD+5giC+VNYq+iLSWVuvZNPpsduT58e
+Aquza5kno40lNspElAIV7KvfuzMIy9LwQ+w9RGI8a4U9r/y7kiprrM40jzyR0tuA
+Ygxl9OuJXiwHKE6VpV6Psw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>
+MIIF7DCCBNSgAwIBAgIDANEuMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYDVQQGEwJD
+TDEYMBYGA1UE ChMPQWNlcHRhLmNvbSBTLkEuMUgwRgYDVQQDEz9BY2VwdGEuY29
+tIEF1dG9yaWRhZCBDZXJ0aWZp Y2Fkb3JhIENsYXNlIDIgUGVyc29uYSBOYXR1cm
+FsIC0gRzQxHjAcBgkqhkiG9w0BCQEWD2luZm9A YWNlcHRhLmNvbTETMBEGA1UEB
+RMKOTY5MTkwNTAtODAeFw0xNzA0MjQxNDA3MTdaFw0yMDA0MjQx NDA3MTdaMIGC
+MQswCQYDVQQGEwJDTDEYMBYGA1UEDBMPUEVSU09OQSBOQVRVUkFMMR0wGwYDVQQD
+ExRIRUNUT1IgREFOSUVMIEJMQU5DTzElMCMGCSqGSIb3DQEJARYWZGFuaWVsQGJs
+YW5jb21hcnRp bi5jbDETMBEGA1UEBRMKMjM4NDExOTQtNzCCASIwDQYJKoZIhvc
+NAQEBBQADggEPADCCAQoCggEB AKVOwT5rJSjHN1ctCv/RMTYGeV1bk0TPoIroOv
+QAoqW2vaPmp0tcXSmBCO3V+mtpA/SMENaPLyuv 7kiGGX5ydM5fX//LSkY/ulDFo
+pOICzGO6lM19r0ufzRANYkAqw2BhmJ18JADO1JmcnP0oSLdflVg cKSmwTE8KiQI
+qIjuVe4iLDETHh3HU1CzCrWoRLIM+FQNFL8WSqNFEYOct2dMHMJohs99NOegggzg
+/uYIgvlTWKvoi0llbr2TT6bHbk+fHgKrs2uZJ6ONJTbKRJQCFeyr37szCMvS8EPs
+PURiPGuFPa/8 u5Iqa6zONI88kdLbgGIMZfTriV4sByhOlaVej7MCAwEAAaOCAkM
+wggI/MB8GA1UdIwQYMBaAFGWl qz4/yLZRbRF+X8MKB+ZDoAi2MB0GA1UdDgQWBB
+TFkOAKd4GhJz2JW6jdXRD9Et+g5jALBgNVHQ8E BAMCBPAwHQYDVR0lBBYwFAYIK
+wYBBQUHAwIGCCsGAQUFBwMEMBEGCWCGSAGG+EIBAQQEAwIFoDB1 BgNVHSAEbjBs
+MGoGCCsGAQQBtWsCMF4wMQYIKwYBBQUHAgEWJWh0dHBzOi8vYWNnNC5hY2VwdGEu
+Y29tL0NQUy1BY2VwdGFjb20wKQYIKwYBBQUHAgIwHTAWFg9BY2VwdGEuY29tIFMu
+QS4wAwIBCRoD VEJEMFoGA1UdEgRTMFGgGAYIKwYBBAHBAQKgDBYKOTY5MTkwNTA
+tOKAkBggrBgEFBQcIA6AYMBYM Cjk2OTE5MDUwLTgGCCsGAQQBwQECgQ9pbmZvQG
+FjZXB0YS5jb20wYQYDVR0RBFowWKAYBggrBgEE AcEBAaAMFgoyMzg0MTE5NC03o
+CQGCCsGAQUFBwgDoBgwFgwKMjM4NDExOTQtNwYIKwYBBAHBAQKB FmRhbmllbEBi
+bGFuY29tYXJ0aW4uY2wwRwYIKwYBBQUHAQEEOzA5MDcGCCsGAQUFBzABhitodHRw
+czovL2FjZzQuYWNlcHRhLmNvbS9hY2c0L29jc3AvQ2xhc2UyLUc0MD8GA1UdHwQ4
+MDYwNKAyoDCG Lmh0dHBzOi8vYWNnNC5hY2VwdGEuY29tL2FjZzQvY3JsL0NsYXN
+lMi1HNC5jcmwwDQYJKoZIhvcN AQELBQADggEBACHvynJ7KjgiebxUJoLwSjyJ1t
+jgMe3ws0P0b5cLeHhR6eCNH5SbKu2pUm0BMYFs tYJkZuul4PuK6ikJbfyKhJNJf
+YgCgWebkPpYsMrz/N9qJ3o2iMsudubXejtTmMjCK8ZM3cjyad54 f3DjhHz4xy/w
+mmsnV8NFlm3v/ad5hEhOESDm4q16YGxYaxsX2CtVj1QzzeYbl/2fO+UwNFnXUxTx
+1rOPzWIPzWtEknKebgFeHuWwHV9WmxbyBgLWugYxQcF3JR6es1kt3bjstHOlYPZA
+zXDhuALO+7KB
+eBPeKYCYYspX9gzPK8z1YHQC9eq63FR7DvhFgegG/4fmcpZMdoQ=</X509Certificate></X509Data></KeyInfo></Signature></DTE>
+<DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
+    <Documento ID="F134T34"><Encabezado><IdDoc><TipoDTE>34</TipoDTE><Folio>134</Folio><FchEmis>2017-05-06</FchEmis><FmaPago>1</FmaPago><FchVenc>2017-05-06</FchVenc></IdDoc><Emisor><RUTEmisor>76201224-3</RUTEmisor><RznSoc>Soc de Servicios Blanco Mart&#237;n EIRL</RznSoc><GiroEmis>Empresas de Servicios Integrales de Inform&#225;tica</GiroEmis><Telefono>+56228400990</Telefono><CorreoEmisor>dteb2b@blancomartin.cl</CorreoEmisor><Acteco>726000</Acteco><DirOrigen>Apoquindo 6410 Of 212</DirOrigen><CmnaOrigen>Las Condes</CmnaOrigen><CiudadOrigen>Santiago</CiudadOrigen></Emisor><Receptor><RUTRecep>23725688-3</RUTRecep><RznSocRecep>CARLO ALEXANDER CASTILLO GARZON</RznSocRecep><GiroRecep>Venta Al Por Mayor de Productos Textiles</GiroRecep><DirRecep>MANZANO 377  204 </DirRecep><CmnaRecep>Recoleta</CmnaRecep><CiudadRecep>Santiago</CiudadRecep></Receptor><Totales><MntExe>210000</MntExe><MntTotal>210000</MntTotal></Totales></Encabezado><Detalle><NroLinDet>1</NroLinDet><IndExe>1</IndExe><NmbItem>HORAS PROGRAMADOR</NmbItem><DscItem>HORAS PROGRAMADOR</DscItem><QtyItem>7.0</QtyItem><UnmdItem>Hora</UnmdItem><PrcItem>30000</PrcItem><MontoItem>210000</MontoItem></Detalle>
+<TED version="1.0"><DD><RE>76201224-3</RE><TD>34</TD><F>134</F><FE>2017-05-06</FE><RR>23725688-3</RR><RSR>CARLO ALEXANDER CASTILLO GARZON</RSR><MNT>210000</MNT><IT1>HORAS PROGRAMADOR</IT1><CAF version="1.0"><DA><RE>76201224-3</RE><RS>SOCIEDAD DE SERVICIOS HECTOR DANIEL BLAN</RS><TD>34</TD><RNG><D>121</D><H>220</H></RNG><FA>2017-04-26</FA><RSAPK><M>ma4Cvxgs3qf2wcdobhhfTXzPuyOP8KB35QaPS3aGLGD+CwPPX6CR98evD1Pns5u8wmzffLvSt81fmKJT0vTtaQ==</M><E>Aw==</E></RSAPK><IDK>100</IDK></DA><FRMA algoritmo="SHA1withRSA">v0ui8EKsMMz6fvNwv9DdCHo+jPtdIhDOWrYjSCx8uHBotEsGVAtphuBIIlPHQteRASo4t289QZjpPhXPv4Xm3Q==</FRMA></CAF><TSTED>2017-05-06T02:33:44</TSTED></DD><FRMT algoritmo="SHA1withRSA">hxiFPX8ccx77I1pBUMqGACqWzvmXlUD01Z+Wb1NnHve5uoCQumw2LWG7SoJ3T5IYKaT5inDj7pE75TDM7ABz3A==</FRMT></TED><TmstFirma>2017-05-06T02:33:44</TmstFirma>
+</Documento>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#F134T34"><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>i6iewDTuQffAzK6My7kyIgSOIUU=</DigestValue></Reference></SignedInfo><SignatureValue>NvxMF1SIrugWU4xfOnjV0/bhRbOyYlYkO9d0p32lgI8MpeZk8c16vshsryw8RJqc
+cHb5A0WQh7WQIi7IIoCEdGM+C8fuoxcILSvyyk4i7LRsGSZG8gsCSbuuMBOddCUY
+Z/A8h4NJou82QyI/Z6CaWwdFEJVSQ3EDIZA0vayia+fe+QZ+PjM6Vq6Jox4WYJeH
+QtdFCm935jfIVaXwj5/3cvJvxK9N87iLPulWUPDoPSS4T7CAO6RtE6yrcvqrG63V
+7XpQ/p6OFDJHOqpuShksvY8j6AMqups14IzhLatsbgRyCNxlicez0M1JeVL/esz+
+iAEg9vxg1Q/U508P5Hq3WQ==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pU7BPmslKMc3Vy0K/9ExNgZ5XVuTRM+giug69ACipba9o+anS1xdKYEI7dX6a2kD
+9IwQ1o8vK6/uSIYZfnJ0zl9f/8tKRj+6UMWik4gLMY7qUzX2vS5/NEA1iQCrDYGG
+YnXwkAM7UmZyc/ShIt1+VWBwpKbBMTwqJAioiO5V7iIsMRMeHcdTULMKtahEsgz4
+VA0UvxZKo0URg5y3Z0wcwmiGz30056CCDOD+5giC+VNYq+iLSWVuvZNPpsduT58e
+Aquza5kno40lNspElAIV7KvfuzMIy9LwQ+w9RGI8a4U9r/y7kiprrM40jzyR0tuA
+Ygxl9OuJXiwHKE6VpV6Psw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>
+MIIF7DCCBNSgAwIBAgIDANEuMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYDVQQGEwJD
+TDEYMBYGA1UE ChMPQWNlcHRhLmNvbSBTLkEuMUgwRgYDVQQDEz9BY2VwdGEuY29
+tIEF1dG9yaWRhZCBDZXJ0aWZp Y2Fkb3JhIENsYXNlIDIgUGVyc29uYSBOYXR1cm
+FsIC0gRzQxHjAcBgkqhkiG9w0BCQEWD2luZm9A YWNlcHRhLmNvbTETMBEGA1UEB
+RMKOTY5MTkwNTAtODAeFw0xNzA0MjQxNDA3MTdaFw0yMDA0MjQx NDA3MTdaMIGC
+MQswCQYDVQQGEwJDTDEYMBYGA1UEDBMPUEVSU09OQSBOQVRVUkFMMR0wGwYDVQQD
+ExRIRUNUT1IgREFOSUVMIEJMQU5DTzElMCMGCSqGSIb3DQEJARYWZGFuaWVsQGJs
+YW5jb21hcnRp bi5jbDETMBEGA1UEBRMKMjM4NDExOTQtNzCCASIwDQYJKoZIhvc
+NAQEBBQADggEPADCCAQoCggEB AKVOwT5rJSjHN1ctCv/RMTYGeV1bk0TPoIroOv
+QAoqW2vaPmp0tcXSmBCO3V+mtpA/SMENaPLyuv 7kiGGX5ydM5fX//LSkY/ulDFo
+pOICzGO6lM19r0ufzRANYkAqw2BhmJ18JADO1JmcnP0oSLdflVg cKSmwTE8KiQI
+qIjuVe4iLDETHh3HU1CzCrWoRLIM+FQNFL8WSqNFEYOct2dMHMJohs99NOegggzg
+/uYIgvlTWKvoi0llbr2TT6bHbk+fHgKrs2uZJ6ONJTbKRJQCFeyr37szCMvS8EPs
+PURiPGuFPa/8 u5Iqa6zONI88kdLbgGIMZfTriV4sByhOlaVej7MCAwEAAaOCAkM
+wggI/MB8GA1UdIwQYMBaAFGWl qz4/yLZRbRF+X8MKB+ZDoAi2MB0GA1UdDgQWBB
+TFkOAKd4GhJz2JW6jdXRD9Et+g5jALBgNVHQ8E BAMCBPAwHQYDVR0lBBYwFAYIK
+wYBBQUHAwIGCCsGAQUFBwMEMBEGCWCGSAGG+EIBAQQEAwIFoDB1 BgNVHSAEbjBs
+MGoGCCsGAQQBtWsCMF4wMQYIKwYBBQUHAgEWJWh0dHBzOi8vYWNnNC5hY2VwdGEu
+Y29tL0NQUy1BY2VwdGFjb20wKQYIKwYBBQUHAgIwHTAWFg9BY2VwdGEuY29tIFMu
+QS4wAwIBCRoD VEJEMFoGA1UdEgRTMFGgGAYIKwYBBAHBAQKgDBYKOTY5MTkwNTA
+tOKAkBggrBgEFBQcIA6AYMBYM Cjk2OTE5MDUwLTgGCCsGAQQBwQECgQ9pbmZvQG
+FjZXB0YS5jb20wYQYDVR0RBFowWKAYBggrBgEE AcEBAaAMFgoyMzg0MTE5NC03o
+CQGCCsGAQUFBwgDoBgwFgwKMjM4NDExOTQtNwYIKwYBBAHBAQKB FmRhbmllbEBi
+bGFuY29tYXJ0aW4uY2wwRwYIKwYBBQUHAQEEOzA5MDcGCCsGAQUFBzABhitodHRw
+czovL2FjZzQuYWNlcHRhLmNvbS9hY2c0L29jc3AvQ2xhc2UyLUc0MD8GA1UdHwQ4
+MDYwNKAyoDCG Lmh0dHBzOi8vYWNnNC5hY2VwdGEuY29tL2FjZzQvY3JsL0NsYXN
+lMi1HNC5jcmwwDQYJKoZIhvcN AQELBQADggEBACHvynJ7KjgiebxUJoLwSjyJ1t
+jgMe3ws0P0b5cLeHhR6eCNH5SbKu2pUm0BMYFs tYJkZuul4PuK6ikJbfyKhJNJf
+YgCgWebkPpYsMrz/N9qJ3o2iMsudubXejtTmMjCK8ZM3cjyad54 f3DjhHz4xy/w
+mmsnV8NFlm3v/ad5hEhOESDm4q16YGxYaxsX2CtVj1QzzeYbl/2fO+UwNFnXUxTx
+1rOPzWIPzWtEknKebgFeHuWwHV9WmxbyBgLWugYxQcF3JR6es1kt3bjstHOlYPZA
+zXDhuALO+7KB
+eBPeKYCYYspX9gzPK8z1YHQC9eq63FR7DvhFgegG/4fmcpZMdoQ=</X509Certificate></X509Data></KeyInfo></Signature></DTE>
+<DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
+    <Documento ID="F135T34"><Encabezado><IdDoc><TipoDTE>34</TipoDTE><Folio>135</Folio><FchEmis>2017-05-06</FchEmis><FmaPago>1</FmaPago><FchVenc>2017-05-06</FchVenc></IdDoc><Emisor><RUTEmisor>76201224-3</RUTEmisor><RznSoc>Soc de Servicios Blanco Mart&#237;n EIRL</RznSoc><GiroEmis>Empresas de Servicios Integrales de Inform&#225;tica</GiroEmis><Telefono>+56228400990</Telefono><CorreoEmisor>dteb2b@blancomartin.cl</CorreoEmisor><Acteco>726000</Acteco><DirOrigen>Apoquindo 6410 Of 212</DirOrigen><CmnaOrigen>Las Condes</CmnaOrigen><CiudadOrigen>Santiago</CiudadOrigen></Emisor><Receptor><RUTRecep>76170547-4</RUTRecep><RznSocRecep>M5 Soluciones Industriales y Mec&#225;nicas Ltda</RznSocRecep><GiroRecep>Fabricaci&#243;n de Art&#237;culos de Otras Indust</GiroRecep><DirRecep>Retamo 867 </DirRecep><CmnaRecep>Valpara&#237;so</CmnaRecep><CiudadRecep>Valpara&#237;so</CiudadRecep></Receptor><Totales><MntExe>267000</MntExe><MntTotal>267000</MntTotal></Totales></Encabezado><Detalle><NroLinDet>1</NroLinDet><IndExe>1</IndExe><NmbItem>INDUCCION</NmbItem><DscItem>INDUCCION SOBRE FUNCIONAMIENTO MRP ODOO TERCERA ETAPA</DscItem><QtyItem>3.0</QtyItem><UnmdItem>Unit</UnmdItem><PrcItem>89000</PrcItem><MontoItem>267000</MontoItem></Detalle>
+<TED version="1.0"><DD><RE>76201224-3</RE><TD>34</TD><F>135</F><FE>2017-05-06</FE><RR>76170547-4</RR><RSR>M5 Soluciones Industriales y Mec&#225;nicas L</RSR><MNT>267000</MNT><IT1>INDUCCION</IT1><CAF version="1.0"><DA><RE>76201224-3</RE><RS>SOCIEDAD DE SERVICIOS HECTOR DANIEL BLAN</RS><TD>34</TD><RNG><D>121</D><H>220</H></RNG><FA>2017-04-26</FA><RSAPK><M>ma4Cvxgs3qf2wcdobhhfTXzPuyOP8KB35QaPS3aGLGD+CwPPX6CR98evD1Pns5u8wmzffLvSt81fmKJT0vTtaQ==</M><E>Aw==</E></RSAPK><IDK>100</IDK></DA><FRMA algoritmo="SHA1withRSA">v0ui8EKsMMz6fvNwv9DdCHo+jPtdIhDOWrYjSCx8uHBotEsGVAtphuBIIlPHQteRASo4t289QZjpPhXPv4Xm3Q==</FRMA></CAF><TSTED>2017-05-06T02:33:45</TSTED></DD><FRMT algoritmo="SHA1withRSA">Yml2yChsbfnGjAjsOe8JYGdcHCwKV5+arEUEhowfsop333nPolAQr9uZbl3eK+twm+RopspmZr5bvzkBK44fgQ==</FRMT></TED><TmstFirma>2017-05-06T02:33:45</TmstFirma>
+</Documento>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#F135T34"><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>WrxJ3tuduvt0OE6DmwVNb19QtMs=</DigestValue></Reference></SignedInfo><SignatureValue>MrGcRyLPQfZUTmKlVc9kcqFVeKUaLsX7tnyL+gpLDYltxM95oj5lHLXXtfKLqbhO
+uGhhbPIfSHQLFC4o9q7J2B3kIZavhzs+Pi/0xzMPdmO1L5TzHnLBjIw+IQOZSF1H
+phm66XoU8DRv52ejc7oqaAKA+Alz34QnJufd89OXw/P8+hTteim9ZWp5/2N0nMUO
+butla/i0daixQom1/Qf+qOWZjH96628jAcyJk7cwzIiwHR5/0OBg54Irv57Xl65Y
+hQZ2CUM0Z/F9ge98spIdfICRhGYCDJpBZAU6T5w/xOTdS263QdvT+RnVLEP14Ii/
+jRjJoPEyxBr7C/IhthnC8g==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pU7BPmslKMc3Vy0K/9ExNgZ5XVuTRM+giug69ACipba9o+anS1xdKYEI7dX6a2kD
+9IwQ1o8vK6/uSIYZfnJ0zl9f/8tKRj+6UMWik4gLMY7qUzX2vS5/NEA1iQCrDYGG
+YnXwkAM7UmZyc/ShIt1+VWBwpKbBMTwqJAioiO5V7iIsMRMeHcdTULMKtahEsgz4
+VA0UvxZKo0URg5y3Z0wcwmiGz30056CCDOD+5giC+VNYq+iLSWVuvZNPpsduT58e
+Aquza5kno40lNspElAIV7KvfuzMIy9LwQ+w9RGI8a4U9r/y7kiprrM40jzyR0tuA
+Ygxl9OuJXiwHKE6VpV6Psw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>
+MIIF7DCCBNSgAwIBAgIDANEuMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYDVQQGEwJD
+TDEYMBYGA1UE ChMPQWNlcHRhLmNvbSBTLkEuMUgwRgYDVQQDEz9BY2VwdGEuY29
+tIEF1dG9yaWRhZCBDZXJ0aWZp Y2Fkb3JhIENsYXNlIDIgUGVyc29uYSBOYXR1cm
+FsIC0gRzQxHjAcBgkqhkiG9w0BCQEWD2luZm9A YWNlcHRhLmNvbTETMBEGA1UEB
+RMKOTY5MTkwNTAtODAeFw0xNzA0MjQxNDA3MTdaFw0yMDA0MjQx NDA3MTdaMIGC
+MQswCQYDVQQGEwJDTDEYMBYGA1UEDBMPUEVSU09OQSBOQVRVUkFMMR0wGwYDVQQD
+ExRIRUNUT1IgREFOSUVMIEJMQU5DTzElMCMGCSqGSIb3DQEJARYWZGFuaWVsQGJs
+YW5jb21hcnRp bi5jbDETMBEGA1UEBRMKMjM4NDExOTQtNzCCASIwDQYJKoZIhvc
+NAQEBBQADggEPADCCAQoCggEB AKVOwT5rJSjHN1ctCv/RMTYGeV1bk0TPoIroOv
+QAoqW2vaPmp0tcXSmBCO3V+mtpA/SMENaPLyuv 7kiGGX5ydM5fX//LSkY/ulDFo
+pOICzGO6lM19r0ufzRANYkAqw2BhmJ18JADO1JmcnP0oSLdflVg cKSmwTE8KiQI
+qIjuVe4iLDETHh3HU1CzCrWoRLIM+FQNFL8WSqNFEYOct2dMHMJohs99NOegggzg
+/uYIgvlTWKvoi0llbr2TT6bHbk+fHgKrs2uZJ6ONJTbKRJQCFeyr37szCMvS8EPs
+PURiPGuFPa/8 u5Iqa6zONI88kdLbgGIMZfTriV4sByhOlaVej7MCAwEAAaOCAkM
+wggI/MB8GA1UdIwQYMBaAFGWl qz4/yLZRbRF+X8MKB+ZDoAi2MB0GA1UdDgQWBB
+TFkOAKd4GhJz2JW6jdXRD9Et+g5jALBgNVHQ8E BAMCBPAwHQYDVR0lBBYwFAYIK
+wYBBQUHAwIGCCsGAQUFBwMEMBEGCWCGSAGG+EIBAQQEAwIFoDB1 BgNVHSAEbjBs
+MGoGCCsGAQQBtWsCMF4wMQYIKwYBBQUHAgEWJWh0dHBzOi8vYWNnNC5hY2VwdGEu
+Y29tL0NQUy1BY2VwdGFjb20wKQYIKwYBBQUHAgIwHTAWFg9BY2VwdGEuY29tIFMu
+QS4wAwIBCRoD VEJEMFoGA1UdEgRTMFGgGAYIKwYBBAHBAQKgDBYKOTY5MTkwNTA
+tOKAkBggrBgEFBQcIA6AYMBYM Cjk2OTE5MDUwLTgGCCsGAQQBwQECgQ9pbmZvQG
+FjZXB0YS5jb20wYQYDVR0RBFowWKAYBggrBgEE AcEBAaAMFgoyMzg0MTE5NC03o
+CQGCCsGAQUFBwgDoBgwFgwKMjM4NDExOTQtNwYIKwYBBAHBAQKB FmRhbmllbEBi
+bGFuY29tYXJ0aW4uY2wwRwYIKwYBBQUHAQEEOzA5MDcGCCsGAQUFBzABhitodHRw
+czovL2FjZzQuYWNlcHRhLmNvbS9hY2c0L29jc3AvQ2xhc2UyLUc0MD8GA1UdHwQ4
+MDYwNKAyoDCG Lmh0dHBzOi8vYWNnNC5hY2VwdGEuY29tL2FjZzQvY3JsL0NsYXN
+lMi1HNC5jcmwwDQYJKoZIhvcN AQELBQADggEBACHvynJ7KjgiebxUJoLwSjyJ1t
+jgMe3ws0P0b5cLeHhR6eCNH5SbKu2pUm0BMYFs tYJkZuul4PuK6ikJbfyKhJNJf
+YgCgWebkPpYsMrz/N9qJ3o2iMsudubXejtTmMjCK8ZM3cjyad54 f3DjhHz4xy/w
+mmsnV8NFlm3v/ad5hEhOESDm4q16YGxYaxsX2CtVj1QzzeYbl/2fO+UwNFnXUxTx
+1rOPzWIPzWtEknKebgFeHuWwHV9WmxbyBgLWugYxQcF3JR6es1kt3bjstHOlYPZA
+zXDhuALO+7KB
+eBPeKYCYYspX9gzPK8z1YHQC9eq63FR7DvhFgegG/4fmcpZMdoQ=</X509Certificate></X509Data></KeyInfo></Signature></DTE>
+<DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
+    <Documento ID="F136T34"><Encabezado><IdDoc><TipoDTE>34</TipoDTE><Folio>136</Folio><FchEmis>2017-05-06</FchEmis><FmaPago>1</FmaPago><FchVenc>2017-05-06</FchVenc></IdDoc><Emisor><RUTEmisor>76201224-3</RUTEmisor><RznSoc>Soc de Servicios Blanco Mart&#237;n EIRL</RznSoc><GiroEmis>Empresas de Servicios Integrales de Inform&#225;tica</GiroEmis><Telefono>+56228400990</Telefono><CorreoEmisor>dteb2b@blancomartin.cl</CorreoEmisor><Acteco>726000</Acteco><DirOrigen>Apoquindo 6410 Of 212</DirOrigen><CmnaOrigen>Las Condes</CmnaOrigen><CiudadOrigen>Santiago</CiudadOrigen></Emisor><Receptor><RUTRecep>76170547-4</RUTRecep><RznSocRecep>M5 Soluciones Industriales y Mec&#225;nicas Ltda</RznSocRecep><GiroRecep>Fabricaci&#243;n de Art&#237;culos de Otras Indust</GiroRecep><DirRecep>Retamo 867 </DirRecep><CmnaRecep>Valpara&#237;so</CmnaRecep><CiudadRecep>Valpara&#237;so</CiudadRecep></Receptor><Totales><MntExe>276000</MntExe><MntTotal>276000</MntTotal></Totales></Encabezado><Detalle><NroLinDet>1</NroLinDet><IndExe>1</IndExe><NmbItem>INDUCCION</NmbItem><DscItem>INDUCCION SOBRE FUNCIONAMIENTO MRP ODOO TERCERA ETAPA</DscItem><QtyItem>3.0</QtyItem><UnmdItem>Unit</UnmdItem><PrcItem>92000</PrcItem><MontoItem>276000</MontoItem></Detalle>
+<TED version="1.0"><DD><RE>76201224-3</RE><TD>34</TD><F>136</F><FE>2017-05-06</FE><RR>76170547-4</RR><RSR>M5 Soluciones Industriales y Mec&#225;nicas L</RSR><MNT>276000</MNT><IT1>INDUCCION</IT1><CAF version="1.0"><DA><RE>76201224-3</RE><RS>SOCIEDAD DE SERVICIOS HECTOR DANIEL BLAN</RS><TD>34</TD><RNG><D>121</D><H>220</H></RNG><FA>2017-04-26</FA><RSAPK><M>ma4Cvxgs3qf2wcdobhhfTXzPuyOP8KB35QaPS3aGLGD+CwPPX6CR98evD1Pns5u8wmzffLvSt81fmKJT0vTtaQ==</M><E>Aw==</E></RSAPK><IDK>100</IDK></DA><FRMA algoritmo="SHA1withRSA">v0ui8EKsMMz6fvNwv9DdCHo+jPtdIhDOWrYjSCx8uHBotEsGVAtphuBIIlPHQteRASo4t289QZjpPhXPv4Xm3Q==</FRMA></CAF><TSTED>2017-05-06T02:33:47</TSTED></DD><FRMT algoritmo="SHA1withRSA">gr9FBlr03HZOwvZFJfGUPdB+cQyJj+uXbRgj3lOmTfQT3MTF6ScsfQkpxetLAy5oROanoz9EzBdbyd9SN0SAMg==</FRMT></TED><TmstFirma>2017-05-06T02:33:47</TmstFirma>
+</Documento>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#F136T34"><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>QNrlAYdCP8FMoWdlf84ytJEzFJo=</DigestValue></Reference></SignedInfo><SignatureValue>AK9FTBcHEbWYJyy5xZYuOxHmkD+0U4svt2vJjB0TEKDJAnL88ni7IjNvs5ciJvR1
+karw8l2cG1rfYGzx3qyAsmAKnBUJ/rCnxBjaE9db3AyDdu2WQ4VN5JtBknzpFa8q
+ezYfzlFyJpeoCluZRNqJWuk0rR5PU5dRzuP4CAnKIP+7DiWzHXz7t7qB2MwIDlcY
+ZuFVAUsDCRwZw9gQYXIoLHYqIpRbfW6G8BfznrMHmqOhcwCu9xIkueCLPmud26AF
+VUw4tMNMS/WTNkU84wkqlKaVGUSxWFXjVIXBzXuoltV8EGctQmoOJ8yFPltsmKI1
+JsTvjqq3R59J2dcy/4eDvw==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pU7BPmslKMc3Vy0K/9ExNgZ5XVuTRM+giug69ACipba9o+anS1xdKYEI7dX6a2kD
+9IwQ1o8vK6/uSIYZfnJ0zl9f/8tKRj+6UMWik4gLMY7qUzX2vS5/NEA1iQCrDYGG
+YnXwkAM7UmZyc/ShIt1+VWBwpKbBMTwqJAioiO5V7iIsMRMeHcdTULMKtahEsgz4
+VA0UvxZKo0URg5y3Z0wcwmiGz30056CCDOD+5giC+VNYq+iLSWVuvZNPpsduT58e
+Aquza5kno40lNspElAIV7KvfuzMIy9LwQ+w9RGI8a4U9r/y7kiprrM40jzyR0tuA
+Ygxl9OuJXiwHKE6VpV6Psw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>
+MIIF7DCCBNSgAwIBAgIDANEuMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYDVQQGEwJD
+TDEYMBYGA1UE ChMPQWNlcHRhLmNvbSBTLkEuMUgwRgYDVQQDEz9BY2VwdGEuY29
+tIEF1dG9yaWRhZCBDZXJ0aWZp Y2Fkb3JhIENsYXNlIDIgUGVyc29uYSBOYXR1cm
+FsIC0gRzQxHjAcBgkqhkiG9w0BCQEWD2luZm9A YWNlcHRhLmNvbTETMBEGA1UEB
+RMKOTY5MTkwNTAtODAeFw0xNzA0MjQxNDA3MTdaFw0yMDA0MjQx NDA3MTdaMIGC
+MQswCQYDVQQGEwJDTDEYMBYGA1UEDBMPUEVSU09OQSBOQVRVUkFMMR0wGwYDVQQD
+ExRIRUNUT1IgREFOSUVMIEJMQU5DTzElMCMGCSqGSIb3DQEJARYWZGFuaWVsQGJs
+YW5jb21hcnRp bi5jbDETMBEGA1UEBRMKMjM4NDExOTQtNzCCASIwDQYJKoZIhvc
+NAQEBBQADggEPADCCAQoCggEB AKVOwT5rJSjHN1ctCv/RMTYGeV1bk0TPoIroOv
+QAoqW2vaPmp0tcXSmBCO3V+mtpA/SMENaPLyuv 7kiGGX5ydM5fX//LSkY/ulDFo
+pOICzGO6lM19r0ufzRANYkAqw2BhmJ18JADO1JmcnP0oSLdflVg cKSmwTE8KiQI
+qIjuVe4iLDETHh3HU1CzCrWoRLIM+FQNFL8WSqNFEYOct2dMHMJohs99NOegggzg
+/uYIgvlTWKvoi0llbr2TT6bHbk+fHgKrs2uZJ6ONJTbKRJQCFeyr37szCMvS8EPs
+PURiPGuFPa/8 u5Iqa6zONI88kdLbgGIMZfTriV4sByhOlaVej7MCAwEAAaOCAkM
+wggI/MB8GA1UdIwQYMBaAFGWl qz4/yLZRbRF+X8MKB+ZDoAi2MB0GA1UdDgQWBB
+TFkOAKd4GhJz2JW6jdXRD9Et+g5jALBgNVHQ8E BAMCBPAwHQYDVR0lBBYwFAYIK
+wYBBQUHAwIGCCsGAQUFBwMEMBEGCWCGSAGG+EIBAQQEAwIFoDB1 BgNVHSAEbjBs
+MGoGCCsGAQQBtWsCMF4wMQYIKwYBBQUHAgEWJWh0dHBzOi8vYWNnNC5hY2VwdGEu
+Y29tL0NQUy1BY2VwdGFjb20wKQYIKwYBBQUHAgIwHTAWFg9BY2VwdGEuY29tIFMu
+QS4wAwIBCRoD VEJEMFoGA1UdEgRTMFGgGAYIKwYBBAHBAQKgDBYKOTY5MTkwNTA
+tOKAkBggrBgEFBQcIA6AYMBYM Cjk2OTE5MDUwLTgGCCsGAQQBwQECgQ9pbmZvQG
+FjZXB0YS5jb20wYQYDVR0RBFowWKAYBggrBgEE AcEBAaAMFgoyMzg0MTE5NC03o
+CQGCCsGAQUFBwgDoBgwFgwKMjM4NDExOTQtNwYIKwYBBAHBAQKB FmRhbmllbEBi
+bGFuY29tYXJ0aW4uY2wwRwYIKwYBBQUHAQEEOzA5MDcGCCsGAQUFBzABhitodHRw
+czovL2FjZzQuYWNlcHRhLmNvbS9hY2c0L29jc3AvQ2xhc2UyLUc0MD8GA1UdHwQ4
+MDYwNKAyoDCG Lmh0dHBzOi8vYWNnNC5hY2VwdGEuY29tL2FjZzQvY3JsL0NsYXN
+lMi1HNC5jcmwwDQYJKoZIhvcN AQELBQADggEBACHvynJ7KjgiebxUJoLwSjyJ1t
+jgMe3ws0P0b5cLeHhR6eCNH5SbKu2pUm0BMYFs tYJkZuul4PuK6ikJbfyKhJNJf
+YgCgWebkPpYsMrz/N9qJ3o2iMsudubXejtTmMjCK8ZM3cjyad54 f3DjhHz4xy/w
+mmsnV8NFlm3v/ad5hEhOESDm4q16YGxYaxsX2CtVj1QzzeYbl/2fO+UwNFnXUxTx
+1rOPzWIPzWtEknKebgFeHuWwHV9WmxbyBgLWugYxQcF3JR6es1kt3bjstHOlYPZA
+zXDhuALO+7KB
+eBPeKYCYYspX9gzPK8z1YHQC9eq63FR7DvhFgegG/4fmcpZMdoQ=</X509Certificate></X509Data></KeyInfo></Signature></DTE>
+<DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
+    <Documento ID="F137T34"><Encabezado><IdDoc><TipoDTE>34</TipoDTE><Folio>137</Folio><FchEmis>2017-05-06</FchEmis><FmaPago>1</FmaPago><FchVenc>2017-05-06</FchVenc></IdDoc><Emisor><RUTEmisor>76201224-3</RUTEmisor><RznSoc>Soc de Servicios Blanco Mart&#237;n EIRL</RznSoc><GiroEmis>Empresas de Servicios Integrales de Inform&#225;tica</GiroEmis><Telefono>+56228400990</Telefono><CorreoEmisor>dteb2b@blancomartin.cl</CorreoEmisor><Acteco>726000</Acteco><DirOrigen>Apoquindo 6410 Of 212</DirOrigen><CmnaOrigen>Las Condes</CmnaOrigen><CiudadOrigen>Santiago</CiudadOrigen></Emisor><Receptor><RUTRecep>77771710-3</RUTRecep><RznSocRecep>Comercial Blanco Ltda</RznSocRecep><GiroRecep>Otras Actividades Empresariales N.C.P.</GiroRecep><DirRecep>Av. Las Condes 8173 </DirRecep><CmnaRecep>Las Condes</CmnaRecep><CiudadRecep>Santiago</CiudadRecep></Receptor><Totales><MntExe>205000</MntExe><MntTotal>205000</MntTotal></Totales></Encabezado><Detalle><NroLinDet>1</NroLinDet><IndExe>1</IndExe><NmbItem>SERVICIO DE CERTIFICACI&#211;N DIGITAL</NmbItem><DscItem>SERVICIO DE CERTIFICACI&#211;N DIGITAL /SSL PARA SITIO www.cartoys.cl</DscItem><QtyItem>5.0</QtyItem><UnmdItem>Unit</UnmdItem><PrcItem>41000</PrcItem><MontoItem>205000</MontoItem></Detalle>
+<TED version="1.0"><DD><RE>76201224-3</RE><TD>34</TD><F>137</F><FE>2017-05-06</FE><RR>77771710-3</RR><RSR>Comercial Blanco Ltda</RSR><MNT>205000</MNT><IT1>SERVICIO DE CERTIFICACI&#211;N DIGITAL</IT1><CAF version="1.0"><DA><RE>76201224-3</RE><RS>SOCIEDAD DE SERVICIOS HECTOR DANIEL BLAN</RS><TD>34</TD><RNG><D>121</D><H>220</H></RNG><FA>2017-04-26</FA><RSAPK><M>ma4Cvxgs3qf2wcdobhhfTXzPuyOP8KB35QaPS3aGLGD+CwPPX6CR98evD1Pns5u8wmzffLvSt81fmKJT0vTtaQ==</M><E>Aw==</E></RSAPK><IDK>100</IDK></DA><FRMA algoritmo="SHA1withRSA">v0ui8EKsMMz6fvNwv9DdCHo+jPtdIhDOWrYjSCx8uHBotEsGVAtphuBIIlPHQteRASo4t289QZjpPhXPv4Xm3Q==</FRMA></CAF><TSTED>2017-05-06T02:33:48</TSTED></DD><FRMT algoritmo="SHA1withRSA">Jf4wde1W5z1AiDtN7+0A2Xm3wy9tk+q9Gpr7Au2ksWTHixQz3x8fiu1ZnPCgnRJM8lmXzhL9EMpIMAhhWEC33g==</FRMT></TED><TmstFirma>2017-05-06T02:33:48</TmstFirma>
+</Documento>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#F137T34"><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>5T4FqhAcf5TUq0kNodc3+2VQnUw=</DigestValue></Reference></SignedInfo><SignatureValue>CnsQ5emOqkZUyOueau/mEgoZVqmVbcm14UX8805Z0iJqKKdfVfeVPM8qNqYk+T5x
+0O/hKHl4xFBjwJod/s+wS3FkbTGN1tECNfdI8CsWzCqrwDSkOAys3dQGL4+7wCgz
+nz1871YWSpI+rcb4937zdn+WYLUdmihQPJoMhrBqiC+pfbSFbuifIS7p9e2t20j4
+5XOl09N2QjgmoEfbJmd8EfzKoeO1qq2d1fHGfsEMRuEALFwiWF+ec5WaKppi6yuB
+o/m27lXDV//kwyfVBnxdQwSKvG4mAP//b969ERXuQ83zzNu8we/CTgV3jcEY5S+Q
+VJN0Xn/QT4bkPvABFAoAMg==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pU7BPmslKMc3Vy0K/9ExNgZ5XVuTRM+giug69ACipba9o+anS1xdKYEI7dX6a2kD
+9IwQ1o8vK6/uSIYZfnJ0zl9f/8tKRj+6UMWik4gLMY7qUzX2vS5/NEA1iQCrDYGG
+YnXwkAM7UmZyc/ShIt1+VWBwpKbBMTwqJAioiO5V7iIsMRMeHcdTULMKtahEsgz4
+VA0UvxZKo0URg5y3Z0wcwmiGz30056CCDOD+5giC+VNYq+iLSWVuvZNPpsduT58e
+Aquza5kno40lNspElAIV7KvfuzMIy9LwQ+w9RGI8a4U9r/y7kiprrM40jzyR0tuA
+Ygxl9OuJXiwHKE6VpV6Psw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>
+MIIF7DCCBNSgAwIBAgIDANEuMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYDVQQGEwJD
+TDEYMBYGA1UE ChMPQWNlcHRhLmNvbSBTLkEuMUgwRgYDVQQDEz9BY2VwdGEuY29
+tIEF1dG9yaWRhZCBDZXJ0aWZp Y2Fkb3JhIENsYXNlIDIgUGVyc29uYSBOYXR1cm
+FsIC0gRzQxHjAcBgkqhkiG9w0BCQEWD2luZm9A YWNlcHRhLmNvbTETMBEGA1UEB
+RMKOTY5MTkwNTAtODAeFw0xNzA0MjQxNDA3MTdaFw0yMDA0MjQx NDA3MTdaMIGC
+MQswCQYDVQQGEwJDTDEYMBYGA1UEDBMPUEVSU09OQSBOQVRVUkFMMR0wGwYDVQQD
+ExRIRUNUT1IgREFOSUVMIEJMQU5DTzElMCMGCSqGSIb3DQEJARYWZGFuaWVsQGJs
+YW5jb21hcnRp bi5jbDETMBEGA1UEBRMKMjM4NDExOTQtNzCCASIwDQYJKoZIhvc
+NAQEBBQADggEPADCCAQoCggEB AKVOwT5rJSjHN1ctCv/RMTYGeV1bk0TPoIroOv
+QAoqW2vaPmp0tcXSmBCO3V+mtpA/SMENaPLyuv 7kiGGX5ydM5fX//LSkY/ulDFo
+pOICzGO6lM19r0ufzRANYkAqw2BhmJ18JADO1JmcnP0oSLdflVg cKSmwTE8KiQI
+qIjuVe4iLDETHh3HU1CzCrWoRLIM+FQNFL8WSqNFEYOct2dMHMJohs99NOegggzg
+/uYIgvlTWKvoi0llbr2TT6bHbk+fHgKrs2uZJ6ONJTbKRJQCFeyr37szCMvS8EPs
+PURiPGuFPa/8 u5Iqa6zONI88kdLbgGIMZfTriV4sByhOlaVej7MCAwEAAaOCAkM
+wggI/MB8GA1UdIwQYMBaAFGWl qz4/yLZRbRF+X8MKB+ZDoAi2MB0GA1UdDgQWBB
+TFkOAKd4GhJz2JW6jdXRD9Et+g5jALBgNVHQ8E BAMCBPAwHQYDVR0lBBYwFAYIK
+wYBBQUHAwIGCCsGAQUFBwMEMBEGCWCGSAGG+EIBAQQEAwIFoDB1 BgNVHSAEbjBs
+MGoGCCsGAQQBtWsCMF4wMQYIKwYBBQUHAgEWJWh0dHBzOi8vYWNnNC5hY2VwdGEu
+Y29tL0NQUy1BY2VwdGFjb20wKQYIKwYBBQUHAgIwHTAWFg9BY2VwdGEuY29tIFMu
+QS4wAwIBCRoD VEJEMFoGA1UdEgRTMFGgGAYIKwYBBAHBAQKgDBYKOTY5MTkwNTA
+tOKAkBggrBgEFBQcIA6AYMBYM Cjk2OTE5MDUwLTgGCCsGAQQBwQECgQ9pbmZvQG
+FjZXB0YS5jb20wYQYDVR0RBFowWKAYBggrBgEE AcEBAaAMFgoyMzg0MTE5NC03o
+CQGCCsGAQUFBwgDoBgwFgwKMjM4NDExOTQtNwYIKwYBBAHBAQKB FmRhbmllbEBi
+bGFuY29tYXJ0aW4uY2wwRwYIKwYBBQUHAQEEOzA5MDcGCCsGAQUFBzABhitodHRw
+czovL2FjZzQuYWNlcHRhLmNvbS9hY2c0L29jc3AvQ2xhc2UyLUc0MD8GA1UdHwQ4
+MDYwNKAyoDCG Lmh0dHBzOi8vYWNnNC5hY2VwdGEuY29tL2FjZzQvY3JsL0NsYXN
+lMi1HNC5jcmwwDQYJKoZIhvcN AQELBQADggEBACHvynJ7KjgiebxUJoLwSjyJ1t
+jgMe3ws0P0b5cLeHhR6eCNH5SbKu2pUm0BMYFs tYJkZuul4PuK6ikJbfyKhJNJf
+YgCgWebkPpYsMrz/N9qJ3o2iMsudubXejtTmMjCK8ZM3cjyad54 f3DjhHz4xy/w
+mmsnV8NFlm3v/ad5hEhOESDm4q16YGxYaxsX2CtVj1QzzeYbl/2fO+UwNFnXUxTx
+1rOPzWIPzWtEknKebgFeHuWwHV9WmxbyBgLWugYxQcF3JR6es1kt3bjstHOlYPZA
+zXDhuALO+7KB
+eBPeKYCYYspX9gzPK8z1YHQC9eq63FR7DvhFgegG/4fmcpZMdoQ=</X509Certificate></X509Data></KeyInfo></Signature></DTE>
+<DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
+    <Documento ID="F138T34"><Encabezado><IdDoc><TipoDTE>34</TipoDTE><Folio>138</Folio><FchEmis>2017-05-06</FchEmis><FmaPago>1</FmaPago><FchVenc>2017-05-06</FchVenc></IdDoc><Emisor><RUTEmisor>76201224-3</RUTEmisor><RznSoc>Soc de Servicios Blanco Mart&#237;n EIRL</RznSoc><GiroEmis>Empresas de Servicios Integrales de Inform&#225;tica</GiroEmis><Telefono>+56228400990</Telefono><CorreoEmisor>dteb2b@blancomartin.cl</CorreoEmisor><Acteco>726000</Acteco><DirOrigen>Apoquindo 6410 Of 212</DirOrigen><CmnaOrigen>Las Condes</CmnaOrigen><CiudadOrigen>Santiago</CiudadOrigen></Emisor><Receptor><RUTRecep>23725688-3</RUTRecep><RznSocRecep>CARLO ALEXANDER CASTILLO GARZON</RznSocRecep><GiroRecep>Venta Al Por Mayor de Productos Textiles</GiroRecep><DirRecep>MANZANO 377  204 </DirRecep><CmnaRecep>Recoleta</CmnaRecep><CiudadRecep>Santiago</CiudadRecep></Receptor><Totales><MntExe>423300</MntExe><MntTotal>423300</MntTotal></Totales></Encabezado><Detalle><NroLinDet>1</NroLinDet><IndExe>1</IndExe><NmbItem>HORAS PROGRAMADOR</NmbItem><DscItem>HORAS PROGRAMADOR</DscItem><QtyItem>17.0</QtyItem><UnmdItem>Hora</UnmdItem><PrcItem>24900</PrcItem><MontoItem>423300</MontoItem></Detalle>
+<TED version="1.0"><DD><RE>76201224-3</RE><TD>34</TD><F>138</F><FE>2017-05-06</FE><RR>23725688-3</RR><RSR>CARLO ALEXANDER CASTILLO GARZON</RSR><MNT>423300</MNT><IT1>HORAS PROGRAMADOR</IT1><CAF version="1.0"><DA><RE>76201224-3</RE><RS>SOCIEDAD DE SERVICIOS HECTOR DANIEL BLAN</RS><TD>34</TD><RNG><D>121</D><H>220</H></RNG><FA>2017-04-26</FA><RSAPK><M>ma4Cvxgs3qf2wcdobhhfTXzPuyOP8KB35QaPS3aGLGD+CwPPX6CR98evD1Pns5u8wmzffLvSt81fmKJT0vTtaQ==</M><E>Aw==</E></RSAPK><IDK>100</IDK></DA><FRMA algoritmo="SHA1withRSA">v0ui8EKsMMz6fvNwv9DdCHo+jPtdIhDOWrYjSCx8uHBotEsGVAtphuBIIlPHQteRASo4t289QZjpPhXPv4Xm3Q==</FRMA></CAF><TSTED>2017-05-06T02:33:50</TSTED></DD><FRMT algoritmo="SHA1withRSA">DitKgXarou60m8AMkFCUc7MBSlJwZwxmX1w5YKBBpohuYtWyZY88oFklNImwkOQ7E8E0DOFJZ445y5b/pOdxlA==</FRMT></TED><TmstFirma>2017-05-06T02:33:50</TmstFirma>
+</Documento>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#F138T34"><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>ks8SMwrSB9hxz0L7UZoZKPrG54E=</DigestValue></Reference></SignedInfo><SignatureValue>iKJUekMp65Akx6RpHMzIKci6a59HFHmRfVR8I6i7DEvIUV4IcxMGhXVBaoqparRs
+dv2XdgOy28ouuvX2PgFqYX4W3KLqP1526vyTwwipZdFmcKXN4VAvvy4drDZLHNr7
+MyeQkT6pVwd60t0GrkD+YNGMOdngMZI0mA5S6GMVf64WvEdwxPRbEHC/J3kZdkUh
+rsrkFg2epyJYWpiQJphQfme+hVyE5V56ViVxmPFfSpDwY16Kht58cxYBD4DXBseW
+sRxraYce6FyKPdSMVZ+xvF6HsqgLo2n64m15VyqKmcbVicE9+W2tHotP7MT6rscM
+4SYkmStPRm/L6GFNYyieBw==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pU7BPmslKMc3Vy0K/9ExNgZ5XVuTRM+giug69ACipba9o+anS1xdKYEI7dX6a2kD
+9IwQ1o8vK6/uSIYZfnJ0zl9f/8tKRj+6UMWik4gLMY7qUzX2vS5/NEA1iQCrDYGG
+YnXwkAM7UmZyc/ShIt1+VWBwpKbBMTwqJAioiO5V7iIsMRMeHcdTULMKtahEsgz4
+VA0UvxZKo0URg5y3Z0wcwmiGz30056CCDOD+5giC+VNYq+iLSWVuvZNPpsduT58e
+Aquza5kno40lNspElAIV7KvfuzMIy9LwQ+w9RGI8a4U9r/y7kiprrM40jzyR0tuA
+Ygxl9OuJXiwHKE6VpV6Psw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>
+MIIF7DCCBNSgAwIBAgIDANEuMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYDVQQGEwJD
+TDEYMBYGA1UE ChMPQWNlcHRhLmNvbSBTLkEuMUgwRgYDVQQDEz9BY2VwdGEuY29
+tIEF1dG9yaWRhZCBDZXJ0aWZp Y2Fkb3JhIENsYXNlIDIgUGVyc29uYSBOYXR1cm
+FsIC0gRzQxHjAcBgkqhkiG9w0BCQEWD2luZm9A YWNlcHRhLmNvbTETMBEGA1UEB
+RMKOTY5MTkwNTAtODAeFw0xNzA0MjQxNDA3MTdaFw0yMDA0MjQx NDA3MTdaMIGC
+MQswCQYDVQQGEwJDTDEYMBYGA1UEDBMPUEVSU09OQSBOQVRVUkFMMR0wGwYDVQQD
+ExRIRUNUT1IgREFOSUVMIEJMQU5DTzElMCMGCSqGSIb3DQEJARYWZGFuaWVsQGJs
+YW5jb21hcnRp bi5jbDETMBEGA1UEBRMKMjM4NDExOTQtNzCCASIwDQYJKoZIhvc
+NAQEBBQADggEPADCCAQoCggEB AKVOwT5rJSjHN1ctCv/RMTYGeV1bk0TPoIroOv
+QAoqW2vaPmp0tcXSmBCO3V+mtpA/SMENaPLyuv 7kiGGX5ydM5fX//LSkY/ulDFo
+pOICzGO6lM19r0ufzRANYkAqw2BhmJ18JADO1JmcnP0oSLdflVg cKSmwTE8KiQI
+qIjuVe4iLDETHh3HU1CzCrWoRLIM+FQNFL8WSqNFEYOct2dMHMJohs99NOegggzg
+/uYIgvlTWKvoi0llbr2TT6bHbk+fHgKrs2uZJ6ONJTbKRJQCFeyr37szCMvS8EPs
+PURiPGuFPa/8 u5Iqa6zONI88kdLbgGIMZfTriV4sByhOlaVej7MCAwEAAaOCAkM
+wggI/MB8GA1UdIwQYMBaAFGWl qz4/yLZRbRF+X8MKB+ZDoAi2MB0GA1UdDgQWBB
+TFkOAKd4GhJz2JW6jdXRD9Et+g5jALBgNVHQ8E BAMCBPAwHQYDVR0lBBYwFAYIK
+wYBBQUHAwIGCCsGAQUFBwMEMBEGCWCGSAGG+EIBAQQEAwIFoDB1 BgNVHSAEbjBs
+MGoGCCsGAQQBtWsCMF4wMQYIKwYBBQUHAgEWJWh0dHBzOi8vYWNnNC5hY2VwdGEu
+Y29tL0NQUy1BY2VwdGFjb20wKQYIKwYBBQUHAgIwHTAWFg9BY2VwdGEuY29tIFMu
+QS4wAwIBCRoD VEJEMFoGA1UdEgRTMFGgGAYIKwYBBAHBAQKgDBYKOTY5MTkwNTA
+tOKAkBggrBgEFBQcIA6AYMBYM Cjk2OTE5MDUwLTgGCCsGAQQBwQECgQ9pbmZvQG
+FjZXB0YS5jb20wYQYDVR0RBFowWKAYBggrBgEE AcEBAaAMFgoyMzg0MTE5NC03o
+CQGCCsGAQUFBwgDoBgwFgwKMjM4NDExOTQtNwYIKwYBBAHBAQKB FmRhbmllbEBi
+bGFuY29tYXJ0aW4uY2wwRwYIKwYBBQUHAQEEOzA5MDcGCCsGAQUFBzABhitodHRw
+czovL2FjZzQuYWNlcHRhLmNvbS9hY2c0L29jc3AvQ2xhc2UyLUc0MD8GA1UdHwQ4
+MDYwNKAyoDCG Lmh0dHBzOi8vYWNnNC5hY2VwdGEuY29tL2FjZzQvY3JsL0NsYXN
+lMi1HNC5jcmwwDQYJKoZIhvcN AQELBQADggEBACHvynJ7KjgiebxUJoLwSjyJ1t
+jgMe3ws0P0b5cLeHhR6eCNH5SbKu2pUm0BMYFs tYJkZuul4PuK6ikJbfyKhJNJf
+YgCgWebkPpYsMrz/N9qJ3o2iMsudubXejtTmMjCK8ZM3cjyad54 f3DjhHz4xy/w
+mmsnV8NFlm3v/ad5hEhOESDm4q16YGxYaxsX2CtVj1QzzeYbl/2fO+UwNFnXUxTx
+1rOPzWIPzWtEknKebgFeHuWwHV9WmxbyBgLWugYxQcF3JR6es1kt3bjstHOlYPZA
+zXDhuALO+7KB
+eBPeKYCYYspX9gzPK8z1YHQC9eq63FR7DvhFgegG/4fmcpZMdoQ=</X509Certificate></X509Data></KeyInfo></Signature></DTE>
+<DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
+    <Documento ID="F139T34"><Encabezado><IdDoc><TipoDTE>34</TipoDTE><Folio>139</Folio><FchEmis>2017-05-06</FchEmis><FmaPago>1</FmaPago><FchVenc>2017-05-06</FchVenc></IdDoc><Emisor><RUTEmisor>76201224-3</RUTEmisor><RznSoc>Soc de Servicios Blanco Mart&#237;n EIRL</RznSoc><GiroEmis>Empresas de Servicios Integrales de Inform&#225;tica</GiroEmis><Telefono>+56228400990</Telefono><CorreoEmisor>dteb2b@blancomartin.cl</CorreoEmisor><Acteco>726000</Acteco><DirOrigen>Apoquindo 6410 Of 212</DirOrigen><CmnaOrigen>Las Condes</CmnaOrigen><CiudadOrigen>Santiago</CiudadOrigen></Emisor><Receptor><RUTRecep>77771710-3</RUTRecep><RznSocRecep>Comercial Blanco Ltda</RznSocRecep><GiroRecep>Otras Actividades Empresariales N.C.P.</GiroRecep><DirRecep>Av. Las Condes 8173 </DirRecep><CmnaRecep>Las Condes</CmnaRecep><CiudadRecep>Santiago</CiudadRecep></Receptor><Totales><MntExe>897000</MntExe><MntTotal>897000</MntTotal></Totales></Encabezado><Detalle><NroLinDet>1</NroLinDet><IndExe>1</IndExe><NmbItem>SERVICIO DE CERTIFICACI&#211;N DIGITAL</NmbItem><DscItem>SERVICIO DE CERTIFICACI&#211;N DIGITAL /SSL PARA SITIO www.cartoys.cl</DscItem><QtyItem>30.0</QtyItem><UnmdItem>Unit</UnmdItem><PrcItem>29900</PrcItem><MontoItem>897000</MontoItem></Detalle>
+<TED version="1.0"><DD><RE>76201224-3</RE><TD>34</TD><F>139</F><FE>2017-05-06</FE><RR>77771710-3</RR><RSR>Comercial Blanco Ltda</RSR><MNT>897000</MNT><IT1>SERVICIO DE CERTIFICACI&#211;N DIGITAL</IT1><CAF version="1.0"><DA><RE>76201224-3</RE><RS>SOCIEDAD DE SERVICIOS HECTOR DANIEL BLAN</RS><TD>34</TD><RNG><D>121</D><H>220</H></RNG><FA>2017-04-26</FA><RSAPK><M>ma4Cvxgs3qf2wcdobhhfTXzPuyOP8KB35QaPS3aGLGD+CwPPX6CR98evD1Pns5u8wmzffLvSt81fmKJT0vTtaQ==</M><E>Aw==</E></RSAPK><IDK>100</IDK></DA><FRMA algoritmo="SHA1withRSA">v0ui8EKsMMz6fvNwv9DdCHo+jPtdIhDOWrYjSCx8uHBotEsGVAtphuBIIlPHQteRASo4t289QZjpPhXPv4Xm3Q==</FRMA></CAF><TSTED>2017-05-06T02:33:51</TSTED></DD><FRMT algoritmo="SHA1withRSA">cYoQOKgS7Qn5Z/Mo6lgoKFATbtpLcVA1rbAvKKgWd37BgH7vXLpqRfknzhiH84YZltwc7B/3TltegxuNFfvpeA==</FRMT></TED><TmstFirma>2017-05-06T02:33:51</TmstFirma>
+</Documento>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#F139T34"><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>WyPKLjzeE4B4KN/MKMmZUSlQQKA=</DigestValue></Reference></SignedInfo><SignatureValue>e9n+tOZZsVEnvn4m0oZFaNJ14DQwYHw06VIkixIMkhl+KZB6D2pRlX3MmF0lnNUg
+0ojALdy7ASl9td//wQzU+w2VgOcxPaHFZSo8WLXSZtT1R2OdPYAiZvt3ZbMF0sph
+iZgw7xWQqVS52dq3Ak0Ucvr89ld4powr0Xmqf4rXI/aihMbSRQyWRSECRRT7YKBG
+mauWv+DTMkBqN38XOxT0FLp159CpJ9Qf7wtj7y4K5uGjkfKbyiczJAgT+w1tvOoU
+uM84PvSMur72dKiS631deA6jK4kfToU21AOUOv+eThwRz2nDWfPMrArWr1W7ogrN
+toupVPwZkv4Ksc1/sz19yw==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pU7BPmslKMc3Vy0K/9ExNgZ5XVuTRM+giug69ACipba9o+anS1xdKYEI7dX6a2kD
+9IwQ1o8vK6/uSIYZfnJ0zl9f/8tKRj+6UMWik4gLMY7qUzX2vS5/NEA1iQCrDYGG
+YnXwkAM7UmZyc/ShIt1+VWBwpKbBMTwqJAioiO5V7iIsMRMeHcdTULMKtahEsgz4
+VA0UvxZKo0URg5y3Z0wcwmiGz30056CCDOD+5giC+VNYq+iLSWVuvZNPpsduT58e
+Aquza5kno40lNspElAIV7KvfuzMIy9LwQ+w9RGI8a4U9r/y7kiprrM40jzyR0tuA
+Ygxl9OuJXiwHKE6VpV6Psw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>
+MIIF7DCCBNSgAwIBAgIDANEuMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYDVQQGEwJD
+TDEYMBYGA1UE ChMPQWNlcHRhLmNvbSBTLkEuMUgwRgYDVQQDEz9BY2VwdGEuY29
+tIEF1dG9yaWRhZCBDZXJ0aWZp Y2Fkb3JhIENsYXNlIDIgUGVyc29uYSBOYXR1cm
+FsIC0gRzQxHjAcBgkqhkiG9w0BCQEWD2luZm9A YWNlcHRhLmNvbTETMBEGA1UEB
+RMKOTY5MTkwNTAtODAeFw0xNzA0MjQxNDA3MTdaFw0yMDA0MjQx NDA3MTdaMIGC
+MQswCQYDVQQGEwJDTDEYMBYGA1UEDBMPUEVSU09OQSBOQVRVUkFMMR0wGwYDVQQD
+ExRIRUNUT1IgREFOSUVMIEJMQU5DTzElMCMGCSqGSIb3DQEJARYWZGFuaWVsQGJs
+YW5jb21hcnRp bi5jbDETMBEGA1UEBRMKMjM4NDExOTQtNzCCASIwDQYJKoZIhvc
+NAQEBBQADggEPADCCAQoCggEB AKVOwT5rJSjHN1ctCv/RMTYGeV1bk0TPoIroOv
+QAoqW2vaPmp0tcXSmBCO3V+mtpA/SMENaPLyuv 7kiGGX5ydM5fX//LSkY/ulDFo
+pOICzGO6lM19r0ufzRANYkAqw2BhmJ18JADO1JmcnP0oSLdflVg cKSmwTE8KiQI
+qIjuVe4iLDETHh3HU1CzCrWoRLIM+FQNFL8WSqNFEYOct2dMHMJohs99NOegggzg
+/uYIgvlTWKvoi0llbr2TT6bHbk+fHgKrs2uZJ6ONJTbKRJQCFeyr37szCMvS8EPs
+PURiPGuFPa/8 u5Iqa6zONI88kdLbgGIMZfTriV4sByhOlaVej7MCAwEAAaOCAkM
+wggI/MB8GA1UdIwQYMBaAFGWl qz4/yLZRbRF+X8MKB+ZDoAi2MB0GA1UdDgQWBB
+TFkOAKd4GhJz2JW6jdXRD9Et+g5jALBgNVHQ8E BAMCBPAwHQYDVR0lBBYwFAYIK
+wYBBQUHAwIGCCsGAQUFBwMEMBEGCWCGSAGG+EIBAQQEAwIFoDB1 BgNVHSAEbjBs
+MGoGCCsGAQQBtWsCMF4wMQYIKwYBBQUHAgEWJWh0dHBzOi8vYWNnNC5hY2VwdGEu
+Y29tL0NQUy1BY2VwdGFjb20wKQYIKwYBBQUHAgIwHTAWFg9BY2VwdGEuY29tIFMu
+QS4wAwIBCRoD VEJEMFoGA1UdEgRTMFGgGAYIKwYBBAHBAQKgDBYKOTY5MTkwNTA
+tOKAkBggrBgEFBQcIA6AYMBYM Cjk2OTE5MDUwLTgGCCsGAQQBwQECgQ9pbmZvQG
+FjZXB0YS5jb20wYQYDVR0RBFowWKAYBggrBgEE AcEBAaAMFgoyMzg0MTE5NC03o
+CQGCCsGAQUFBwgDoBgwFgwKMjM4NDExOTQtNwYIKwYBBAHBAQKB FmRhbmllbEBi
+bGFuY29tYXJ0aW4uY2wwRwYIKwYBBQUHAQEEOzA5MDcGCCsGAQUFBzABhitodHRw
+czovL2FjZzQuYWNlcHRhLmNvbS9hY2c0L29jc3AvQ2xhc2UyLUc0MD8GA1UdHwQ4
+MDYwNKAyoDCG Lmh0dHBzOi8vYWNnNC5hY2VwdGEuY29tL2FjZzQvY3JsL0NsYXN
+lMi1HNC5jcmwwDQYJKoZIhvcN AQELBQADggEBACHvynJ7KjgiebxUJoLwSjyJ1t
+jgMe3ws0P0b5cLeHhR6eCNH5SbKu2pUm0BMYFs tYJkZuul4PuK6ikJbfyKhJNJf
+YgCgWebkPpYsMrz/N9qJ3o2iMsudubXejtTmMjCK8ZM3cjyad54 f3DjhHz4xy/w
+mmsnV8NFlm3v/ad5hEhOESDm4q16YGxYaxsX2CtVj1QzzeYbl/2fO+UwNFnXUxTx
+1rOPzWIPzWtEknKebgFeHuWwHV9WmxbyBgLWugYxQcF3JR6es1kt3bjstHOlYPZA
+zXDhuALO+7KB
+eBPeKYCYYspX9gzPK8z1YHQC9eq63FR7DvhFgegG/4fmcpZMdoQ=</X509Certificate></X509Data></KeyInfo></Signature></DTE>
+<DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
+    <Documento ID="F140T34"><Encabezado><IdDoc><TipoDTE>34</TipoDTE><Folio>140</Folio><FchEmis>2017-05-06</FchEmis><FmaPago>1</FmaPago><FchVenc>2017-05-06</FchVenc></IdDoc><Emisor><RUTEmisor>76201224-3</RUTEmisor><RznSoc>Soc de Servicios Blanco Mart&#237;n EIRL</RznSoc><GiroEmis>Empresas de Servicios Integrales de Inform&#225;tica</GiroEmis><Telefono>+56228400990</Telefono><CorreoEmisor>dteb2b@blancomartin.cl</CorreoEmisor><Acteco>726000</Acteco><DirOrigen>Apoquindo 6410 Of 212</DirOrigen><CmnaOrigen>Las Condes</CmnaOrigen><CiudadOrigen>Santiago</CiudadOrigen></Emisor><Receptor><RUTRecep>76170547-4</RUTRecep><RznSocRecep>M5 Soluciones Industriales y Mec&#225;nicas Ltda</RznSocRecep><GiroRecep>Fabricaci&#243;n de Art&#237;culos de Otras Indust</GiroRecep><DirRecep>Retamo 867 </DirRecep><CmnaRecep>Valpara&#237;so</CmnaRecep><CiudadRecep>Valpara&#237;so</CiudadRecep></Receptor><Totales><MntExe>177000</MntExe><MntTotal>177000</MntTotal></Totales></Encabezado><Detalle><NroLinDet>1</NroLinDet><IndExe>1</IndExe><NmbItem>INDUCCION</NmbItem><DscItem>INDUCCION SOBRE FUNCIONAMIENTO MRP ODOO TERCERA ETAPA</DscItem><QtyItem>2.0</QtyItem><UnmdItem>Unit</UnmdItem><PrcItem>88500</PrcItem><MontoItem>177000</MontoItem></Detalle>
+<TED version="1.0"><DD><RE>76201224-3</RE><TD>34</TD><F>140</F><FE>2017-05-06</FE><RR>76170547-4</RR><RSR>M5 Soluciones Industriales y Mec&#225;nicas L</RSR><MNT>177000</MNT><IT1>INDUCCION</IT1><CAF version="1.0"><DA><RE>76201224-3</RE><RS>SOCIEDAD DE SERVICIOS HECTOR DANIEL BLAN</RS><TD>34</TD><RNG><D>121</D><H>220</H></RNG><FA>2017-04-26</FA><RSAPK><M>ma4Cvxgs3qf2wcdobhhfTXzPuyOP8KB35QaPS3aGLGD+CwPPX6CR98evD1Pns5u8wmzffLvSt81fmKJT0vTtaQ==</M><E>Aw==</E></RSAPK><IDK>100</IDK></DA><FRMA algoritmo="SHA1withRSA">v0ui8EKsMMz6fvNwv9DdCHo+jPtdIhDOWrYjSCx8uHBotEsGVAtphuBIIlPHQteRASo4t289QZjpPhXPv4Xm3Q==</FRMA></CAF><TSTED>2017-05-06T02:33:53</TSTED></DD><FRMT algoritmo="SHA1withRSA">KKiOaFqj/rHBZArq0Nd9dSzvTwpsoFgVGA9hL4fzWR3Qs1dyXelCkDNMF1Qi7rVllH6c/HLKPbU0I1eTmkWkog==</FRMT></TED><TmstFirma>2017-05-06T02:33:53</TmstFirma>
+</Documento>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#F140T34"><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>JHd9g/0+/xiwSOBwvFo6kVDehMk=</DigestValue></Reference></SignedInfo><SignatureValue>OmSvU+JPY8rpx+WfjBmHn3Q/BRABiF8D/LcjkWqmtR7HVcfmN7/HEh8nAuHv4Wyy
+947BxjeyBKoQFepEe0yLjK50u9WniXIktLUPU3wOaKWbHHYRJl2xX0zZVcJhU9+8
+1H3gcJbDrEarAXPaoBXlNLAkDXG49nZ5zj6lron2SV3n8hcatJkLcJDv9PhDqDnK
+QdvbrxXa3vqDxz65b9fPhJSaR6KkZqod/cL+VkzSkGym809lITi81KyK1J2X3277
+gviTRMgjo5gd6AOZfg15zJcgGmyjRnpu2m7N3RKcEQzFytg85VG5Ph+oeT4NT+pn
+YdGa9419SPy77cZ2gaBlHw==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pU7BPmslKMc3Vy0K/9ExNgZ5XVuTRM+giug69ACipba9o+anS1xdKYEI7dX6a2kD
+9IwQ1o8vK6/uSIYZfnJ0zl9f/8tKRj+6UMWik4gLMY7qUzX2vS5/NEA1iQCrDYGG
+YnXwkAM7UmZyc/ShIt1+VWBwpKbBMTwqJAioiO5V7iIsMRMeHcdTULMKtahEsgz4
+VA0UvxZKo0URg5y3Z0wcwmiGz30056CCDOD+5giC+VNYq+iLSWVuvZNPpsduT58e
+Aquza5kno40lNspElAIV7KvfuzMIy9LwQ+w9RGI8a4U9r/y7kiprrM40jzyR0tuA
+Ygxl9OuJXiwHKE6VpV6Psw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>
+MIIF7DCCBNSgAwIBAgIDANEuMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYDVQQGEwJD
+TDEYMBYGA1UE ChMPQWNlcHRhLmNvbSBTLkEuMUgwRgYDVQQDEz9BY2VwdGEuY29
+tIEF1dG9yaWRhZCBDZXJ0aWZp Y2Fkb3JhIENsYXNlIDIgUGVyc29uYSBOYXR1cm
+FsIC0gRzQxHjAcBgkqhkiG9w0BCQEWD2luZm9A YWNlcHRhLmNvbTETMBEGA1UEB
+RMKOTY5MTkwNTAtODAeFw0xNzA0MjQxNDA3MTdaFw0yMDA0MjQx NDA3MTdaMIGC
+MQswCQYDVQQGEwJDTDEYMBYGA1UEDBMPUEVSU09OQSBOQVRVUkFMMR0wGwYDVQQD
+ExRIRUNUT1IgREFOSUVMIEJMQU5DTzElMCMGCSqGSIb3DQEJARYWZGFuaWVsQGJs
+YW5jb21hcnRp bi5jbDETMBEGA1UEBRMKMjM4NDExOTQtNzCCASIwDQYJKoZIhvc
+NAQEBBQADggEPADCCAQoCggEB AKVOwT5rJSjHN1ctCv/RMTYGeV1bk0TPoIroOv
+QAoqW2vaPmp0tcXSmBCO3V+mtpA/SMENaPLyuv 7kiGGX5ydM5fX//LSkY/ulDFo
+pOICzGO6lM19r0ufzRANYkAqw2BhmJ18JADO1JmcnP0oSLdflVg cKSmwTE8KiQI
+qIjuVe4iLDETHh3HU1CzCrWoRLIM+FQNFL8WSqNFEYOct2dMHMJohs99NOegggzg
+/uYIgvlTWKvoi0llbr2TT6bHbk+fHgKrs2uZJ6ONJTbKRJQCFeyr37szCMvS8EPs
+PURiPGuFPa/8 u5Iqa6zONI88kdLbgGIMZfTriV4sByhOlaVej7MCAwEAAaOCAkM
+wggI/MB8GA1UdIwQYMBaAFGWl qz4/yLZRbRF+X8MKB+ZDoAi2MB0GA1UdDgQWBB
+TFkOAKd4GhJz2JW6jdXRD9Et+g5jALBgNVHQ8E BAMCBPAwHQYDVR0lBBYwFAYIK
+wYBBQUHAwIGCCsGAQUFBwMEMBEGCWCGSAGG+EIBAQQEAwIFoDB1 BgNVHSAEbjBs
+MGoGCCsGAQQBtWsCMF4wMQYIKwYBBQUHAgEWJWh0dHBzOi8vYWNnNC5hY2VwdGEu
+Y29tL0NQUy1BY2VwdGFjb20wKQYIKwYBBQUHAgIwHTAWFg9BY2VwdGEuY29tIFMu
+QS4wAwIBCRoD VEJEMFoGA1UdEgRTMFGgGAYIKwYBBAHBAQKgDBYKOTY5MTkwNTA
+tOKAkBggrBgEFBQcIA6AYMBYM Cjk2OTE5MDUwLTgGCCsGAQQBwQECgQ9pbmZvQG
+FjZXB0YS5jb20wYQYDVR0RBFowWKAYBggrBgEE AcEBAaAMFgoyMzg0MTE5NC03o
+CQGCCsGAQUFBwgDoBgwFgwKMjM4NDExOTQtNwYIKwYBBAHBAQKB FmRhbmllbEBi
+bGFuY29tYXJ0aW4uY2wwRwYIKwYBBQUHAQEEOzA5MDcGCCsGAQUFBzABhitodHRw
+czovL2FjZzQuYWNlcHRhLmNvbS9hY2c0L29jc3AvQ2xhc2UyLUc0MD8GA1UdHwQ4
+MDYwNKAyoDCG Lmh0dHBzOi8vYWNnNC5hY2VwdGEuY29tL2FjZzQvY3JsL0NsYXN
+lMi1HNC5jcmwwDQYJKoZIhvcN AQELBQADggEBACHvynJ7KjgiebxUJoLwSjyJ1t
+jgMe3ws0P0b5cLeHhR6eCNH5SbKu2pUm0BMYFs tYJkZuul4PuK6ikJbfyKhJNJf
+YgCgWebkPpYsMrz/N9qJ3o2iMsudubXejtTmMjCK8ZM3cjyad54 f3DjhHz4xy/w
+mmsnV8NFlm3v/ad5hEhOESDm4q16YGxYaxsX2CtVj1QzzeYbl/2fO+UwNFnXUxTx
+1rOPzWIPzWtEknKebgFeHuWwHV9WmxbyBgLWugYxQcF3JR6es1kt3bjstHOlYPZA
+zXDhuALO+7KB
+eBPeKYCYYspX9gzPK8z1YHQC9eq63FR7DvhFgegG/4fmcpZMdoQ=</X509Certificate></X509Data></KeyInfo></Signature></DTE>
+<DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
+    <Documento ID="F47T61"><Encabezado><IdDoc><TipoDTE>61</TipoDTE><Folio>47</Folio><FchEmis>2017-05-06</FchEmis><FmaPago>1</FmaPago><FchVenc>2017-05-06</FchVenc></IdDoc><Emisor><RUTEmisor>76201224-3</RUTEmisor><RznSoc>Soc de Servicios Blanco Mart&#237;n EIRL</RznSoc><GiroEmis>Empresas de Servicios Integrales de Inform&#225;tica</GiroEmis><Telefono>+56228400990</Telefono><CorreoEmisor>dteb2b@blancomartin.cl</CorreoEmisor><Acteco>726000</Acteco><DirOrigen>Apoquindo 6410 Of 212</DirOrigen><CmnaOrigen>Las Condes</CmnaOrigen><CiudadOrigen>Santiago</CiudadOrigen></Emisor><Receptor><RUTRecep>77771710-3</RUTRecep><RznSocRecep>Comercial Blanco Ltda</RznSocRecep><GiroRecep>Otras Actividades Empresariales N.C.P.</GiroRecep><DirRecep>Av. Las Condes 8173 </DirRecep><CmnaRecep>Las Condes</CmnaRecep><CiudadRecep>Santiago</CiudadRecep></Receptor><Totales><MntExe>120000</MntExe><MntTotal>120000</MntTotal></Totales></Encabezado><Detalle><NroLinDet>1</NroLinDet><IndExe>1</IndExe><NmbItem>SERVICIO DE CERTIFICACI&#211;N DIGITAL</NmbItem><DscItem>SERVICIO DE CERTIFICACI&#211;N DIGITAL /SSL PARA SITIO www.cartoys.cl</DscItem><QtyItem>3.0</QtyItem><UnmdItem>Unit</UnmdItem><PrcItem>40000</PrcItem><MontoItem>120000</MontoItem></Detalle><Referencia><NroLinRef>1</NroLinRef><TpoDocRef>34</TpoDocRef><FolioRef>125</FolioRef><FchRef>2017-05-06</FchRef><CodRef>1</CodRef><RazonRef>anula</RazonRef></Referencia>
+<TED version="1.0"><DD><RE>76201224-3</RE><TD>61</TD><F>47</F><FE>2017-05-06</FE><RR>77771710-3</RR><RSR>Comercial Blanco Ltda</RSR><MNT>120000</MNT><IT1>SERVICIO DE CERTIFICACI&#211;N DIGITAL</IT1><CAF version="1.0"><DA><RE>76201224-3</RE><RS>SOCIEDAD DE SERVICIOS HECTOR DANIEL BLAN</RS><TD>61</TD><RNG><D>1</D><H>50</H></RNG><FA>2016-09-28</FA><RSAPK><M>uaDMyQ1c8W5w7eXG1gLgDyjika41NIMAwt2oDASUyBR/mKSx1mzi1lWjmVsxkS79a6yI7GJqkzFg4jImfOMuvw==</M><E>Aw==</E></RSAPK><IDK>100</IDK></DA><FRMA algoritmo="SHA1withRSA">VDlp571RZ9/4lqSlQTkRTbtBB3lr8fecoVPAmVWcmpY/LKOsCWcD5DYFKXXBMU02NO32ePvBbpUrsuvc4G7+tg==</FRMA></CAF><TSTED>2017-05-06T02:33:54</TSTED></DD><FRMT algoritmo="SHA1withRSA">XHnCPYOU8PCVw0OA5cpzqUeAdrIdupdPf14TIHke8rFAq+oIKgjBiHxwm1rPsk0ED7jAnBZlDxBSZ0RuiedN8g==</FRMT></TED><TmstFirma>2017-05-06T02:33:54</TmstFirma>
+</Documento>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#F47T61"><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>h2WSFZ6HZh9sj3ZM4VKVlXSYBiA=</DigestValue></Reference></SignedInfo><SignatureValue>Z5YMakrfdA4v9/fnT8SREtsBLqJmeo1dI31sLEZ8tMsB0668OccTBiuBQAYZVLbS
+hq/MCbygTINEY89yTHOViZ0M3fMVbyqz4jfRpkOsTSqs3/9YdSTthXm7En7WJzK2
+oafzsQGB/HPvSTHfSd52l+md3rm7ZK0B87X5DhBGKv9kDNfxVj7K08aQmPAAPyfp
+HuxNT5kcnsjvvMoh6OD4+j1pKqw8AHDM0Bo1755XoMGy5/Gy9Jzrrf3+QyTp87sD
+E91ZOF4X5ZRgaJ0PYr3J+7hgOv5feVdJHhmvHN0GlKQ4lmduJeQbL3lN9YiufyxY
+janOvuwoX6xG0bUt6kW+4Q==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pU7BPmslKMc3Vy0K/9ExNgZ5XVuTRM+giug69ACipba9o+anS1xdKYEI7dX6a2kD
+9IwQ1o8vK6/uSIYZfnJ0zl9f/8tKRj+6UMWik4gLMY7qUzX2vS5/NEA1iQCrDYGG
+YnXwkAM7UmZyc/ShIt1+VWBwpKbBMTwqJAioiO5V7iIsMRMeHcdTULMKtahEsgz4
+VA0UvxZKo0URg5y3Z0wcwmiGz30056CCDOD+5giC+VNYq+iLSWVuvZNPpsduT58e
+Aquza5kno40lNspElAIV7KvfuzMIy9LwQ+w9RGI8a4U9r/y7kiprrM40jzyR0tuA
+Ygxl9OuJXiwHKE6VpV6Psw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>
+MIIF7DCCBNSgAwIBAgIDANEuMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYDVQQGEwJD
+TDEYMBYGA1UE ChMPQWNlcHRhLmNvbSBTLkEuMUgwRgYDVQQDEz9BY2VwdGEuY29
+tIEF1dG9yaWRhZCBDZXJ0aWZp Y2Fkb3JhIENsYXNlIDIgUGVyc29uYSBOYXR1cm
+FsIC0gRzQxHjAcBgkqhkiG9w0BCQEWD2luZm9A YWNlcHRhLmNvbTETMBEGA1UEB
+RMKOTY5MTkwNTAtODAeFw0xNzA0MjQxNDA3MTdaFw0yMDA0MjQx NDA3MTdaMIGC
+MQswCQYDVQQGEwJDTDEYMBYGA1UEDBMPUEVSU09OQSBOQVRVUkFMMR0wGwYDVQQD
+ExRIRUNUT1IgREFOSUVMIEJMQU5DTzElMCMGCSqGSIb3DQEJARYWZGFuaWVsQGJs
+YW5jb21hcnRp bi5jbDETMBEGA1UEBRMKMjM4NDExOTQtNzCCASIwDQYJKoZIhvc
+NAQEBBQADggEPADCCAQoCggEB AKVOwT5rJSjHN1ctCv/RMTYGeV1bk0TPoIroOv
+QAoqW2vaPmp0tcXSmBCO3V+mtpA/SMENaPLyuv 7kiGGX5ydM5fX//LSkY/ulDFo
+pOICzGO6lM19r0ufzRANYkAqw2BhmJ18JADO1JmcnP0oSLdflVg cKSmwTE8KiQI
+qIjuVe4iLDETHh3HU1CzCrWoRLIM+FQNFL8WSqNFEYOct2dMHMJohs99NOegggzg
+/uYIgvlTWKvoi0llbr2TT6bHbk+fHgKrs2uZJ6ONJTbKRJQCFeyr37szCMvS8EPs
+PURiPGuFPa/8 u5Iqa6zONI88kdLbgGIMZfTriV4sByhOlaVej7MCAwEAAaOCAkM
+wggI/MB8GA1UdIwQYMBaAFGWl qz4/yLZRbRF+X8MKB+ZDoAi2MB0GA1UdDgQWBB
+TFkOAKd4GhJz2JW6jdXRD9Et+g5jALBgNVHQ8E BAMCBPAwHQYDVR0lBBYwFAYIK
+wYBBQUHAwIGCCsGAQUFBwMEMBEGCWCGSAGG+EIBAQQEAwIFoDB1 BgNVHSAEbjBs
+MGoGCCsGAQQBtWsCMF4wMQYIKwYBBQUHAgEWJWh0dHBzOi8vYWNnNC5hY2VwdGEu
+Y29tL0NQUy1BY2VwdGFjb20wKQYIKwYBBQUHAgIwHTAWFg9BY2VwdGEuY29tIFMu
+QS4wAwIBCRoD VEJEMFoGA1UdEgRTMFGgGAYIKwYBBAHBAQKgDBYKOTY5MTkwNTA
+tOKAkBggrBgEFBQcIA6AYMBYM Cjk2OTE5MDUwLTgGCCsGAQQBwQECgQ9pbmZvQG
+FjZXB0YS5jb20wYQYDVR0RBFowWKAYBggrBgEE AcEBAaAMFgoyMzg0MTE5NC03o
+CQGCCsGAQUFBwgDoBgwFgwKMjM4NDExOTQtNwYIKwYBBAHBAQKB FmRhbmllbEBi
+bGFuY29tYXJ0aW4uY2wwRwYIKwYBBQUHAQEEOzA5MDcGCCsGAQUFBzABhitodHRw
+czovL2FjZzQuYWNlcHRhLmNvbS9hY2c0L29jc3AvQ2xhc2UyLUc0MD8GA1UdHwQ4
+MDYwNKAyoDCG Lmh0dHBzOi8vYWNnNC5hY2VwdGEuY29tL2FjZzQvY3JsL0NsYXN
+lMi1HNC5jcmwwDQYJKoZIhvcN AQELBQADggEBACHvynJ7KjgiebxUJoLwSjyJ1t
+jgMe3ws0P0b5cLeHhR6eCNH5SbKu2pUm0BMYFs tYJkZuul4PuK6ikJbfyKhJNJf
+YgCgWebkPpYsMrz/N9qJ3o2iMsudubXejtTmMjCK8ZM3cjyad54 f3DjhHz4xy/w
+mmsnV8NFlm3v/ad5hEhOESDm4q16YGxYaxsX2CtVj1QzzeYbl/2fO+UwNFnXUxTx
+1rOPzWIPzWtEknKebgFeHuWwHV9WmxbyBgLWugYxQcF3JR6es1kt3bjstHOlYPZA
+zXDhuALO+7KB
+eBPeKYCYYspX9gzPK8z1YHQC9eq63FR7DvhFgegG/4fmcpZMdoQ=</X509Certificate></X509Data></KeyInfo></Signature></DTE>
+<DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
+    <Documento ID="F17T56"><Encabezado><IdDoc><TipoDTE>56</TipoDTE><Folio>17</Folio><FchEmis>2017-05-06</FchEmis><FmaPago>1</FmaPago><FchVenc>2017-05-06</FchVenc></IdDoc><Emisor><RUTEmisor>76201224-3</RUTEmisor><RznSoc>Soc de Servicios Blanco Mart&#237;n EIRL</RznSoc><GiroEmis>Empresas de Servicios Integrales de Inform&#225;tica</GiroEmis><Telefono>+56228400990</Telefono><CorreoEmisor>dteb2b@blancomartin.cl</CorreoEmisor><Acteco>726000</Acteco><DirOrigen>Apoquindo 6410 Of 212</DirOrigen><CmnaOrigen>Las Condes</CmnaOrigen><CiudadOrigen>Santiago</CiudadOrigen></Emisor><Receptor><RUTRecep>76134225-8</RUTRecep><RznSocRecep>Inversiones BR Ltda</RznSocRecep><GiroRecep>Arriendo de Inmuebles Amoblados O Con Eq</GiroRecep><DirRecep>Apoquindo 6410 Of 212</DirRecep><CmnaRecep>Santiago</CmnaRecep><CiudadRecep>Santiago</CiudadRecep></Receptor><Totales><MntExe>18000</MntExe><MntTotal>18000</MntTotal></Totales></Encabezado><Detalle><NroLinDet>1</NroLinDet><IndExe>1</IndExe><NmbItem>IMPLEMENTACI&#211;N SOFTWARE</NmbItem><DscItem>IMPLEMENTACI&#211;N SOFTWARE</DscItem><QtyItem>1.0</QtyItem><UnmdItem>Unit</UnmdItem><PrcItem>18000</PrcItem><MontoItem>18000</MontoItem></Detalle><Referencia><NroLinRef>1</NroLinRef><TpoDocRef>34</TpoDocRef><FolioRef>126</FolioRef><FchRef>2017-05-06</FchRef><CodRef>3</CodRef><RazonRef>recargo</RazonRef></Referencia>
+<TED version="1.0"><DD><RE>76201224-3</RE><TD>56</TD><F>17</F><FE>2017-05-06</FE><RR>76134225-8</RR><RSR>Inversiones BR Ltda</RSR><MNT>18000</MNT><IT1>IMPLEMENTACI&#211;N SOFTWARE</IT1><CAF version="1.0"><DA><RE>76201224-3</RE><RS>SOCIEDAD DE SERVICIOS HECTOR DANIEL BLAN</RS><TD>56</TD><RNG><D>1</D><H>50</H></RNG><FA>2017-04-17</FA><RSAPK><M>x07vCI9K/5EPJdHfW8hmsJ2ZV/y8Yu0CtweYmASM8IzJzpgf71JF9AkewRhNV/37iFIMdixaeD3VN+MNFXqjLQ==</M><E>Aw==</E></RSAPK><IDK>100</IDK></DA><FRMA algoritmo="SHA1withRSA">UekbnLlhZ+3WrE12Fj94/TTXq1So9vLr/sVjQILRfdVjEu29KNrZUNdeBSOFf0LFhuqVJpeHpDPdfacuSkAF0Q==</FRMA></CAF><TSTED>2017-05-06T02:33:56</TSTED></DD><FRMT algoritmo="SHA1withRSA">YuYTaDqdJyylRCMnGu6BR96yElpnJafK/jw8lIjN3RHR8CIgoOjkdKYOcL02K9e/6AFireWroSJ77SOzjTSrJw==</FRMT></TED><TmstFirma>2017-05-06T02:33:56</TmstFirma>
+</Documento>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#F17T56"><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>vJ7yXZLiUGSt38AEI5fG58FNcwg=</DigestValue></Reference></SignedInfo><SignatureValue>Lbxzt63OTffF7/fHbvy9vON5/CE1PHHMlWxuKyUbk2ZNAMY9CVg4OKQCTyTbAZ7H
+YQ6wubTzDzl+iyKaI//52pGm9t93fKN4sTpN5fKaUKZoQyrsbjbNSfhXMX9Xj0rI
+J2mlksnwTBm9ZfQhFBk2rhzFnhNt9jP+LLDvEfLht28T0Xwd+xXIfVyUgnFI+tCf
+3U4iOkqtKQBmtuYLXNbTY5Jihe1dzkF+G80I1lFGXdVejqVPSHVvt8nIil2Y0td9
+l7XtegLJpaXilOuRSJhOI+PU+Qp/51pS2wwP4dKMncxG4zyKUs+2x4IV70fUUCAL
+9U9xfIby64YXwXdl7GxTng==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pU7BPmslKMc3Vy0K/9ExNgZ5XVuTRM+giug69ACipba9o+anS1xdKYEI7dX6a2kD
+9IwQ1o8vK6/uSIYZfnJ0zl9f/8tKRj+6UMWik4gLMY7qUzX2vS5/NEA1iQCrDYGG
+YnXwkAM7UmZyc/ShIt1+VWBwpKbBMTwqJAioiO5V7iIsMRMeHcdTULMKtahEsgz4
+VA0UvxZKo0URg5y3Z0wcwmiGz30056CCDOD+5giC+VNYq+iLSWVuvZNPpsduT58e
+Aquza5kno40lNspElAIV7KvfuzMIy9LwQ+w9RGI8a4U9r/y7kiprrM40jzyR0tuA
+Ygxl9OuJXiwHKE6VpV6Psw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>
+MIIF7DCCBNSgAwIBAgIDANEuMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYDVQQGEwJD
+TDEYMBYGA1UE ChMPQWNlcHRhLmNvbSBTLkEuMUgwRgYDVQQDEz9BY2VwdGEuY29
+tIEF1dG9yaWRhZCBDZXJ0aWZp Y2Fkb3JhIENsYXNlIDIgUGVyc29uYSBOYXR1cm
+FsIC0gRzQxHjAcBgkqhkiG9w0BCQEWD2luZm9A YWNlcHRhLmNvbTETMBEGA1UEB
+RMKOTY5MTkwNTAtODAeFw0xNzA0MjQxNDA3MTdaFw0yMDA0MjQx NDA3MTdaMIGC
+MQswCQYDVQQGEwJDTDEYMBYGA1UEDBMPUEVSU09OQSBOQVRVUkFMMR0wGwYDVQQD
+ExRIRUNUT1IgREFOSUVMIEJMQU5DTzElMCMGCSqGSIb3DQEJARYWZGFuaWVsQGJs
+YW5jb21hcnRp bi5jbDETMBEGA1UEBRMKMjM4NDExOTQtNzCCASIwDQYJKoZIhvc
+NAQEBBQADggEPADCCAQoCggEB AKVOwT5rJSjHN1ctCv/RMTYGeV1bk0TPoIroOv
+QAoqW2vaPmp0tcXSmBCO3V+mtpA/SMENaPLyuv 7kiGGX5ydM5fX//LSkY/ulDFo
+pOICzGO6lM19r0ufzRANYkAqw2BhmJ18JADO1JmcnP0oSLdflVg cKSmwTE8KiQI
+qIjuVe4iLDETHh3HU1CzCrWoRLIM+FQNFL8WSqNFEYOct2dMHMJohs99NOegggzg
+/uYIgvlTWKvoi0llbr2TT6bHbk+fHgKrs2uZJ6ONJTbKRJQCFeyr37szCMvS8EPs
+PURiPGuFPa/8 u5Iqa6zONI88kdLbgGIMZfTriV4sByhOlaVej7MCAwEAAaOCAkM
+wggI/MB8GA1UdIwQYMBaAFGWl qz4/yLZRbRF+X8MKB+ZDoAi2MB0GA1UdDgQWBB
+TFkOAKd4GhJz2JW6jdXRD9Et+g5jALBgNVHQ8E BAMCBPAwHQYDVR0lBBYwFAYIK
+wYBBQUHAwIGCCsGAQUFBwMEMBEGCWCGSAGG+EIBAQQEAwIFoDB1 BgNVHSAEbjBs
+MGoGCCsGAQQBtWsCMF4wMQYIKwYBBQUHAgEWJWh0dHBzOi8vYWNnNC5hY2VwdGEu
+Y29tL0NQUy1BY2VwdGFjb20wKQYIKwYBBQUHAgIwHTAWFg9BY2VwdGEuY29tIFMu
+QS4wAwIBCRoD VEJEMFoGA1UdEgRTMFGgGAYIKwYBBAHBAQKgDBYKOTY5MTkwNTA
+tOKAkBggrBgEFBQcIA6AYMBYM Cjk2OTE5MDUwLTgGCCsGAQQBwQECgQ9pbmZvQG
+FjZXB0YS5jb20wYQYDVR0RBFowWKAYBggrBgEE AcEBAaAMFgoyMzg0MTE5NC03o
+CQGCCsGAQUFBwgDoBgwFgwKMjM4NDExOTQtNwYIKwYBBAHBAQKB FmRhbmllbEBi
+bGFuY29tYXJ0aW4uY2wwRwYIKwYBBQUHAQEEOzA5MDcGCCsGAQUFBzABhitodHRw
+czovL2FjZzQuYWNlcHRhLmNvbS9hY2c0L29jc3AvQ2xhc2UyLUc0MD8GA1UdHwQ4
+MDYwNKAyoDCG Lmh0dHBzOi8vYWNnNC5hY2VwdGEuY29tL2FjZzQvY3JsL0NsYXN
+lMi1HNC5jcmwwDQYJKoZIhvcN AQELBQADggEBACHvynJ7KjgiebxUJoLwSjyJ1t
+jgMe3ws0P0b5cLeHhR6eCNH5SbKu2pUm0BMYFs tYJkZuul4PuK6ikJbfyKhJNJf
+YgCgWebkPpYsMrz/N9qJ3o2iMsudubXejtTmMjCK8ZM3cjyad54 f3DjhHz4xy/w
+mmsnV8NFlm3v/ad5hEhOESDm4q16YGxYaxsX2CtVj1QzzeYbl/2fO+UwNFnXUxTx
+1rOPzWIPzWtEknKebgFeHuWwHV9WmxbyBgLWugYxQcF3JR6es1kt3bjstHOlYPZA
+zXDhuALO+7KB
+eBPeKYCYYspX9gzPK8z1YHQC9eq63FR7DvhFgegG/4fmcpZMdoQ=</X509Certificate></X509Data></KeyInfo></Signature></DTE>
+<DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
+    <Documento ID="F48T61"><Encabezado><IdDoc><TipoDTE>61</TipoDTE><Folio>48</Folio><FchEmis>2017-05-06</FchEmis><FmaPago>1</FmaPago><FchVenc>2017-05-06</FchVenc></IdDoc><Emisor><RUTEmisor>76201224-3</RUTEmisor><RznSoc>Soc de Servicios Blanco Mart&#237;n EIRL</RznSoc><GiroEmis>Empresas de Servicios Integrales de Inform&#225;tica</GiroEmis><Telefono>+56228400990</Telefono><CorreoEmisor>dteb2b@blancomartin.cl</CorreoEmisor><Acteco>726000</Acteco><DirOrigen>Apoquindo 6410 Of 212</DirOrigen><CmnaOrigen>Las Condes</CmnaOrigen><CiudadOrigen>Santiago</CiudadOrigen></Emisor><Receptor><RUTRecep>76096477-8</RUTRecep><RznSocRecep>COMERCIAL ONAK SYSTEMS LIMITADA</RznSocRecep><GiroRecep>Reparaci&#243;n Otros Tipos de Maquinaria y E</GiroRecep><DirRecep>Baron de Judas Reales N&#186; 4427 </DirRecep><CmnaRecep>Santiago</CmnaRecep><CiudadRecep>Santiago</CiudadRecep></Receptor><Totales><MntExe>810000</MntExe><MntTotal>810000</MntTotal></Totales></Encabezado><Detalle><NroLinDet>1</NroLinDet><IndExe>1</IndExe><NmbItem>IMPLEMENTACI&#211;N SOFTWARE</NmbItem><DscItem>IMPLEMENTACI&#211;N SOFTWARE COMPLETA</DscItem><QtyItem>1.0</QtyItem><UnmdItem>Unit</UnmdItem><PrcItem>810000</PrcItem><MontoItem>810000</MontoItem></Detalle><Referencia><NroLinRef>1</NroLinRef><TpoDocRef>34</TpoDocRef><FolioRef>130</FolioRef><FchRef>2017-05-06</FchRef><CodRef>3</CodRef><RazonRef>corrige monto</RazonRef></Referencia>
+<TED version="1.0"><DD><RE>76201224-3</RE><TD>61</TD><F>48</F><FE>2017-05-06</FE><RR>76096477-8</RR><RSR>COMERCIAL ONAK SYSTEMS LIMITADA</RSR><MNT>810000</MNT><IT1>IMPLEMENTACI&#211;N SOFTWARE</IT1><CAF version="1.0"><DA><RE>76201224-3</RE><RS>SOCIEDAD DE SERVICIOS HECTOR DANIEL BLAN</RS><TD>61</TD><RNG><D>1</D><H>50</H></RNG><FA>2016-09-28</FA><RSAPK><M>uaDMyQ1c8W5w7eXG1gLgDyjika41NIMAwt2oDASUyBR/mKSx1mzi1lWjmVsxkS79a6yI7GJqkzFg4jImfOMuvw==</M><E>Aw==</E></RSAPK><IDK>100</IDK></DA><FRMA algoritmo="SHA1withRSA">VDlp571RZ9/4lqSlQTkRTbtBB3lr8fecoVPAmVWcmpY/LKOsCWcD5DYFKXXBMU02NO32ePvBbpUrsuvc4G7+tg==</FRMA></CAF><TSTED>2017-05-06T02:33:57</TSTED></DD><FRMT algoritmo="SHA1withRSA">RNUbDuF2QnOAeVRMBlUFEOL51ZDkh9LokxWI5OqgGgnnObUgCfbpHnn9Kxatr3VeQCaC+aDlPNr0XU99gyds6Q==</FRMT></TED><TmstFirma>2017-05-06T02:33:57</TmstFirma>
+</Documento>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#F48T61"><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>6HP03XzOpOTa2tGn8oRv2g2UMto=</DigestValue></Reference></SignedInfo><SignatureValue>dOEAS5E2xIucM19ep4qWRQMlDHxoqtA+YIZBOFwVKz2H9cJ7BHkN2LpytKnzIzv5
+KrvKUesHdQ2mZVmLG9VmB56VDSooIyfYI4WyNdWZXWMPn8oI1naPBVwAz8MZyBgu
+B0XQfd7EZM35bNrLyTSEGO2j+ZwTd71hpB3+52d5Ft2j/+wnJYF0+48EO9MVcZyQ
+wpwAYP8wu6gUI7YenpsshY8At7wnAP9DHhGklyGDE4Iy2e3LMLx2EYv/M1j9rU+5
+X74UwAIoBtan4C0ND1IQMO+Xn6zljsIMmQAyhdn38+uaGRqD0OkpB8Z0o0nrfzQL
+DaDG8zAUyMuuf8r7lDU9MQ==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pU7BPmslKMc3Vy0K/9ExNgZ5XVuTRM+giug69ACipba9o+anS1xdKYEI7dX6a2kD
+9IwQ1o8vK6/uSIYZfnJ0zl9f/8tKRj+6UMWik4gLMY7qUzX2vS5/NEA1iQCrDYGG
+YnXwkAM7UmZyc/ShIt1+VWBwpKbBMTwqJAioiO5V7iIsMRMeHcdTULMKtahEsgz4
+VA0UvxZKo0URg5y3Z0wcwmiGz30056CCDOD+5giC+VNYq+iLSWVuvZNPpsduT58e
+Aquza5kno40lNspElAIV7KvfuzMIy9LwQ+w9RGI8a4U9r/y7kiprrM40jzyR0tuA
+Ygxl9OuJXiwHKE6VpV6Psw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>
+MIIF7DCCBNSgAwIBAgIDANEuMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYDVQQGEwJD
+TDEYMBYGA1UE ChMPQWNlcHRhLmNvbSBTLkEuMUgwRgYDVQQDEz9BY2VwdGEuY29
+tIEF1dG9yaWRhZCBDZXJ0aWZp Y2Fkb3JhIENsYXNlIDIgUGVyc29uYSBOYXR1cm
+FsIC0gRzQxHjAcBgkqhkiG9w0BCQEWD2luZm9A YWNlcHRhLmNvbTETMBEGA1UEB
+RMKOTY5MTkwNTAtODAeFw0xNzA0MjQxNDA3MTdaFw0yMDA0MjQx NDA3MTdaMIGC
+MQswCQYDVQQGEwJDTDEYMBYGA1UEDBMPUEVSU09OQSBOQVRVUkFMMR0wGwYDVQQD
+ExRIRUNUT1IgREFOSUVMIEJMQU5DTzElMCMGCSqGSIb3DQEJARYWZGFuaWVsQGJs
+YW5jb21hcnRp bi5jbDETMBEGA1UEBRMKMjM4NDExOTQtNzCCASIwDQYJKoZIhvc
+NAQEBBQADggEPADCCAQoCggEB AKVOwT5rJSjHN1ctCv/RMTYGeV1bk0TPoIroOv
+QAoqW2vaPmp0tcXSmBCO3V+mtpA/SMENaPLyuv 7kiGGX5ydM5fX//LSkY/ulDFo
+pOICzGO6lM19r0ufzRANYkAqw2BhmJ18JADO1JmcnP0oSLdflVg cKSmwTE8KiQI
+qIjuVe4iLDETHh3HU1CzCrWoRLIM+FQNFL8WSqNFEYOct2dMHMJohs99NOegggzg
+/uYIgvlTWKvoi0llbr2TT6bHbk+fHgKrs2uZJ6ONJTbKRJQCFeyr37szCMvS8EPs
+PURiPGuFPa/8 u5Iqa6zONI88kdLbgGIMZfTriV4sByhOlaVej7MCAwEAAaOCAkM
+wggI/MB8GA1UdIwQYMBaAFGWl qz4/yLZRbRF+X8MKB+ZDoAi2MB0GA1UdDgQWBB
+TFkOAKd4GhJz2JW6jdXRD9Et+g5jALBgNVHQ8E BAMCBPAwHQYDVR0lBBYwFAYIK
+wYBBQUHAwIGCCsGAQUFBwMEMBEGCWCGSAGG+EIBAQQEAwIFoDB1 BgNVHSAEbjBs
+MGoGCCsGAQQBtWsCMF4wMQYIKwYBBQUHAgEWJWh0dHBzOi8vYWNnNC5hY2VwdGEu
+Y29tL0NQUy1BY2VwdGFjb20wKQYIKwYBBQUHAgIwHTAWFg9BY2VwdGEuY29tIFMu
+QS4wAwIBCRoD VEJEMFoGA1UdEgRTMFGgGAYIKwYBBAHBAQKgDBYKOTY5MTkwNTA
+tOKAkBggrBgEFBQcIA6AYMBYM Cjk2OTE5MDUwLTgGCCsGAQQBwQECgQ9pbmZvQG
+FjZXB0YS5jb20wYQYDVR0RBFowWKAYBggrBgEE AcEBAaAMFgoyMzg0MTE5NC03o
+CQGCCsGAQUFBwgDoBgwFgwKMjM4NDExOTQtNwYIKwYBBAHBAQKB FmRhbmllbEBi
+bGFuY29tYXJ0aW4uY2wwRwYIKwYBBQUHAQEEOzA5MDcGCCsGAQUFBzABhitodHRw
+czovL2FjZzQuYWNlcHRhLmNvbS9hY2c0L29jc3AvQ2xhc2UyLUc0MD8GA1UdHwQ4
+MDYwNKAyoDCG Lmh0dHBzOi8vYWNnNC5hY2VwdGEuY29tL2FjZzQvY3JsL0NsYXN
+lMi1HNC5jcmwwDQYJKoZIhvcN AQELBQADggEBACHvynJ7KjgiebxUJoLwSjyJ1t
+jgMe3ws0P0b5cLeHhR6eCNH5SbKu2pUm0BMYFs tYJkZuul4PuK6ikJbfyKhJNJf
+YgCgWebkPpYsMrz/N9qJ3o2iMsudubXejtTmMjCK8ZM3cjyad54 f3DjhHz4xy/w
+mmsnV8NFlm3v/ad5hEhOESDm4q16YGxYaxsX2CtVj1QzzeYbl/2fO+UwNFnXUxTx
+1rOPzWIPzWtEknKebgFeHuWwHV9WmxbyBgLWugYxQcF3JR6es1kt3bjstHOlYPZA
+zXDhuALO+7KB
+eBPeKYCYYspX9gzPK8z1YHQC9eq63FR7DvhFgegG/4fmcpZMdoQ=</X509Certificate></X509Data></KeyInfo></Signature></DTE>
+<DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
+    <Documento ID="F126T34"><Encabezado><IdDoc><TipoDTE>34</TipoDTE><Folio>126</Folio><FchEmis>2017-05-06</FchEmis><FmaPago>1</FmaPago><FchVenc>2017-05-06</FchVenc></IdDoc><Emisor><RUTEmisor>76201224-3</RUTEmisor><RznSoc>Soc de Servicios Blanco Mart&#237;n EIRL</RznSoc><GiroEmis>Empresas de Servicios Integrales de Inform&#225;tica</GiroEmis><Telefono>+56228400990</Telefono><CorreoEmisor>dteb2b@blancomartin.cl</CorreoEmisor><Acteco>726000</Acteco><DirOrigen>Apoquindo 6410 Of 212</DirOrigen><CmnaOrigen>Las Condes</CmnaOrigen><CiudadOrigen>Santiago</CiudadOrigen></Emisor><Receptor><RUTRecep>76134225-8</RUTRecep><RznSocRecep>Inversiones BR Ltda</RznSocRecep><GiroRecep>Arriendo de Inmuebles Amoblados O Con Eq</GiroRecep><DirRecep>Apoquindo 6410 Of 212</DirRecep><CmnaRecep>Santiago</CmnaRecep><CiudadRecep>Santiago</CiudadRecep></Receptor><Totales><MntExe>38000</MntExe><MntTotal>38000</MntTotal></Totales></Encabezado><Detalle><NroLinDet>1</NroLinDet><IndExe>1</IndExe><NmbItem>IMPLEMENTACI&#211;N SOFTWARE</NmbItem><DscItem>IMPLEMENTACI&#211;N SOFTWARE</DscItem><QtyItem>1.0</QtyItem><UnmdItem>Unit</UnmdItem><PrcItem>38000</PrcItem><MontoItem>38000</MontoItem></Detalle>
+<TED version="1.0"><DD><RE>76201224-3</RE><TD>34</TD><F>126</F><FE>2017-05-06</FE><RR>76134225-8</RR><RSR>Inversiones BR Ltda</RSR><MNT>38000</MNT><IT1>IMPLEMENTACI&#211;N SOFTWARE</IT1><CAF version="1.0"><DA><RE>76201224-3</RE><RS>SOCIEDAD DE SERVICIOS HECTOR DANIEL BLAN</RS><TD>34</TD><RNG><D>121</D><H>220</H></RNG><FA>2017-04-26</FA><RSAPK><M>ma4Cvxgs3qf2wcdobhhfTXzPuyOP8KB35QaPS3aGLGD+CwPPX6CR98evD1Pns5u8wmzffLvSt81fmKJT0vTtaQ==</M><E>Aw==</E></RSAPK><IDK>100</IDK></DA><FRMA algoritmo="SHA1withRSA">v0ui8EKsMMz6fvNwv9DdCHo+jPtdIhDOWrYjSCx8uHBotEsGVAtphuBIIlPHQteRASo4t289QZjpPhXPv4Xm3Q==</FRMA></CAF><TSTED>2017-05-06T02:33:32</TSTED></DD><FRMT algoritmo="SHA1withRSA">UD8gDII7VdNc07T7HycpDwNRFdV/AAXqfmDz0DTsLfsynjL7b3LdacNjcE+tz9ee1Fe9IUUk8kQdMHl/nQnwQQ==</FRMT></TED><TmstFirma>2017-05-06T02:33:32</TmstFirma>
+</Documento>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#F126T34"><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>AyhLNn27p/36XvNSKswXj9DeohA=</DigestValue></Reference></SignedInfo><SignatureValue>DP21HGogAz5g3ta5iPakuF/YMA3Vhlp3156BHIFcZXv4P875XmHtcJQY+htP4tH7
+GFPec9fg6lGqc72nZrv+cWIukuV+PErn5Jk9whLcf50u9PxCMxAgbqC1WoW0gMUv
+4diOrKlp8kDs0I5Oa2GFSyEF6F640Ni/ci37IiszXbKeuzndjn3PERfR84vjgX4K
+/pLiu82dmPfBaoA4smhnXZLzIRr8E1NUFxMEiqNkXypmM1RDRgAfD+OvSmTVmYxc
+/pVcJmE1Cj1GISdLxIyfon56TmaYMFidpKUPzh1/NHeAeK+03ZoDOE22xzVlmQZz
+p4YoC7o8yBd0zShc0kR7xg==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pU7BPmslKMc3Vy0K/9ExNgZ5XVuTRM+giug69ACipba9o+anS1xdKYEI7dX6a2kD
+9IwQ1o8vK6/uSIYZfnJ0zl9f/8tKRj+6UMWik4gLMY7qUzX2vS5/NEA1iQCrDYGG
+YnXwkAM7UmZyc/ShIt1+VWBwpKbBMTwqJAioiO5V7iIsMRMeHcdTULMKtahEsgz4
+VA0UvxZKo0URg5y3Z0wcwmiGz30056CCDOD+5giC+VNYq+iLSWVuvZNPpsduT58e
+Aquza5kno40lNspElAIV7KvfuzMIy9LwQ+w9RGI8a4U9r/y7kiprrM40jzyR0tuA
+Ygxl9OuJXiwHKE6VpV6Psw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>
+MIIF7DCCBNSgAwIBAgIDANEuMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYDVQQGEwJD
+TDEYMBYGA1UE ChMPQWNlcHRhLmNvbSBTLkEuMUgwRgYDVQQDEz9BY2VwdGEuY29
+tIEF1dG9yaWRhZCBDZXJ0aWZp Y2Fkb3JhIENsYXNlIDIgUGVyc29uYSBOYXR1cm
+FsIC0gRzQxHjAcBgkqhkiG9w0BCQEWD2luZm9A YWNlcHRhLmNvbTETMBEGA1UEB
+RMKOTY5MTkwNTAtODAeFw0xNzA0MjQxNDA3MTdaFw0yMDA0MjQx NDA3MTdaMIGC
+MQswCQYDVQQGEwJDTDEYMBYGA1UEDBMPUEVSU09OQSBOQVRVUkFMMR0wGwYDVQQD
+ExRIRUNUT1IgREFOSUVMIEJMQU5DTzElMCMGCSqGSIb3DQEJARYWZGFuaWVsQGJs
+YW5jb21hcnRp bi5jbDETMBEGA1UEBRMKMjM4NDExOTQtNzCCASIwDQYJKoZIhvc
+NAQEBBQADggEPADCCAQoCggEB AKVOwT5rJSjHN1ctCv/RMTYGeV1bk0TPoIroOv
+QAoqW2vaPmp0tcXSmBCO3V+mtpA/SMENaPLyuv 7kiGGX5ydM5fX//LSkY/ulDFo
+pOICzGO6lM19r0ufzRANYkAqw2BhmJ18JADO1JmcnP0oSLdflVg cKSmwTE8KiQI
+qIjuVe4iLDETHh3HU1CzCrWoRLIM+FQNFL8WSqNFEYOct2dMHMJohs99NOegggzg
+/uYIgvlTWKvoi0llbr2TT6bHbk+fHgKrs2uZJ6ONJTbKRJQCFeyr37szCMvS8EPs
+PURiPGuFPa/8 u5Iqa6zONI88kdLbgGIMZfTriV4sByhOlaVej7MCAwEAAaOCAkM
+wggI/MB8GA1UdIwQYMBaAFGWl qz4/yLZRbRF+X8MKB+ZDoAi2MB0GA1UdDgQWBB
+TFkOAKd4GhJz2JW6jdXRD9Et+g5jALBgNVHQ8E BAMCBPAwHQYDVR0lBBYwFAYIK
+wYBBQUHAwIGCCsGAQUFBwMEMBEGCWCGSAGG+EIBAQQEAwIFoDB1 BgNVHSAEbjBs
+MGoGCCsGAQQBtWsCMF4wMQYIKwYBBQUHAgEWJWh0dHBzOi8vYWNnNC5hY2VwdGEu
+Y29tL0NQUy1BY2VwdGFjb20wKQYIKwYBBQUHAgIwHTAWFg9BY2VwdGEuY29tIFMu
+QS4wAwIBCRoD VEJEMFoGA1UdEgRTMFGgGAYIKwYBBAHBAQKgDBYKOTY5MTkwNTA
+tOKAkBggrBgEFBQcIA6AYMBYM Cjk2OTE5MDUwLTgGCCsGAQQBwQECgQ9pbmZvQG
+FjZXB0YS5jb20wYQYDVR0RBFowWKAYBggrBgEE AcEBAaAMFgoyMzg0MTE5NC03o
+CQGCCsGAQUFBwgDoBgwFgwKMjM4NDExOTQtNwYIKwYBBAHBAQKB FmRhbmllbEBi
+bGFuY29tYXJ0aW4uY2wwRwYIKwYBBQUHAQEEOzA5MDcGCCsGAQUFBzABhitodHRw
+czovL2FjZzQuYWNlcHRhLmNvbS9hY2c0L29jc3AvQ2xhc2UyLUc0MD8GA1UdHwQ4
+MDYwNKAyoDCG Lmh0dHBzOi8vYWNnNC5hY2VwdGEuY29tL2FjZzQvY3JsL0NsYXN
+lMi1HNC5jcmwwDQYJKoZIhvcN AQELBQADggEBACHvynJ7KjgiebxUJoLwSjyJ1t
+jgMe3ws0P0b5cLeHhR6eCNH5SbKu2pUm0BMYFs tYJkZuul4PuK6ikJbfyKhJNJf
+YgCgWebkPpYsMrz/N9qJ3o2iMsudubXejtTmMjCK8ZM3cjyad54 f3DjhHz4xy/w
+mmsnV8NFlm3v/ad5hEhOESDm4q16YGxYaxsX2CtVj1QzzeYbl/2fO+UwNFnXUxTx
+1rOPzWIPzWtEknKebgFeHuWwHV9WmxbyBgLWugYxQcF3JR6es1kt3bjstHOlYPZA
+zXDhuALO+7KB
+eBPeKYCYYspX9gzPK8z1YHQC9eq63FR7DvhFgegG/4fmcpZMdoQ=</X509Certificate></X509Data></KeyInfo></Signature></DTE>
+<DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
+    <Documento ID="F49T61"><Encabezado><IdDoc><TipoDTE>61</TipoDTE><Folio>49</Folio><FchEmis>2017-05-06</FchEmis><FmaPago>1</FmaPago><FchVenc>2017-05-06</FchVenc></IdDoc><Emisor><RUTEmisor>76201224-3</RUTEmisor><RznSoc>Soc de Servicios Blanco Mart&#237;n EIRL</RznSoc><GiroEmis>Empresas de Servicios Integrales de Inform&#225;tica</GiroEmis><Telefono>+56228400990</Telefono><CorreoEmisor>dteb2b@blancomartin.cl</CorreoEmisor><Acteco>726000</Acteco><DirOrigen>Apoquindo 6410 Of 212</DirOrigen><CmnaOrigen>Las Condes</CmnaOrigen><CiudadOrigen>Santiago</CiudadOrigen></Emisor><Receptor><RUTRecep>23725688-3</RUTRecep><RznSocRecep>CARLO ALEXANDER CASTILLO GARZON</RznSocRecep><GiroRecep>Venta Al Por Mayor de Productos Textiles</GiroRecep><DirRecep>MANZANO 377  204 </DirRecep><CmnaRecep>Recoleta</CmnaRecep><CiudadRecep>Santiago</CiudadRecep></Receptor><Totales><MntTotal>0</MntTotal></Totales></Encabezado><Detalle><NroLinDet>1</NroLinDet><NmbItem>Modifica Documento</NmbItem><DscItem>DONDE DICE Venta Al Por Mayor de Productos Textiles, Prendas de Vestir y Calzado DEBE DECIR VENTA AL POR MENOR INDUMENTARIA</DscItem><MontoItem>0</MontoItem></Detalle><Referencia><NroLinRef>1</NroLinRef><TpoDocRef>34</TpoDocRef><FolioRef>134</FolioRef><FchRef>2017-05-06</FchRef><CodRef>2</CodRef><RazonRef>corrige giro</RazonRef></Referencia>
+<TED version="1.0"><DD><RE>76201224-3</RE><TD>61</TD><F>49</F><FE>2017-05-06</FE><RR>23725688-3</RR><RSR>CARLO ALEXANDER CASTILLO GARZON</RSR><MNT>0</MNT><IT1>Modifica Documento</IT1><CAF version="1.0"><DA><RE>76201224-3</RE><RS>SOCIEDAD DE SERVICIOS HECTOR DANIEL BLAN</RS><TD>61</TD><RNG><D>1</D><H>50</H></RNG><FA>2016-09-28</FA><RSAPK><M>uaDMyQ1c8W5w7eXG1gLgDyjika41NIMAwt2oDASUyBR/mKSx1mzi1lWjmVsxkS79a6yI7GJqkzFg4jImfOMuvw==</M><E>Aw==</E></RSAPK><IDK>100</IDK></DA><FRMA algoritmo="SHA1withRSA">VDlp571RZ9/4lqSlQTkRTbtBB3lr8fecoVPAmVWcmpY/LKOsCWcD5DYFKXXBMU02NO32ePvBbpUrsuvc4G7+tg==</FRMA></CAF><TSTED>2017-05-06T02:33:59</TSTED></DD><FRMT algoritmo="SHA1withRSA">PglgHkUcCvKPTyPbUrBOA/qdowvoYCqH6nZDxE2LYMwcwFe+PRalFN8Xv/HBb/ZCCbpFbxjJUWb/IzgnqxHwpA==</FRMT></TED><TmstFirma>2017-05-06T02:33:59</TmstFirma>
+</Documento>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#F49T61"><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>eFHnRZpwhUA9+E8T+1pm8u3O/L4=</DigestValue></Reference></SignedInfo><SignatureValue>eDL+ZWfOvZNAvTHsj8NRCKCM6rLuo6IuqvcmFGby/kPP68muVPc5y7oxVhDrpfpC
+JX5/UAWjkIWHPj1jN3Ow/IPazpbHPCzXzZfpFoLIRycOYloifmAb/k6YKWEMThex
+w40sZl/fK/uBMUybTF7FGtqGHp/0Kti1DpixX2Ow18iAqoiYSdiaFZdR1oiDXY+3
+yinLU0jJz/sIlPVyiNMSfLf5dln6fvnexfrSJCx/rauRmReje3gZLZ07h5hNG938
+I/GJkdopAnGZK4d3VHS3+1iQeZihXpHbwyFwIMkVPyEaoDs63mCoTjVyFFYL6pOP
+GzJ8fDxSCJwuDkTa8Nf+aQ==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pU7BPmslKMc3Vy0K/9ExNgZ5XVuTRM+giug69ACipba9o+anS1xdKYEI7dX6a2kD
+9IwQ1o8vK6/uSIYZfnJ0zl9f/8tKRj+6UMWik4gLMY7qUzX2vS5/NEA1iQCrDYGG
+YnXwkAM7UmZyc/ShIt1+VWBwpKbBMTwqJAioiO5V7iIsMRMeHcdTULMKtahEsgz4
+VA0UvxZKo0URg5y3Z0wcwmiGz30056CCDOD+5giC+VNYq+iLSWVuvZNPpsduT58e
+Aquza5kno40lNspElAIV7KvfuzMIy9LwQ+w9RGI8a4U9r/y7kiprrM40jzyR0tuA
+Ygxl9OuJXiwHKE6VpV6Psw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>
+MIIF7DCCBNSgAwIBAgIDANEuMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYDVQQGEwJD
+TDEYMBYGA1UE ChMPQWNlcHRhLmNvbSBTLkEuMUgwRgYDVQQDEz9BY2VwdGEuY29
+tIEF1dG9yaWRhZCBDZXJ0aWZp Y2Fkb3JhIENsYXNlIDIgUGVyc29uYSBOYXR1cm
+FsIC0gRzQxHjAcBgkqhkiG9w0BCQEWD2luZm9A YWNlcHRhLmNvbTETMBEGA1UEB
+RMKOTY5MTkwNTAtODAeFw0xNzA0MjQxNDA3MTdaFw0yMDA0MjQx NDA3MTdaMIGC
+MQswCQYDVQQGEwJDTDEYMBYGA1UEDBMPUEVSU09OQSBOQVRVUkFMMR0wGwYDVQQD
+ExRIRUNUT1IgREFOSUVMIEJMQU5DTzElMCMGCSqGSIb3DQEJARYWZGFuaWVsQGJs
+YW5jb21hcnRp bi5jbDETMBEGA1UEBRMKMjM4NDExOTQtNzCCASIwDQYJKoZIhvc
+NAQEBBQADggEPADCCAQoCggEB AKVOwT5rJSjHN1ctCv/RMTYGeV1bk0TPoIroOv
+QAoqW2vaPmp0tcXSmBCO3V+mtpA/SMENaPLyuv 7kiGGX5ydM5fX//LSkY/ulDFo
+pOICzGO6lM19r0ufzRANYkAqw2BhmJ18JADO1JmcnP0oSLdflVg cKSmwTE8KiQI
+qIjuVe4iLDETHh3HU1CzCrWoRLIM+FQNFL8WSqNFEYOct2dMHMJohs99NOegggzg
+/uYIgvlTWKvoi0llbr2TT6bHbk+fHgKrs2uZJ6ONJTbKRJQCFeyr37szCMvS8EPs
+PURiPGuFPa/8 u5Iqa6zONI88kdLbgGIMZfTriV4sByhOlaVej7MCAwEAAaOCAkM
+wggI/MB8GA1UdIwQYMBaAFGWl qz4/yLZRbRF+X8MKB+ZDoAi2MB0GA1UdDgQWBB
+TFkOAKd4GhJz2JW6jdXRD9Et+g5jALBgNVHQ8E BAMCBPAwHQYDVR0lBBYwFAYIK
+wYBBQUHAwIGCCsGAQUFBwMEMBEGCWCGSAGG+EIBAQQEAwIFoDB1 BgNVHSAEbjBs
+MGoGCCsGAQQBtWsCMF4wMQYIKwYBBQUHAgEWJWh0dHBzOi8vYWNnNC5hY2VwdGEu
+Y29tL0NQUy1BY2VwdGFjb20wKQYIKwYBBQUHAgIwHTAWFg9BY2VwdGEuY29tIFMu
+QS4wAwIBCRoD VEJEMFoGA1UdEgRTMFGgGAYIKwYBBAHBAQKgDBYKOTY5MTkwNTA
+tOKAkBggrBgEFBQcIA6AYMBYM Cjk2OTE5MDUwLTgGCCsGAQQBwQECgQ9pbmZvQG
+FjZXB0YS5jb20wYQYDVR0RBFowWKAYBggrBgEE AcEBAaAMFgoyMzg0MTE5NC03o
+CQGCCsGAQUFBwgDoBgwFgwKMjM4NDExOTQtNwYIKwYBBAHBAQKB FmRhbmllbEBi
+bGFuY29tYXJ0aW4uY2wwRwYIKwYBBQUHAQEEOzA5MDcGCCsGAQUFBzABhitodHRw
+czovL2FjZzQuYWNlcHRhLmNvbS9hY2c0L29jc3AvQ2xhc2UyLUc0MD8GA1UdHwQ4
+MDYwNKAyoDCG Lmh0dHBzOi8vYWNnNC5hY2VwdGEuY29tL2FjZzQvY3JsL0NsYXN
+lMi1HNC5jcmwwDQYJKoZIhvcN AQELBQADggEBACHvynJ7KjgiebxUJoLwSjyJ1t
+jgMe3ws0P0b5cLeHhR6eCNH5SbKu2pUm0BMYFs tYJkZuul4PuK6ikJbfyKhJNJf
+YgCgWebkPpYsMrz/N9qJ3o2iMsudubXejtTmMjCK8ZM3cjyad54 f3DjhHz4xy/w
+mmsnV8NFlm3v/ad5hEhOESDm4q16YGxYaxsX2CtVj1QzzeYbl/2fO+UwNFnXUxTx
+1rOPzWIPzWtEknKebgFeHuWwHV9WmxbyBgLWugYxQcF3JR6es1kt3bjstHOlYPZA
+zXDhuALO+7KB
+eBPeKYCYYspX9gzPK8z1YHQC9eq63FR7DvhFgegG/4fmcpZMdoQ=</X509Certificate></X509Data></KeyInfo></Signature></DTE>
+<DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
+    <Documento ID="F127T34"><Encabezado><IdDoc><TipoDTE>34</TipoDTE><Folio>127</Folio><FchEmis>2017-05-06</FchEmis><FmaPago>1</FmaPago><FchVenc>2017-05-06</FchVenc></IdDoc><Emisor><RUTEmisor>76201224-3</RUTEmisor><RznSoc>Soc de Servicios Blanco Mart&#237;n EIRL</RznSoc><GiroEmis>Empresas de Servicios Integrales de Inform&#225;tica</GiroEmis><Telefono>+56228400990</Telefono><CorreoEmisor>dteb2b@blancomartin.cl</CorreoEmisor><Acteco>726000</Acteco><DirOrigen>Apoquindo 6410 Of 212</DirOrigen><CmnaOrigen>Las Condes</CmnaOrigen><CiudadOrigen>Santiago</CiudadOrigen></Emisor><Receptor><RUTRecep>76134225-8</RUTRecep><RznSocRecep>Inversiones BR Ltda</RznSocRecep><GiroRecep>Arriendo de Inmuebles Amoblados O Con Eq</GiroRecep><DirRecep>Apoquindo 6410 Of 212</DirRecep><CmnaRecep>Santiago</CmnaRecep><CiudadRecep>Santiago</CiudadRecep></Receptor><Totales><MntExe>38000</MntExe><MntTotal>38000</MntTotal></Totales></Encabezado><Detalle><NroLinDet>1</NroLinDet><IndExe>1</IndExe><NmbItem>IMPLEMENTACI&#211;N SOFTWARE</NmbItem><DscItem>IMPLEMENTACI&#211;N SOFTWARE</DscItem><QtyItem>1.0</QtyItem><UnmdItem>Unit</UnmdItem><PrcItem>38000</PrcItem><MontoItem>38000</MontoItem></Detalle>
+<TED version="1.0"><DD><RE>76201224-3</RE><TD>34</TD><F>127</F><FE>2017-05-06</FE><RR>76134225-8</RR><RSR>Inversiones BR Ltda</RSR><MNT>38000</MNT><IT1>IMPLEMENTACI&#211;N SOFTWARE</IT1><CAF version="1.0"><DA><RE>76201224-3</RE><RS>SOCIEDAD DE SERVICIOS HECTOR DANIEL BLAN</RS><TD>34</TD><RNG><D>121</D><H>220</H></RNG><FA>2017-04-26</FA><RSAPK><M>ma4Cvxgs3qf2wcdobhhfTXzPuyOP8KB35QaPS3aGLGD+CwPPX6CR98evD1Pns5u8wmzffLvSt81fmKJT0vTtaQ==</M><E>Aw==</E></RSAPK><IDK>100</IDK></DA><FRMA algoritmo="SHA1withRSA">v0ui8EKsMMz6fvNwv9DdCHo+jPtdIhDOWrYjSCx8uHBotEsGVAtphuBIIlPHQteRASo4t289QZjpPhXPv4Xm3Q==</FRMA></CAF><TSTED>2017-05-06T02:33:34</TSTED></DD><FRMT algoritmo="SHA1withRSA">e3s06fLdWZMH0inuVktfydOptKaf1OnWiEgnu9kDTWxvSWFei4yY7LQ8I4c7gLkTf6PcyKKB4OKhlTtwfjcm6A==</FRMT></TED><TmstFirma>2017-05-06T02:33:34</TmstFirma>
+</Documento>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#F127T34"><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>1snNaYgRDWK2O3fr+lPX/thvlZI=</DigestValue></Reference></SignedInfo><SignatureValue>gEv86a2jlYPAuGXgkg6j4eP9ldl3Lkligk9/8297qk4nEL1iIEozqIigbrQTfzbq
+b7jKHz/jo37vyOzsppv26iCZPI2q0B/Lzq0Emywi3poJTPddJfJ/jf+9xrOoXa9J
+yLeF5jcxDN2UNao8vyBaCLgcB87HaVeIxMSJPqr7YDaTkd02+HARNfnYzPe5YB58
+rTvc6afSW7LrDGown2W6RdJ6pO3Uz0GBq09U7jKyQRabaauH/k82NlXkXvkXuwDv
+WJQr0YTYSM3e7WBIfzyMlI2NdFHf6WxCDAMkBFsaX3ZHFKKpUtHrB9BzjJKeBLKl
+36nIn4JO1F2ck9qvutmEZw==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pU7BPmslKMc3Vy0K/9ExNgZ5XVuTRM+giug69ACipba9o+anS1xdKYEI7dX6a2kD
+9IwQ1o8vK6/uSIYZfnJ0zl9f/8tKRj+6UMWik4gLMY7qUzX2vS5/NEA1iQCrDYGG
+YnXwkAM7UmZyc/ShIt1+VWBwpKbBMTwqJAioiO5V7iIsMRMeHcdTULMKtahEsgz4
+VA0UvxZKo0URg5y3Z0wcwmiGz30056CCDOD+5giC+VNYq+iLSWVuvZNPpsduT58e
+Aquza5kno40lNspElAIV7KvfuzMIy9LwQ+w9RGI8a4U9r/y7kiprrM40jzyR0tuA
+Ygxl9OuJXiwHKE6VpV6Psw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>
+MIIF7DCCBNSgAwIBAgIDANEuMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYDVQQGEwJD
+TDEYMBYGA1UE ChMPQWNlcHRhLmNvbSBTLkEuMUgwRgYDVQQDEz9BY2VwdGEuY29
+tIEF1dG9yaWRhZCBDZXJ0aWZp Y2Fkb3JhIENsYXNlIDIgUGVyc29uYSBOYXR1cm
+FsIC0gRzQxHjAcBgkqhkiG9w0BCQEWD2luZm9A YWNlcHRhLmNvbTETMBEGA1UEB
+RMKOTY5MTkwNTAtODAeFw0xNzA0MjQxNDA3MTdaFw0yMDA0MjQx NDA3MTdaMIGC
+MQswCQYDVQQGEwJDTDEYMBYGA1UEDBMPUEVSU09OQSBOQVRVUkFMMR0wGwYDVQQD
+ExRIRUNUT1IgREFOSUVMIEJMQU5DTzElMCMGCSqGSIb3DQEJARYWZGFuaWVsQGJs
+YW5jb21hcnRp bi5jbDETMBEGA1UEBRMKMjM4NDExOTQtNzCCASIwDQYJKoZIhvc
+NAQEBBQADggEPADCCAQoCggEB AKVOwT5rJSjHN1ctCv/RMTYGeV1bk0TPoIroOv
+QAoqW2vaPmp0tcXSmBCO3V+mtpA/SMENaPLyuv 7kiGGX5ydM5fX//LSkY/ulDFo
+pOICzGO6lM19r0ufzRANYkAqw2BhmJ18JADO1JmcnP0oSLdflVg cKSmwTE8KiQI
+qIjuVe4iLDETHh3HU1CzCrWoRLIM+FQNFL8WSqNFEYOct2dMHMJohs99NOegggzg
+/uYIgvlTWKvoi0llbr2TT6bHbk+fHgKrs2uZJ6ONJTbKRJQCFeyr37szCMvS8EPs
+PURiPGuFPa/8 u5Iqa6zONI88kdLbgGIMZfTriV4sByhOlaVej7MCAwEAAaOCAkM
+wggI/MB8GA1UdIwQYMBaAFGWl qz4/yLZRbRF+X8MKB+ZDoAi2MB0GA1UdDgQWBB
+TFkOAKd4GhJz2JW6jdXRD9Et+g5jALBgNVHQ8E BAMCBPAwHQYDVR0lBBYwFAYIK
+wYBBQUHAwIGCCsGAQUFBwMEMBEGCWCGSAGG+EIBAQQEAwIFoDB1 BgNVHSAEbjBs
+MGoGCCsGAQQBtWsCMF4wMQYIKwYBBQUHAgEWJWh0dHBzOi8vYWNnNC5hY2VwdGEu
+Y29tL0NQUy1BY2VwdGFjb20wKQYIKwYBBQUHAgIwHTAWFg9BY2VwdGEuY29tIFMu
+QS4wAwIBCRoD VEJEMFoGA1UdEgRTMFGgGAYIKwYBBAHBAQKgDBYKOTY5MTkwNTA
+tOKAkBggrBgEFBQcIA6AYMBYM Cjk2OTE5MDUwLTgGCCsGAQQBwQECgQ9pbmZvQG
+FjZXB0YS5jb20wYQYDVR0RBFowWKAYBggrBgEE AcEBAaAMFgoyMzg0MTE5NC03o
+CQGCCsGAQUFBwgDoBgwFgwKMjM4NDExOTQtNwYIKwYBBAHBAQKB FmRhbmllbEBi
+bGFuY29tYXJ0aW4uY2wwRwYIKwYBBQUHAQEEOzA5MDcGCCsGAQUFBzABhitodHRw
+czovL2FjZzQuYWNlcHRhLmNvbS9hY2c0L29jc3AvQ2xhc2UyLUc0MD8GA1UdHwQ4
+MDYwNKAyoDCG Lmh0dHBzOi8vYWNnNC5hY2VwdGEuY29tL2FjZzQvY3JsL0NsYXN
+lMi1HNC5jcmwwDQYJKoZIhvcN AQELBQADggEBACHvynJ7KjgiebxUJoLwSjyJ1t
+jgMe3ws0P0b5cLeHhR6eCNH5SbKu2pUm0BMYFs tYJkZuul4PuK6ikJbfyKhJNJf
+YgCgWebkPpYsMrz/N9qJ3o2iMsudubXejtTmMjCK8ZM3cjyad54 f3DjhHz4xy/w
+mmsnV8NFlm3v/ad5hEhOESDm4q16YGxYaxsX2CtVj1QzzeYbl/2fO+UwNFnXUxTx
+1rOPzWIPzWtEknKebgFeHuWwHV9WmxbyBgLWugYxQcF3JR6es1kt3bjstHOlYPZA
+zXDhuALO+7KB
+eBPeKYCYYspX9gzPK8z1YHQC9eq63FR7DvhFgegG/4fmcpZMdoQ=</X509Certificate></X509Data></KeyInfo></Signature></DTE>
+<DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
+    <Documento ID="F128T34"><Encabezado><IdDoc><TipoDTE>34</TipoDTE><Folio>128</Folio><FchEmis>2017-05-06</FchEmis><FmaPago>1</FmaPago><FchVenc>2017-05-06</FchVenc></IdDoc><Emisor><RUTEmisor>76201224-3</RUTEmisor><RznSoc>Soc de Servicios Blanco Mart&#237;n EIRL</RznSoc><GiroEmis>Empresas de Servicios Integrales de Inform&#225;tica</GiroEmis><Telefono>+56228400990</Telefono><CorreoEmisor>dteb2b@blancomartin.cl</CorreoEmisor><Acteco>726000</Acteco><DirOrigen>Apoquindo 6410 Of 212</DirOrigen><CmnaOrigen>Las Condes</CmnaOrigen><CiudadOrigen>Santiago</CiudadOrigen></Emisor><Receptor><RUTRecep>76134225-8</RUTRecep><RznSocRecep>Inversiones BR Ltda</RznSocRecep><GiroRecep>Arriendo de Inmuebles Amoblados O Con Eq</GiroRecep><DirRecep>Apoquindo 6410 Of 212</DirRecep><CmnaRecep>Santiago</CmnaRecep><CiudadRecep>Santiago</CiudadRecep></Receptor><Totales><MntExe>38000</MntExe><MntTotal>38000</MntTotal></Totales></Encabezado><Detalle><NroLinDet>1</NroLinDet><IndExe>1</IndExe><NmbItem>IMPLEMENTACI&#211;N SOFTWARE</NmbItem><DscItem>IMPLEMENTACI&#211;N SOFTWARE</DscItem><QtyItem>1.0</QtyItem><UnmdItem>Unit</UnmdItem><PrcItem>38000</PrcItem><MontoItem>38000</MontoItem></Detalle>
+<TED version="1.0"><DD><RE>76201224-3</RE><TD>34</TD><F>128</F><FE>2017-05-06</FE><RR>76134225-8</RR><RSR>Inversiones BR Ltda</RSR><MNT>38000</MNT><IT1>IMPLEMENTACI&#211;N SOFTWARE</IT1><CAF version="1.0"><DA><RE>76201224-3</RE><RS>SOCIEDAD DE SERVICIOS HECTOR DANIEL BLAN</RS><TD>34</TD><RNG><D>121</D><H>220</H></RNG><FA>2017-04-26</FA><RSAPK><M>ma4Cvxgs3qf2wcdobhhfTXzPuyOP8KB35QaPS3aGLGD+CwPPX6CR98evD1Pns5u8wmzffLvSt81fmKJT0vTtaQ==</M><E>Aw==</E></RSAPK><IDK>100</IDK></DA><FRMA algoritmo="SHA1withRSA">v0ui8EKsMMz6fvNwv9DdCHo+jPtdIhDOWrYjSCx8uHBotEsGVAtphuBIIlPHQteRASo4t289QZjpPhXPv4Xm3Q==</FRMA></CAF><TSTED>2017-05-06T02:33:35</TSTED></DD><FRMT algoritmo="SHA1withRSA">axl6HJuN6zZjdkq3y2E0QUXDNEsiq7wQGzryk8rM5QGpaVYTUMLqO151nHy2PNjgqjtc82oV2PH7XiQtCXR9bw==</FRMT></TED><TmstFirma>2017-05-06T02:33:35</TmstFirma>
+</Documento>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#F128T34"><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>PvSAlMUQzm4WYs0jHgwAotc0T9Y=</DigestValue></Reference></SignedInfo><SignatureValue>i7fl/MJuAgkd6nBczmVevaseEVblVV+qzRqspmkdXPdG+CTGysrfTv7Ip0DuHJ7c
+ulgzz3RhykErpR7kngt38rghdSA0M0Qgs9od26tfiIIi5lfYfcKlP0TzKi4/dWOZ
+trtHlLOlCjteagoU28K1lrzO12VoQnzmzI6ZKrDg8XCr8svI3wk7yFeSW4o7DXd2
+jPcMa0H+sJHL8vMEcrg1MTb7CyrHYv7IHT5kGQGZUfvO3GqKOT/3FGdA8X85UCcz
+KeOEuwxgbHfR+cFZ8yX75m5uPH+UPahqpMRWPzAkhHaXNANh0JAgSGPwwI0Sk2EV
+v5JnDfnkkN6YP5teEFCu/g==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pU7BPmslKMc3Vy0K/9ExNgZ5XVuTRM+giug69ACipba9o+anS1xdKYEI7dX6a2kD
+9IwQ1o8vK6/uSIYZfnJ0zl9f/8tKRj+6UMWik4gLMY7qUzX2vS5/NEA1iQCrDYGG
+YnXwkAM7UmZyc/ShIt1+VWBwpKbBMTwqJAioiO5V7iIsMRMeHcdTULMKtahEsgz4
+VA0UvxZKo0URg5y3Z0wcwmiGz30056CCDOD+5giC+VNYq+iLSWVuvZNPpsduT58e
+Aquza5kno40lNspElAIV7KvfuzMIy9LwQ+w9RGI8a4U9r/y7kiprrM40jzyR0tuA
+Ygxl9OuJXiwHKE6VpV6Psw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>
+MIIF7DCCBNSgAwIBAgIDANEuMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYDVQQGEwJD
+TDEYMBYGA1UE ChMPQWNlcHRhLmNvbSBTLkEuMUgwRgYDVQQDEz9BY2VwdGEuY29
+tIEF1dG9yaWRhZCBDZXJ0aWZp Y2Fkb3JhIENsYXNlIDIgUGVyc29uYSBOYXR1cm
+FsIC0gRzQxHjAcBgkqhkiG9w0BCQEWD2luZm9A YWNlcHRhLmNvbTETMBEGA1UEB
+RMKOTY5MTkwNTAtODAeFw0xNzA0MjQxNDA3MTdaFw0yMDA0MjQx NDA3MTdaMIGC
+MQswCQYDVQQGEwJDTDEYMBYGA1UEDBMPUEVSU09OQSBOQVRVUkFMMR0wGwYDVQQD
+ExRIRUNUT1IgREFOSUVMIEJMQU5DTzElMCMGCSqGSIb3DQEJARYWZGFuaWVsQGJs
+YW5jb21hcnRp bi5jbDETMBEGA1UEBRMKMjM4NDExOTQtNzCCASIwDQYJKoZIhvc
+NAQEBBQADggEPADCCAQoCggEB AKVOwT5rJSjHN1ctCv/RMTYGeV1bk0TPoIroOv
+QAoqW2vaPmp0tcXSmBCO3V+mtpA/SMENaPLyuv 7kiGGX5ydM5fX//LSkY/ulDFo
+pOICzGO6lM19r0ufzRANYkAqw2BhmJ18JADO1JmcnP0oSLdflVg cKSmwTE8KiQI
+qIjuVe4iLDETHh3HU1CzCrWoRLIM+FQNFL8WSqNFEYOct2dMHMJohs99NOegggzg
+/uYIgvlTWKvoi0llbr2TT6bHbk+fHgKrs2uZJ6ONJTbKRJQCFeyr37szCMvS8EPs
+PURiPGuFPa/8 u5Iqa6zONI88kdLbgGIMZfTriV4sByhOlaVej7MCAwEAAaOCAkM
+wggI/MB8GA1UdIwQYMBaAFGWl qz4/yLZRbRF+X8MKB+ZDoAi2MB0GA1UdDgQWBB
+TFkOAKd4GhJz2JW6jdXRD9Et+g5jALBgNVHQ8E BAMCBPAwHQYDVR0lBBYwFAYIK
+wYBBQUHAwIGCCsGAQUFBwMEMBEGCWCGSAGG+EIBAQQEAwIFoDB1 BgNVHSAEbjBs
+MGoGCCsGAQQBtWsCMF4wMQYIKwYBBQUHAgEWJWh0dHBzOi8vYWNnNC5hY2VwdGEu
+Y29tL0NQUy1BY2VwdGFjb20wKQYIKwYBBQUHAgIwHTAWFg9BY2VwdGEuY29tIFMu
+QS4wAwIBCRoD VEJEMFoGA1UdEgRTMFGgGAYIKwYBBAHBAQKgDBYKOTY5MTkwNTA
+tOKAkBggrBgEFBQcIA6AYMBYM Cjk2OTE5MDUwLTgGCCsGAQQBwQECgQ9pbmZvQG
+FjZXB0YS5jb20wYQYDVR0RBFowWKAYBggrBgEE AcEBAaAMFgoyMzg0MTE5NC03o
+CQGCCsGAQUFBwgDoBgwFgwKMjM4NDExOTQtNwYIKwYBBAHBAQKB FmRhbmllbEBi
+bGFuY29tYXJ0aW4uY2wwRwYIKwYBBQUHAQEEOzA5MDcGCCsGAQUFBzABhitodHRw
+czovL2FjZzQuYWNlcHRhLmNvbS9hY2c0L29jc3AvQ2xhc2UyLUc0MD8GA1UdHwQ4
+MDYwNKAyoDCG Lmh0dHBzOi8vYWNnNC5hY2VwdGEuY29tL2FjZzQvY3JsL0NsYXN
+lMi1HNC5jcmwwDQYJKoZIhvcN AQELBQADggEBACHvynJ7KjgiebxUJoLwSjyJ1t
+jgMe3ws0P0b5cLeHhR6eCNH5SbKu2pUm0BMYFs tYJkZuul4PuK6ikJbfyKhJNJf
+YgCgWebkPpYsMrz/N9qJ3o2iMsudubXejtTmMjCK8ZM3cjyad54 f3DjhHz4xy/w
+mmsnV8NFlm3v/ad5hEhOESDm4q16YGxYaxsX2CtVj1QzzeYbl/2fO+UwNFnXUxTx
+1rOPzWIPzWtEknKebgFeHuWwHV9WmxbyBgLWugYxQcF3JR6es1kt3bjstHOlYPZA
+zXDhuALO+7KB
+eBPeKYCYYspX9gzPK8z1YHQC9eq63FR7DvhFgegG/4fmcpZMdoQ=</X509Certificate></X509Data></KeyInfo></Signature></DTE>
+<DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
+    <Documento ID="F129T34"><Encabezado><IdDoc><TipoDTE>34</TipoDTE><Folio>129</Folio><FchEmis>2017-05-06</FchEmis><FmaPago>1</FmaPago><FchVenc>2017-05-06</FchVenc></IdDoc><Emisor><RUTEmisor>76201224-3</RUTEmisor><RznSoc>Soc de Servicios Blanco Mart&#237;n EIRL</RznSoc><GiroEmis>Empresas de Servicios Integrales de Inform&#225;tica</GiroEmis><Telefono>+56228400990</Telefono><CorreoEmisor>dteb2b@blancomartin.cl</CorreoEmisor><Acteco>726000</Acteco><DirOrigen>Apoquindo 6410 Of 212</DirOrigen><CmnaOrigen>Las Condes</CmnaOrigen><CiudadOrigen>Santiago</CiudadOrigen></Emisor><Receptor><RUTRecep>76134225-8</RUTRecep><RznSocRecep>Inversiones BR Ltda</RznSocRecep><GiroRecep>Arriendo de Inmuebles Amoblados O Con Eq</GiroRecep><DirRecep>Apoquindo 6410 Of 212</DirRecep><CmnaRecep>Santiago</CmnaRecep><CiudadRecep>Santiago</CiudadRecep></Receptor><Totales><MntExe>38000</MntExe><MntTotal>38000</MntTotal></Totales></Encabezado><Detalle><NroLinDet>1</NroLinDet><IndExe>1</IndExe><NmbItem>IMPLEMENTACI&#211;N SOFTWARE</NmbItem><DscItem>IMPLEMENTACI&#211;N SOFTWARE</DscItem><QtyItem>1.0</QtyItem><UnmdItem>Unit</UnmdItem><PrcItem>38000</PrcItem><MontoItem>38000</MontoItem></Detalle>
+<TED version="1.0"><DD><RE>76201224-3</RE><TD>34</TD><F>129</F><FE>2017-05-06</FE><RR>76134225-8</RR><RSR>Inversiones BR Ltda</RSR><MNT>38000</MNT><IT1>IMPLEMENTACI&#211;N SOFTWARE</IT1><CAF version="1.0"><DA><RE>76201224-3</RE><RS>SOCIEDAD DE SERVICIOS HECTOR DANIEL BLAN</RS><TD>34</TD><RNG><D>121</D><H>220</H></RNG><FA>2017-04-26</FA><RSAPK><M>ma4Cvxgs3qf2wcdobhhfTXzPuyOP8KB35QaPS3aGLGD+CwPPX6CR98evD1Pns5u8wmzffLvSt81fmKJT0vTtaQ==</M><E>Aw==</E></RSAPK><IDK>100</IDK></DA><FRMA algoritmo="SHA1withRSA">v0ui8EKsMMz6fvNwv9DdCHo+jPtdIhDOWrYjSCx8uHBotEsGVAtphuBIIlPHQteRASo4t289QZjpPhXPv4Xm3Q==</FRMA></CAF><TSTED>2017-05-06T02:33:36</TSTED></DD><FRMT algoritmo="SHA1withRSA">L3JSKwEJQGTVOiQZiOuEzA9RRboOpm9ZbpGgWGuyfSFqq6XCdweceOE2tJac8EQRZIV3RWh2SLJHr67dsd1nXg==</FRMT></TED><TmstFirma>2017-05-06T02:33:36</TmstFirma>
+</Documento>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#F129T34"><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>3O/A8rDEexj0HAYwa5W4eKryI0U=</DigestValue></Reference></SignedInfo><SignatureValue>UO3sdohpFm/3kx2m5xXwaPJiMk1mulstkjPHKiRNwJKXiaK7qkkw70fw41NXGzIN
+MYtduavEqEUTlAKHeCHSyrglX0ag2FMlnWh32qzci3ikijYDuGeDZl4zGpqiziM0
+UchH3dH1Gfd7GxSkocGoGzOLyAtCklvJ3MBrg6PAgAE4HmcgiR+FJB+jXg3Y5EVW
+CvZnAd9x+NJxGrcG1070ZS9lNuLvRNnj1yrFhMNgwySiV/iVAtIGAWSVWcSvg3cz
+wZmtMqh2D3LcpNR88n3JN3Uq9Kj5Tfd4iM9qXKVUATj6bI6MVaTGKNnzvV6xgch3
+hxZDyOHrHh5WnnoXwnRVdg==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pU7BPmslKMc3Vy0K/9ExNgZ5XVuTRM+giug69ACipba9o+anS1xdKYEI7dX6a2kD
+9IwQ1o8vK6/uSIYZfnJ0zl9f/8tKRj+6UMWik4gLMY7qUzX2vS5/NEA1iQCrDYGG
+YnXwkAM7UmZyc/ShIt1+VWBwpKbBMTwqJAioiO5V7iIsMRMeHcdTULMKtahEsgz4
+VA0UvxZKo0URg5y3Z0wcwmiGz30056CCDOD+5giC+VNYq+iLSWVuvZNPpsduT58e
+Aquza5kno40lNspElAIV7KvfuzMIy9LwQ+w9RGI8a4U9r/y7kiprrM40jzyR0tuA
+Ygxl9OuJXiwHKE6VpV6Psw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>
+MIIF7DCCBNSgAwIBAgIDANEuMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYDVQQGEwJD
+TDEYMBYGA1UE ChMPQWNlcHRhLmNvbSBTLkEuMUgwRgYDVQQDEz9BY2VwdGEuY29
+tIEF1dG9yaWRhZCBDZXJ0aWZp Y2Fkb3JhIENsYXNlIDIgUGVyc29uYSBOYXR1cm
+FsIC0gRzQxHjAcBgkqhkiG9w0BCQEWD2luZm9A YWNlcHRhLmNvbTETMBEGA1UEB
+RMKOTY5MTkwNTAtODAeFw0xNzA0MjQxNDA3MTdaFw0yMDA0MjQx NDA3MTdaMIGC
+MQswCQYDVQQGEwJDTDEYMBYGA1UEDBMPUEVSU09OQSBOQVRVUkFMMR0wGwYDVQQD
+ExRIRUNUT1IgREFOSUVMIEJMQU5DTzElMCMGCSqGSIb3DQEJARYWZGFuaWVsQGJs
+YW5jb21hcnRp bi5jbDETMBEGA1UEBRMKMjM4NDExOTQtNzCCASIwDQYJKoZIhvc
+NAQEBBQADggEPADCCAQoCggEB AKVOwT5rJSjHN1ctCv/RMTYGeV1bk0TPoIroOv
+QAoqW2vaPmp0tcXSmBCO3V+mtpA/SMENaPLyuv 7kiGGX5ydM5fX//LSkY/ulDFo
+pOICzGO6lM19r0ufzRANYkAqw2BhmJ18JADO1JmcnP0oSLdflVg cKSmwTE8KiQI
+qIjuVe4iLDETHh3HU1CzCrWoRLIM+FQNFL8WSqNFEYOct2dMHMJohs99NOegggzg
+/uYIgvlTWKvoi0llbr2TT6bHbk+fHgKrs2uZJ6ONJTbKRJQCFeyr37szCMvS8EPs
+PURiPGuFPa/8 u5Iqa6zONI88kdLbgGIMZfTriV4sByhOlaVej7MCAwEAAaOCAkM
+wggI/MB8GA1UdIwQYMBaAFGWl qz4/yLZRbRF+X8MKB+ZDoAi2MB0GA1UdDgQWBB
+TFkOAKd4GhJz2JW6jdXRD9Et+g5jALBgNVHQ8E BAMCBPAwHQYDVR0lBBYwFAYIK
+wYBBQUHAwIGCCsGAQUFBwMEMBEGCWCGSAGG+EIBAQQEAwIFoDB1 BgNVHSAEbjBs
+MGoGCCsGAQQBtWsCMF4wMQYIKwYBBQUHAgEWJWh0dHBzOi8vYWNnNC5hY2VwdGEu
+Y29tL0NQUy1BY2VwdGFjb20wKQYIKwYBBQUHAgIwHTAWFg9BY2VwdGEuY29tIFMu
+QS4wAwIBCRoD VEJEMFoGA1UdEgRTMFGgGAYIKwYBBAHBAQKgDBYKOTY5MTkwNTA
+tOKAkBggrBgEFBQcIA6AYMBYM Cjk2OTE5MDUwLTgGCCsGAQQBwQECgQ9pbmZvQG
+FjZXB0YS5jb20wYQYDVR0RBFowWKAYBggrBgEE AcEBAaAMFgoyMzg0MTE5NC03o
+CQGCCsGAQUFBwgDoBgwFgwKMjM4NDExOTQtNwYIKwYBBAHBAQKB FmRhbmllbEBi
+bGFuY29tYXJ0aW4uY2wwRwYIKwYBBQUHAQEEOzA5MDcGCCsGAQUFBzABhitodHRw
+czovL2FjZzQuYWNlcHRhLmNvbS9hY2c0L29jc3AvQ2xhc2UyLUc0MD8GA1UdHwQ4
+MDYwNKAyoDCG Lmh0dHBzOi8vYWNnNC5hY2VwdGEuY29tL2FjZzQvY3JsL0NsYXN
+lMi1HNC5jcmwwDQYJKoZIhvcN AQELBQADggEBACHvynJ7KjgiebxUJoLwSjyJ1t
+jgMe3ws0P0b5cLeHhR6eCNH5SbKu2pUm0BMYFs tYJkZuul4PuK6ikJbfyKhJNJf
+YgCgWebkPpYsMrz/N9qJ3o2iMsudubXejtTmMjCK8ZM3cjyad54 f3DjhHz4xy/w
+mmsnV8NFlm3v/ad5hEhOESDm4q16YGxYaxsX2CtVj1QzzeYbl/2fO+UwNFnXUxTx
+1rOPzWIPzWtEknKebgFeHuWwHV9WmxbyBgLWugYxQcF3JR6es1kt3bjstHOlYPZA
+zXDhuALO+7KB
+eBPeKYCYYspX9gzPK8z1YHQC9eq63FR7DvhFgegG/4fmcpZMdoQ=</X509Certificate></X509Data></KeyInfo></Signature></DTE>
+<DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
+    <Documento ID="F130T34"><Encabezado><IdDoc><TipoDTE>34</TipoDTE><Folio>130</Folio><FchEmis>2017-05-06</FchEmis><FmaPago>1</FmaPago><FchVenc>2017-05-06</FchVenc></IdDoc><Emisor><RUTEmisor>76201224-3</RUTEmisor><RznSoc>Soc de Servicios Blanco Mart&#237;n EIRL</RznSoc><GiroEmis>Empresas de Servicios Integrales de Inform&#225;tica</GiroEmis><Telefono>+56228400990</Telefono><CorreoEmisor>dteb2b@blancomartin.cl</CorreoEmisor><Acteco>726000</Acteco><DirOrigen>Apoquindo 6410 Of 212</DirOrigen><CmnaOrigen>Las Condes</CmnaOrigen><CiudadOrigen>Santiago</CiudadOrigen></Emisor><Receptor><RUTRecep>76096477-8</RUTRecep><RznSocRecep>COMERCIAL ONAK SYSTEMS LIMITADA</RznSocRecep><GiroRecep>Reparaci&#243;n Otros Tipos de Maquinaria y E</GiroRecep><DirRecep>Baron de Judas Reales N&#186; 4427 </DirRecep><CmnaRecep>Santiago</CmnaRecep><CiudadRecep>Santiago</CiudadRecep></Receptor><Totales><MntExe>1620000</MntExe><MntTotal>1620000</MntTotal></Totales></Encabezado><Detalle><NroLinDet>1</NroLinDet><IndExe>1</IndExe><NmbItem>IMPLEMENTACI&#211;N SOFTWARE</NmbItem><DscItem>IMPLEMENTACI&#211;N SOFTWARE COMPLETA</DscItem><QtyItem>2.0</QtyItem><UnmdItem>Unit</UnmdItem><PrcItem>810000</PrcItem><MontoItem>1620000</MontoItem></Detalle>
+<TED version="1.0"><DD><RE>76201224-3</RE><TD>34</TD><F>130</F><FE>2017-05-06</FE><RR>76096477-8</RR><RSR>COMERCIAL ONAK SYSTEMS LIMITADA</RSR><MNT>1620000</MNT><IT1>IMPLEMENTACI&#211;N SOFTWARE</IT1><CAF version="1.0"><DA><RE>76201224-3</RE><RS>SOCIEDAD DE SERVICIOS HECTOR DANIEL BLAN</RS><TD>34</TD><RNG><D>121</D><H>220</H></RNG><FA>2017-04-26</FA><RSAPK><M>ma4Cvxgs3qf2wcdobhhfTXzPuyOP8KB35QaPS3aGLGD+CwPPX6CR98evD1Pns5u8wmzffLvSt81fmKJT0vTtaQ==</M><E>Aw==</E></RSAPK><IDK>100</IDK></DA><FRMA algoritmo="SHA1withRSA">v0ui8EKsMMz6fvNwv9DdCHo+jPtdIhDOWrYjSCx8uHBotEsGVAtphuBIIlPHQteRASo4t289QZjpPhXPv4Xm3Q==</FRMA></CAF><TSTED>2017-05-06T02:33:38</TSTED></DD><FRMT algoritmo="SHA1withRSA">jnXZNCGf3h+5BUnpHi/1WZCsgMGeUYJvBljhhliwM+yPlxHiuAd6MYIN59P3yxO4amEUVVCWJEpQwJG0xCRDwA==</FRMT></TED><TmstFirma>2017-05-06T02:33:38</TmstFirma>
+</Documento>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#F130T34"><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>MFS7nEfskOJEqAK6cif54o1ba8k=</DigestValue></Reference></SignedInfo><SignatureValue>lBBKCRZeQeF9aQbq1Of5nv0+ChUAthMrIMZVNWTALLsUc5UXPsjiigBgygLeWGuJ
+K0CkQALprOMv7imSsb6iMxq7f7gOodR/JniUK1gDEU+jSa7wFass7NbORW49bi1x
++yNjMkcLR13cmAKpXEuQjwNPP0uvvE5Uwe/d664TU5BvqyiVhK8NbSsRGt1N0qAw
+5v3PQ7BjVBYv5imRlnmdlSTScUAqiFCwJmKHbtLZi1wSdQa6GemL2lqVZuTc570u
+d1hAZIDPSuDhx4KaCpFXcQCa6o38hRcMCPUvbGwKJ7yvBawD2I8ry5ixZLV//d66
+nI1O6SEMtpQiLpZu4DNkow==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pU7BPmslKMc3Vy0K/9ExNgZ5XVuTRM+giug69ACipba9o+anS1xdKYEI7dX6a2kD
+9IwQ1o8vK6/uSIYZfnJ0zl9f/8tKRj+6UMWik4gLMY7qUzX2vS5/NEA1iQCrDYGG
+YnXwkAM7UmZyc/ShIt1+VWBwpKbBMTwqJAioiO5V7iIsMRMeHcdTULMKtahEsgz4
+VA0UvxZKo0URg5y3Z0wcwmiGz30056CCDOD+5giC+VNYq+iLSWVuvZNPpsduT58e
+Aquza5kno40lNspElAIV7KvfuzMIy9LwQ+w9RGI8a4U9r/y7kiprrM40jzyR0tuA
+Ygxl9OuJXiwHKE6VpV6Psw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>
+MIIF7DCCBNSgAwIBAgIDANEuMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYDVQQGEwJD
+TDEYMBYGA1UE ChMPQWNlcHRhLmNvbSBTLkEuMUgwRgYDVQQDEz9BY2VwdGEuY29
+tIEF1dG9yaWRhZCBDZXJ0aWZp Y2Fkb3JhIENsYXNlIDIgUGVyc29uYSBOYXR1cm
+FsIC0gRzQxHjAcBgkqhkiG9w0BCQEWD2luZm9A YWNlcHRhLmNvbTETMBEGA1UEB
+RMKOTY5MTkwNTAtODAeFw0xNzA0MjQxNDA3MTdaFw0yMDA0MjQx NDA3MTdaMIGC
+MQswCQYDVQQGEwJDTDEYMBYGA1UEDBMPUEVSU09OQSBOQVRVUkFMMR0wGwYDVQQD
+ExRIRUNUT1IgREFOSUVMIEJMQU5DTzElMCMGCSqGSIb3DQEJARYWZGFuaWVsQGJs
+YW5jb21hcnRp bi5jbDETMBEGA1UEBRMKMjM4NDExOTQtNzCCASIwDQYJKoZIhvc
+NAQEBBQADggEPADCCAQoCggEB AKVOwT5rJSjHN1ctCv/RMTYGeV1bk0TPoIroOv
+QAoqW2vaPmp0tcXSmBCO3V+mtpA/SMENaPLyuv 7kiGGX5ydM5fX//LSkY/ulDFo
+pOICzGO6lM19r0ufzRANYkAqw2BhmJ18JADO1JmcnP0oSLdflVg cKSmwTE8KiQI
+qIjuVe4iLDETHh3HU1CzCrWoRLIM+FQNFL8WSqNFEYOct2dMHMJohs99NOegggzg
+/uYIgvlTWKvoi0llbr2TT6bHbk+fHgKrs2uZJ6ONJTbKRJQCFeyr37szCMvS8EPs
+PURiPGuFPa/8 u5Iqa6zONI88kdLbgGIMZfTriV4sByhOlaVej7MCAwEAAaOCAkM
+wggI/MB8GA1UdIwQYMBaAFGWl qz4/yLZRbRF+X8MKB+ZDoAi2MB0GA1UdDgQWBB
+TFkOAKd4GhJz2JW6jdXRD9Et+g5jALBgNVHQ8E BAMCBPAwHQYDVR0lBBYwFAYIK
+wYBBQUHAwIGCCsGAQUFBwMEMBEGCWCGSAGG+EIBAQQEAwIFoDB1 BgNVHSAEbjBs
+MGoGCCsGAQQBtWsCMF4wMQYIKwYBBQUHAgEWJWh0dHBzOi8vYWNnNC5hY2VwdGEu
+Y29tL0NQUy1BY2VwdGFjb20wKQYIKwYBBQUHAgIwHTAWFg9BY2VwdGEuY29tIFMu
+QS4wAwIBCRoD VEJEMFoGA1UdEgRTMFGgGAYIKwYBBAHBAQKgDBYKOTY5MTkwNTA
+tOKAkBggrBgEFBQcIA6AYMBYM Cjk2OTE5MDUwLTgGCCsGAQQBwQECgQ9pbmZvQG
+FjZXB0YS5jb20wYQYDVR0RBFowWKAYBggrBgEE AcEBAaAMFgoyMzg0MTE5NC03o
+CQGCCsGAQUFBwgDoBgwFgwKMjM4NDExOTQtNwYIKwYBBAHBAQKB FmRhbmllbEBi
+bGFuY29tYXJ0aW4uY2wwRwYIKwYBBQUHAQEEOzA5MDcGCCsGAQUFBzABhitodHRw
+czovL2FjZzQuYWNlcHRhLmNvbS9hY2c0L29jc3AvQ2xhc2UyLUc0MD8GA1UdHwQ4
+MDYwNKAyoDCG Lmh0dHBzOi8vYWNnNC5hY2VwdGEuY29tL2FjZzQvY3JsL0NsYXN
+lMi1HNC5jcmwwDQYJKoZIhvcN AQELBQADggEBACHvynJ7KjgiebxUJoLwSjyJ1t
+jgMe3ws0P0b5cLeHhR6eCNH5SbKu2pUm0BMYFs tYJkZuul4PuK6ikJbfyKhJNJf
+YgCgWebkPpYsMrz/N9qJ3o2iMsudubXejtTmMjCK8ZM3cjyad54 f3DjhHz4xy/w
+mmsnV8NFlm3v/ad5hEhOESDm4q16YGxYaxsX2CtVj1QzzeYbl/2fO+UwNFnXUxTx
+1rOPzWIPzWtEknKebgFeHuWwHV9WmxbyBgLWugYxQcF3JR6es1kt3bjstHOlYPZA
+zXDhuALO+7KB
+eBPeKYCYYspX9gzPK8z1YHQC9eq63FR7DvhFgegG/4fmcpZMdoQ=</X509Certificate></X509Data></KeyInfo></Signature></DTE>
+<DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
+    <Documento ID="F131T34"><Encabezado><IdDoc><TipoDTE>34</TipoDTE><Folio>131</Folio><FchEmis>2017-05-06</FchEmis><FmaPago>1</FmaPago><FchVenc>2017-05-06</FchVenc></IdDoc><Emisor><RUTEmisor>76201224-3</RUTEmisor><RznSoc>Soc de Servicios Blanco Mart&#237;n EIRL</RznSoc><GiroEmis>Empresas de Servicios Integrales de Inform&#225;tica</GiroEmis><Telefono>+56228400990</Telefono><CorreoEmisor>dteb2b@blancomartin.cl</CorreoEmisor><Acteco>726000</Acteco><DirOrigen>Apoquindo 6410 Of 212</DirOrigen><CmnaOrigen>Las Condes</CmnaOrigen><CiudadOrigen>Santiago</CiudadOrigen></Emisor><Receptor><RUTRecep>76096477-8</RUTRecep><RznSocRecep>COMERCIAL ONAK SYSTEMS LIMITADA</RznSocRecep><GiroRecep>Reparaci&#243;n Otros Tipos de Maquinaria y E</GiroRecep><DirRecep>Baron de Judas Reales N&#186; 4427 </DirRecep><CmnaRecep>Santiago</CmnaRecep><CiudadRecep>Santiago</CiudadRecep></Receptor><Totales><MntExe>1620000</MntExe><MntTotal>1620000</MntTotal></Totales></Encabezado><Detalle><NroLinDet>1</NroLinDet><IndExe>1</IndExe><NmbItem>IMPLEMENTACI&#211;N SOFTWARE</NmbItem><DscItem>IMPLEMENTACI&#211;N SOFTWARE COMPLETA</DscItem><QtyItem>2.0</QtyItem><UnmdItem>Unit</UnmdItem><PrcItem>810000</PrcItem><MontoItem>1620000</MontoItem></Detalle>
+<TED version="1.0"><DD><RE>76201224-3</RE><TD>34</TD><F>131</F><FE>2017-05-06</FE><RR>76096477-8</RR><RSR>COMERCIAL ONAK SYSTEMS LIMITADA</RSR><MNT>1620000</MNT><IT1>IMPLEMENTACI&#211;N SOFTWARE</IT1><CAF version="1.0"><DA><RE>76201224-3</RE><RS>SOCIEDAD DE SERVICIOS HECTOR DANIEL BLAN</RS><TD>34</TD><RNG><D>121</D><H>220</H></RNG><FA>2017-04-26</FA><RSAPK><M>ma4Cvxgs3qf2wcdobhhfTXzPuyOP8KB35QaPS3aGLGD+CwPPX6CR98evD1Pns5u8wmzffLvSt81fmKJT0vTtaQ==</M><E>Aw==</E></RSAPK><IDK>100</IDK></DA><FRMA algoritmo="SHA1withRSA">v0ui8EKsMMz6fvNwv9DdCHo+jPtdIhDOWrYjSCx8uHBotEsGVAtphuBIIlPHQteRASo4t289QZjpPhXPv4Xm3Q==</FRMA></CAF><TSTED>2017-05-06T02:33:39</TSTED></DD><FRMT algoritmo="SHA1withRSA">YAC0HQ9fY96y/zr0vu3CrhbzvxtCxbtCQQlqJ2Exqaiw0Ntx/iWD/6/Jggu+KUKZfcttQ/XQeNRVe/YF3zw58A==</FRMT></TED><TmstFirma>2017-05-06T02:33:39</TmstFirma>
+</Documento>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#F131T34"><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>W+UR2KLykCJExRFX0Dm1vjy2dcc=</DigestValue></Reference></SignedInfo><SignatureValue>LM0Jj1h6q03LUGTUuRkKzW2tEvk89jZu4+fc4IpwZUFh+6itPOy468NzCMNPyCue
+WWazOeEdW4f/RLMcngKwI26iuUSY9QSmxQ9wT6P9fc2209aAHKY0x34XzISDRxnf
+SSJLTkxXkJ7SWUeHcWc55uhJOvjpeAtp0LB8woFiTVzM9HynrPVHoOuui+VL3sgg
+J3FLC/BREpPIhJeJGMGE+syBu02AmreVtadv/SHTVox74gFZMFVXSE84YxtJKcFT
+cK8xmthwegxOClWd8b0EZHjP7P3xdH60PSLLV2byDlqP4v/moHJjZrtAerb1Z99W
+E9RF0wqfwm3E2fnhQsfbjQ==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pU7BPmslKMc3Vy0K/9ExNgZ5XVuTRM+giug69ACipba9o+anS1xdKYEI7dX6a2kD
+9IwQ1o8vK6/uSIYZfnJ0zl9f/8tKRj+6UMWik4gLMY7qUzX2vS5/NEA1iQCrDYGG
+YnXwkAM7UmZyc/ShIt1+VWBwpKbBMTwqJAioiO5V7iIsMRMeHcdTULMKtahEsgz4
+VA0UvxZKo0URg5y3Z0wcwmiGz30056CCDOD+5giC+VNYq+iLSWVuvZNPpsduT58e
+Aquza5kno40lNspElAIV7KvfuzMIy9LwQ+w9RGI8a4U9r/y7kiprrM40jzyR0tuA
+Ygxl9OuJXiwHKE6VpV6Psw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>
+MIIF7DCCBNSgAwIBAgIDANEuMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYDVQQGEwJD
+TDEYMBYGA1UE ChMPQWNlcHRhLmNvbSBTLkEuMUgwRgYDVQQDEz9BY2VwdGEuY29
+tIEF1dG9yaWRhZCBDZXJ0aWZp Y2Fkb3JhIENsYXNlIDIgUGVyc29uYSBOYXR1cm
+FsIC0gRzQxHjAcBgkqhkiG9w0BCQEWD2luZm9A YWNlcHRhLmNvbTETMBEGA1UEB
+RMKOTY5MTkwNTAtODAeFw0xNzA0MjQxNDA3MTdaFw0yMDA0MjQx NDA3MTdaMIGC
+MQswCQYDVQQGEwJDTDEYMBYGA1UEDBMPUEVSU09OQSBOQVRVUkFMMR0wGwYDVQQD
+ExRIRUNUT1IgREFOSUVMIEJMQU5DTzElMCMGCSqGSIb3DQEJARYWZGFuaWVsQGJs
+YW5jb21hcnRp bi5jbDETMBEGA1UEBRMKMjM4NDExOTQtNzCCASIwDQYJKoZIhvc
+NAQEBBQADggEPADCCAQoCggEB AKVOwT5rJSjHN1ctCv/RMTYGeV1bk0TPoIroOv
+QAoqW2vaPmp0tcXSmBCO3V+mtpA/SMENaPLyuv 7kiGGX5ydM5fX//LSkY/ulDFo
+pOICzGO6lM19r0ufzRANYkAqw2BhmJ18JADO1JmcnP0oSLdflVg cKSmwTE8KiQI
+qIjuVe4iLDETHh3HU1CzCrWoRLIM+FQNFL8WSqNFEYOct2dMHMJohs99NOegggzg
+/uYIgvlTWKvoi0llbr2TT6bHbk+fHgKrs2uZJ6ONJTbKRJQCFeyr37szCMvS8EPs
+PURiPGuFPa/8 u5Iqa6zONI88kdLbgGIMZfTriV4sByhOlaVej7MCAwEAAaOCAkM
+wggI/MB8GA1UdIwQYMBaAFGWl qz4/yLZRbRF+X8MKB+ZDoAi2MB0GA1UdDgQWBB
+TFkOAKd4GhJz2JW6jdXRD9Et+g5jALBgNVHQ8E BAMCBPAwHQYDVR0lBBYwFAYIK
+wYBBQUHAwIGCCsGAQUFBwMEMBEGCWCGSAGG+EIBAQQEAwIFoDB1 BgNVHSAEbjBs
+MGoGCCsGAQQBtWsCMF4wMQYIKwYBBQUHAgEWJWh0dHBzOi8vYWNnNC5hY2VwdGEu
+Y29tL0NQUy1BY2VwdGFjb20wKQYIKwYBBQUHAgIwHTAWFg9BY2VwdGEuY29tIFMu
+QS4wAwIBCRoD VEJEMFoGA1UdEgRTMFGgGAYIKwYBBAHBAQKgDBYKOTY5MTkwNTA
+tOKAkBggrBgEFBQcIA6AYMBYM Cjk2OTE5MDUwLTgGCCsGAQQBwQECgQ9pbmZvQG
+FjZXB0YS5jb20wYQYDVR0RBFowWKAYBggrBgEE AcEBAaAMFgoyMzg0MTE5NC03o
+CQGCCsGAQUFBwgDoBgwFgwKMjM4NDExOTQtNwYIKwYBBAHBAQKB FmRhbmllbEBi
+bGFuY29tYXJ0aW4uY2wwRwYIKwYBBQUHAQEEOzA5MDcGCCsGAQUFBzABhitodHRw
+czovL2FjZzQuYWNlcHRhLmNvbS9hY2c0L29jc3AvQ2xhc2UyLUc0MD8GA1UdHwQ4
+MDYwNKAyoDCG Lmh0dHBzOi8vYWNnNC5hY2VwdGEuY29tL2FjZzQvY3JsL0NsYXN
+lMi1HNC5jcmwwDQYJKoZIhvcN AQELBQADggEBACHvynJ7KjgiebxUJoLwSjyJ1t
+jgMe3ws0P0b5cLeHhR6eCNH5SbKu2pUm0BMYFs tYJkZuul4PuK6ikJbfyKhJNJf
+YgCgWebkPpYsMrz/N9qJ3o2iMsudubXejtTmMjCK8ZM3cjyad54 f3DjhHz4xy/w
+mmsnV8NFlm3v/ad5hEhOESDm4q16YGxYaxsX2CtVj1QzzeYbl/2fO+UwNFnXUxTx
+1rOPzWIPzWtEknKebgFeHuWwHV9WmxbyBgLWugYxQcF3JR6es1kt3bjstHOlYPZA
+zXDhuALO+7KB
+eBPeKYCYYspX9gzPK8z1YHQC9eq63FR7DvhFgegG/4fmcpZMdoQ=</X509Certificate></X509Data></KeyInfo></Signature></DTE>
+<DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
+    <Documento ID="F132T34"><Encabezado><IdDoc><TipoDTE>34</TipoDTE><Folio>132</Folio><FchEmis>2017-05-06</FchEmis><FmaPago>1</FmaPago><FchVenc>2017-05-06</FchVenc></IdDoc><Emisor><RUTEmisor>76201224-3</RUTEmisor><RznSoc>Soc de Servicios Blanco Mart&#237;n EIRL</RznSoc><GiroEmis>Empresas de Servicios Integrales de Inform&#225;tica</GiroEmis><Telefono>+56228400990</Telefono><CorreoEmisor>dteb2b@blancomartin.cl</CorreoEmisor><Acteco>726000</Acteco><DirOrigen>Apoquindo 6410 Of 212</DirOrigen><CmnaOrigen>Las Condes</CmnaOrigen><CiudadOrigen>Santiago</CiudadOrigen></Emisor><Receptor><RUTRecep>77771710-3</RUTRecep><RznSocRecep>Comercial Blanco Ltda</RznSocRecep><GiroRecep>Otras Actividades Empresariales N.C.P.</GiroRecep><DirRecep>Av. Las Condes 8173 </DirRecep><CmnaRecep>Las Condes</CmnaRecep><CiudadRecep>Santiago</CiudadRecep></Receptor><Totales><MntExe>120000</MntExe><MntTotal>120000</MntTotal></Totales></Encabezado><Detalle><NroLinDet>1</NroLinDet><IndExe>1</IndExe><NmbItem>SERVICIO DE CERTIFICACI&#211;N DIGITAL</NmbItem><DscItem>SERVICIO DE CERTIFICACI&#211;N DIGITAL /SSL PARA SITIO www.cartoys.cl</DscItem><QtyItem>3.0</QtyItem><UnmdItem>Unit</UnmdItem><PrcItem>40000</PrcItem><MontoItem>120000</MontoItem></Detalle>
+<TED version="1.0"><DD><RE>76201224-3</RE><TD>34</TD><F>132</F><FE>2017-05-06</FE><RR>77771710-3</RR><RSR>Comercial Blanco Ltda</RSR><MNT>120000</MNT><IT1>SERVICIO DE CERTIFICACI&#211;N DIGITAL</IT1><CAF version="1.0"><DA><RE>76201224-3</RE><RS>SOCIEDAD DE SERVICIOS HECTOR DANIEL BLAN</RS><TD>34</TD><RNG><D>121</D><H>220</H></RNG><FA>2017-04-26</FA><RSAPK><M>ma4Cvxgs3qf2wcdobhhfTXzPuyOP8KB35QaPS3aGLGD+CwPPX6CR98evD1Pns5u8wmzffLvSt81fmKJT0vTtaQ==</M><E>Aw==</E></RSAPK><IDK>100</IDK></DA><FRMA algoritmo="SHA1withRSA">v0ui8EKsMMz6fvNwv9DdCHo+jPtdIhDOWrYjSCx8uHBotEsGVAtphuBIIlPHQteRASo4t289QZjpPhXPv4Xm3Q==</FRMA></CAF><TSTED>2017-05-06T02:33:41</TSTED></DD><FRMT algoritmo="SHA1withRSA">Oyh/TNcXwt+buROzIlbJMxo6Nv42JtdcrfpwFOFAbRP17jY7pvzCSJ2oFz98gR3HrLaN3jTCaQJfTu0qs3ilnQ==</FRMT></TED><TmstFirma>2017-05-06T02:33:41</TmstFirma>
+</Documento>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#F132T34"><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>AmxLq0bIREHYF3dIwFmSdg6U2xc=</DigestValue></Reference></SignedInfo><SignatureValue>RdZatVrEgZWFVzyc6npb7+R+6ZKY2/BSxbz6byceQxEgsVx8Cgh6W1F00OdFxpC9
+bpr8HBwlBYPc+xEpFt+WFy6psFE71DhWyWxq2HS2019TF5+cndqz0hGhPhHf8YrT
+jH35t2SrwNekwcYw1i0Kkck5U6NsbKCtpGyA4SwvD53kC7L+NABsbbKAMgzuBbS1
+jZlFoKmyGZ3Csp47UAqZVR/4E/SjlUPABKlDehqNHS6Iqoplg2O4zyze5LAaCA9/
+cB/9EuffR3cOg1QJ/+YF5u3VgqY2TuM6RyC+WulhBJsGhIVzaIO/phsZcfmoQsdi
+B5coFh2Zn0hMty3zXmaryQ==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pU7BPmslKMc3Vy0K/9ExNgZ5XVuTRM+giug69ACipba9o+anS1xdKYEI7dX6a2kD
+9IwQ1o8vK6/uSIYZfnJ0zl9f/8tKRj+6UMWik4gLMY7qUzX2vS5/NEA1iQCrDYGG
+YnXwkAM7UmZyc/ShIt1+VWBwpKbBMTwqJAioiO5V7iIsMRMeHcdTULMKtahEsgz4
+VA0UvxZKo0URg5y3Z0wcwmiGz30056CCDOD+5giC+VNYq+iLSWVuvZNPpsduT58e
+Aquza5kno40lNspElAIV7KvfuzMIy9LwQ+w9RGI8a4U9r/y7kiprrM40jzyR0tuA
+Ygxl9OuJXiwHKE6VpV6Psw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>
+MIIF7DCCBNSgAwIBAgIDANEuMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYDVQQGEwJD
+TDEYMBYGA1UE ChMPQWNlcHRhLmNvbSBTLkEuMUgwRgYDVQQDEz9BY2VwdGEuY29
+tIEF1dG9yaWRhZCBDZXJ0aWZp Y2Fkb3JhIENsYXNlIDIgUGVyc29uYSBOYXR1cm
+FsIC0gRzQxHjAcBgkqhkiG9w0BCQEWD2luZm9A YWNlcHRhLmNvbTETMBEGA1UEB
+RMKOTY5MTkwNTAtODAeFw0xNzA0MjQxNDA3MTdaFw0yMDA0MjQx NDA3MTdaMIGC
+MQswCQYDVQQGEwJDTDEYMBYGA1UEDBMPUEVSU09OQSBOQVRVUkFMMR0wGwYDVQQD
+ExRIRUNUT1IgREFOSUVMIEJMQU5DTzElMCMGCSqGSIb3DQEJARYWZGFuaWVsQGJs
+YW5jb21hcnRp bi5jbDETMBEGA1UEBRMKMjM4NDExOTQtNzCCASIwDQYJKoZIhvc
+NAQEBBQADggEPADCCAQoCggEB AKVOwT5rJSjHN1ctCv/RMTYGeV1bk0TPoIroOv
+QAoqW2vaPmp0tcXSmBCO3V+mtpA/SMENaPLyuv 7kiGGX5ydM5fX//LSkY/ulDFo
+pOICzGO6lM19r0ufzRANYkAqw2BhmJ18JADO1JmcnP0oSLdflVg cKSmwTE8KiQI
+qIjuVe4iLDETHh3HU1CzCrWoRLIM+FQNFL8WSqNFEYOct2dMHMJohs99NOegggzg
+/uYIgvlTWKvoi0llbr2TT6bHbk+fHgKrs2uZJ6ONJTbKRJQCFeyr37szCMvS8EPs
+PURiPGuFPa/8 u5Iqa6zONI88kdLbgGIMZfTriV4sByhOlaVej7MCAwEAAaOCAkM
+wggI/MB8GA1UdIwQYMBaAFGWl qz4/yLZRbRF+X8MKB+ZDoAi2MB0GA1UdDgQWBB
+TFkOAKd4GhJz2JW6jdXRD9Et+g5jALBgNVHQ8E BAMCBPAwHQYDVR0lBBYwFAYIK
+wYBBQUHAwIGCCsGAQUFBwMEMBEGCWCGSAGG+EIBAQQEAwIFoDB1 BgNVHSAEbjBs
+MGoGCCsGAQQBtWsCMF4wMQYIKwYBBQUHAgEWJWh0dHBzOi8vYWNnNC5hY2VwdGEu
+Y29tL0NQUy1BY2VwdGFjb20wKQYIKwYBBQUHAgIwHTAWFg9BY2VwdGEuY29tIFMu
+QS4wAwIBCRoD VEJEMFoGA1UdEgRTMFGgGAYIKwYBBAHBAQKgDBYKOTY5MTkwNTA
+tOKAkBggrBgEFBQcIA6AYMBYM Cjk2OTE5MDUwLTgGCCsGAQQBwQECgQ9pbmZvQG
+FjZXB0YS5jb20wYQYDVR0RBFowWKAYBggrBgEE AcEBAaAMFgoyMzg0MTE5NC03o
+CQGCCsGAQUFBwgDoBgwFgwKMjM4NDExOTQtNwYIKwYBBAHBAQKB FmRhbmllbEBi
+bGFuY29tYXJ0aW4uY2wwRwYIKwYBBQUHAQEEOzA5MDcGCCsGAQUFBzABhitodHRw
+czovL2FjZzQuYWNlcHRhLmNvbS9hY2c0L29jc3AvQ2xhc2UyLUc0MD8GA1UdHwQ4
+MDYwNKAyoDCG Lmh0dHBzOi8vYWNnNC5hY2VwdGEuY29tL2FjZzQvY3JsL0NsYXN
+lMi1HNC5jcmwwDQYJKoZIhvcN AQELBQADggEBACHvynJ7KjgiebxUJoLwSjyJ1t
+jgMe3ws0P0b5cLeHhR6eCNH5SbKu2pUm0BMYFs tYJkZuul4PuK6ikJbfyKhJNJf
+YgCgWebkPpYsMrz/N9qJ3o2iMsudubXejtTmMjCK8ZM3cjyad54 f3DjhHz4xy/w
+mmsnV8NFlm3v/ad5hEhOESDm4q16YGxYaxsX2CtVj1QzzeYbl/2fO+UwNFnXUxTx
+1rOPzWIPzWtEknKebgFeHuWwHV9WmxbyBgLWugYxQcF3JR6es1kt3bjstHOlYPZA
+zXDhuALO+7KB
+eBPeKYCYYspX9gzPK8z1YHQC9eq63FR7DvhFgegG/4fmcpZMdoQ=</X509Certificate></X509Data></KeyInfo></Signature></DTE>
+<DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
+    <Documento ID="F133T34"><Encabezado><IdDoc><TipoDTE>34</TipoDTE><Folio>133</Folio><FchEmis>2017-05-06</FchEmis><FmaPago>1</FmaPago><FchVenc>2017-05-06</FchVenc></IdDoc><Emisor><RUTEmisor>76201224-3</RUTEmisor><RznSoc>Soc de Servicios Blanco Mart&#237;n EIRL</RznSoc><GiroEmis>Empresas de Servicios Integrales de Inform&#225;tica</GiroEmis><Telefono>+56228400990</Telefono><CorreoEmisor>dteb2b@blancomartin.cl</CorreoEmisor><Acteco>726000</Acteco><DirOrigen>Apoquindo 6410 Of 212</DirOrigen><CmnaOrigen>Las Condes</CmnaOrigen><CiudadOrigen>Santiago</CiudadOrigen></Emisor><Receptor><RUTRecep>78063350-6</RUTRecep><RznSocRecep>Dantechnique LTDA.</RznSocRecep><GiroRecep>Venta Al Por Menor de Otros Productos En</GiroRecep><DirRecep>Gaspar de La Barrera 2823 </DirRecep><CmnaRecep>Santiago</CmnaRecep><CiudadRecep>Santiago</CiudadRecep></Receptor><Totales><MntExe>406000</MntExe><MntTotal>406000</MntTotal></Totales></Encabezado><Detalle><NroLinDet>1</NroLinDet><IndExe>1</IndExe><NmbItem>HORAS PROGRAMADOR</NmbItem><DscItem>HORAS PROGRAMADOR</DscItem><QtyItem>14.0</QtyItem><UnmdItem>Hora</UnmdItem><PrcItem>29000</PrcItem><MontoItem>406000</MontoItem></Detalle>
+<TED version="1.0"><DD><RE>76201224-3</RE><TD>34</TD><F>133</F><FE>2017-05-06</FE><RR>78063350-6</RR><RSR>Dantechnique LTDA.</RSR><MNT>406000</MNT><IT1>HORAS PROGRAMADOR</IT1><CAF version="1.0"><DA><RE>76201224-3</RE><RS>SOCIEDAD DE SERVICIOS HECTOR DANIEL BLAN</RS><TD>34</TD><RNG><D>121</D><H>220</H></RNG><FA>2017-04-26</FA><RSAPK><M>ma4Cvxgs3qf2wcdobhhfTXzPuyOP8KB35QaPS3aGLGD+CwPPX6CR98evD1Pns5u8wmzffLvSt81fmKJT0vTtaQ==</M><E>Aw==</E></RSAPK><IDK>100</IDK></DA><FRMA algoritmo="SHA1withRSA">v0ui8EKsMMz6fvNwv9DdCHo+jPtdIhDOWrYjSCx8uHBotEsGVAtphuBIIlPHQteRASo4t289QZjpPhXPv4Xm3Q==</FRMA></CAF><TSTED>2017-05-06T02:33:42</TSTED></DD><FRMT algoritmo="SHA1withRSA">Ilr/wQN0SareMEXw826fqDc9BAsLpgMpZrwLJETA/JFZrxo5bYW1Z6Z9I3PEYCNheh+PTyPeJmsG/wUd7f4MXQ==</FRMT></TED><TmstFirma>2017-05-06T02:33:42</TmstFirma>
+</Documento>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#F133T34"><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>xKsAgulLjvAjqnrsJ6XZZD5SMJw=</DigestValue></Reference></SignedInfo><SignatureValue>H1EejNWtm07erM4mFAYFQoEIiNX5vxhskJ3SQ20Jez4KvKew0pMVWhcaYFaNAdZx
+WR3Firxym9Ibkmsv/InpycOF/vuz6YN6b4jwTbmhO0Ni8AqU2EjZHSPw0fDxbWYa
+QU3mKJyWr4DRckcU0K1XDBsPIo27hOWJG6tFGD/f2Z6PEXU4/mf5k9Ospm3VgA9y
+QvuFzKEx//8ctibEsht/wJZCXDFEhf/B82LGDGqLmAX0WUZ1+MITly9ULhPFGuwy
+sJsMD2MeUTYKxsLg1kyevAltozH6j1vtwh/gzg9b6rI17rHMqV7W4h3S1Cou8It4
+K97AJA782zsYiENmcVDd4Q==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pU7BPmslKMc3Vy0K/9ExNgZ5XVuTRM+giug69ACipba9o+anS1xdKYEI7dX6a2kD
+9IwQ1o8vK6/uSIYZfnJ0zl9f/8tKRj+6UMWik4gLMY7qUzX2vS5/NEA1iQCrDYGG
+YnXwkAM7UmZyc/ShIt1+VWBwpKbBMTwqJAioiO5V7iIsMRMeHcdTULMKtahEsgz4
+VA0UvxZKo0URg5y3Z0wcwmiGz30056CCDOD+5giC+VNYq+iLSWVuvZNPpsduT58e
+Aquza5kno40lNspElAIV7KvfuzMIy9LwQ+w9RGI8a4U9r/y7kiprrM40jzyR0tuA
+Ygxl9OuJXiwHKE6VpV6Psw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>
+MIIF7DCCBNSgAwIBAgIDANEuMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYDVQQGEwJD
+TDEYMBYGA1UE ChMPQWNlcHRhLmNvbSBTLkEuMUgwRgYDVQQDEz9BY2VwdGEuY29
+tIEF1dG9yaWRhZCBDZXJ0aWZp Y2Fkb3JhIENsYXNlIDIgUGVyc29uYSBOYXR1cm
+FsIC0gRzQxHjAcBgkqhkiG9w0BCQEWD2luZm9A YWNlcHRhLmNvbTETMBEGA1UEB
+RMKOTY5MTkwNTAtODAeFw0xNzA0MjQxNDA3MTdaFw0yMDA0MjQx NDA3MTdaMIGC
+MQswCQYDVQQGEwJDTDEYMBYGA1UEDBMPUEVSU09OQSBOQVRVUkFMMR0wGwYDVQQD
+ExRIRUNUT1IgREFOSUVMIEJMQU5DTzElMCMGCSqGSIb3DQEJARYWZGFuaWVsQGJs
+YW5jb21hcnRp bi5jbDETMBEGA1UEBRMKMjM4NDExOTQtNzCCASIwDQYJKoZIhvc
+NAQEBBQADggEPADCCAQoCggEB AKVOwT5rJSjHN1ctCv/RMTYGeV1bk0TPoIroOv
+QAoqW2vaPmp0tcXSmBCO3V+mtpA/SMENaPLyuv 7kiGGX5ydM5fX//LSkY/ulDFo
+pOICzGO6lM19r0ufzRANYkAqw2BhmJ18JADO1JmcnP0oSLdflVg cKSmwTE8KiQI
+qIjuVe4iLDETHh3HU1CzCrWoRLIM+FQNFL8WSqNFEYOct2dMHMJohs99NOegggzg
+/uYIgvlTWKvoi0llbr2TT6bHbk+fHgKrs2uZJ6ONJTbKRJQCFeyr37szCMvS8EPs
+PURiPGuFPa/8 u5Iqa6zONI88kdLbgGIMZfTriV4sByhOlaVej7MCAwEAAaOCAkM
+wggI/MB8GA1UdIwQYMBaAFGWl qz4/yLZRbRF+X8MKB+ZDoAi2MB0GA1UdDgQWBB
+TFkOAKd4GhJz2JW6jdXRD9Et+g5jALBgNVHQ8E BAMCBPAwHQYDVR0lBBYwFAYIK
+wYBBQUHAwIGCCsGAQUFBwMEMBEGCWCGSAGG+EIBAQQEAwIFoDB1 BgNVHSAEbjBs
+MGoGCCsGAQQBtWsCMF4wMQYIKwYBBQUHAgEWJWh0dHBzOi8vYWNnNC5hY2VwdGEu
+Y29tL0NQUy1BY2VwdGFjb20wKQYIKwYBBQUHAgIwHTAWFg9BY2VwdGEuY29tIFMu
+QS4wAwIBCRoD VEJEMFoGA1UdEgRTMFGgGAYIKwYBBAHBAQKgDBYKOTY5MTkwNTA
+tOKAkBggrBgEFBQcIA6AYMBYM Cjk2OTE5MDUwLTgGCCsGAQQBwQECgQ9pbmZvQG
+FjZXB0YS5jb20wYQYDVR0RBFowWKAYBggrBgEE AcEBAaAMFgoyMzg0MTE5NC03o
+CQGCCsGAQUFBwgDoBgwFgwKMjM4NDExOTQtNwYIKwYBBAHBAQKB FmRhbmllbEBi
+bGFuY29tYXJ0aW4uY2wwRwYIKwYBBQUHAQEEOzA5MDcGCCsGAQUFBzABhitodHRw
+czovL2FjZzQuYWNlcHRhLmNvbS9hY2c0L29jc3AvQ2xhc2UyLUc0MD8GA1UdHwQ4
+MDYwNKAyoDCG Lmh0dHBzOi8vYWNnNC5hY2VwdGEuY29tL2FjZzQvY3JsL0NsYXN
+lMi1HNC5jcmwwDQYJKoZIhvcN AQELBQADggEBACHvynJ7KjgiebxUJoLwSjyJ1t
+jgMe3ws0P0b5cLeHhR6eCNH5SbKu2pUm0BMYFs tYJkZuul4PuK6ikJbfyKhJNJf
+YgCgWebkPpYsMrz/N9qJ3o2iMsudubXejtTmMjCK8ZM3cjyad54 f3DjhHz4xy/w
+mmsnV8NFlm3v/ad5hEhOESDm4q16YGxYaxsX2CtVj1QzzeYbl/2fO+UwNFnXUxTx
+1rOPzWIPzWtEknKebgFeHuWwHV9WmxbyBgLWugYxQcF3JR6es1kt3bjstHOlYPZA
+zXDhuALO+7KB
+eBPeKYCYYspX9gzPK8z1YHQC9eq63FR7DvhFgegG/4fmcpZMdoQ=</X509Certificate></X509Data></KeyInfo></Signature></DTE>
+</SetDTE>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#BMyA_Odoo_SetDoc"><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>IAdPlHqPPzLQKVkie166XWTT8Hs=</DigestValue></Reference></SignedInfo><SignatureValue>hEeWEtKEgjfHyt8yyrnJgXhXA/neaAu+HANkZ9RRgrFWiHAdi2MyFCKOiOOe1VnO
+llRrrlH2hpTDEMYUtjSTfiaX004DzXuHNs1jmyADK+kzT0qnMV+Spav7Q1f3vjBU
+xt5ZOx6/WIuxkDU6NsH8M/Q75aDrSwgCgB1H9i9HscT+hP329B6tO+aKuYGbb2wJ
+Ji3TrQpCyJCTlsdhbBIYmRLUzzpNEOR6SeCobqpP5DfZMd5V+7KYSnTaNiTTN3xk
+YACMLaXHAqn4rJyG4LgxN5C4jDdITcKM6LXJPn4XqyDR7qb7McWIXRy6ctrsHEg2
+75PhqdApTK+TOIpBWE2jeQ==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pU7BPmslKMc3Vy0K/9ExNgZ5XVuTRM+giug69ACipba9o+anS1xdKYEI7dX6a2kD
+9IwQ1o8vK6/uSIYZfnJ0zl9f/8tKRj+6UMWik4gLMY7qUzX2vS5/NEA1iQCrDYGG
+YnXwkAM7UmZyc/ShIt1+VWBwpKbBMTwqJAioiO5V7iIsMRMeHcdTULMKtahEsgz4
+VA0UvxZKo0URg5y3Z0wcwmiGz30056CCDOD+5giC+VNYq+iLSWVuvZNPpsduT58e
+Aquza5kno40lNspElAIV7KvfuzMIy9LwQ+w9RGI8a4U9r/y7kiprrM40jzyR0tuA
+Ygxl9OuJXiwHKE6VpV6Psw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>
+MIIF7DCCBNSgAwIBAgIDANEuMA0GCSqGSIb3DQEBCwUAMIGmMQswCQYDVQQGEwJD
+TDEYMBYGA1UEChMPQWNlcHRhLmNvbSBTLkEuMUgwRgYDVQQDEz9BY2VwdGEuY29t
+IEF1dG9yaWRhZCBDZXJ0aWZpY2Fkb3JhIENsYXNlIDIgUGVyc29uYSBOYXR1cmFs
+IC0gRzQxHjAcBgkqhkiG9w0BCQEWD2luZm9AYWNlcHRhLmNvbTETMBEGA1UEBRMK
+OTY5MTkwNTAtODAeFw0xNzA0MjQxNDA3MTdaFw0yMDA0MjQxNDA3MTdaMIGCMQsw
+CQYDVQQGEwJDTDEYMBYGA1UEDBMPUEVSU09OQSBOQVRVUkFMMR0wGwYDVQQDExRI
+RUNUT1IgREFOSUVMIEJMQU5DTzElMCMGCSqGSIb3DQEJARYWZGFuaWVsQGJsYW5j
+b21hcnRpbi5jbDETMBEGA1UEBRMKMjM4NDExOTQtNzCCASIwDQYJKoZIhvcNAQEB
+BQADggEPADCCAQoCggEBAKVOwT5rJSjHN1ctCv/RMTYGeV1bk0TPoIroOvQAoqW2
+vaPmp0tcXSmBCO3V+mtpA/SMENaPLyuv7kiGGX5ydM5fX//LSkY/ulDFopOICzGO
+6lM19r0ufzRANYkAqw2BhmJ18JADO1JmcnP0oSLdflVgcKSmwTE8KiQIqIjuVe4i
+LDETHh3HU1CzCrWoRLIM+FQNFL8WSqNFEYOct2dMHMJohs99NOegggzg/uYIgvlT
+WKvoi0llbr2TT6bHbk+fHgKrs2uZJ6ONJTbKRJQCFeyr37szCMvS8EPsPURiPGuF
+Pa/8u5Iqa6zONI88kdLbgGIMZfTriV4sByhOlaVej7MCAwEAAaOCAkMwggI/MB8G
+A1UdIwQYMBaAFGWlqz4/yLZRbRF+X8MKB+ZDoAi2MB0GA1UdDgQWBBTFkOAKd4Gh
+Jz2JW6jdXRD9Et+g5jALBgNVHQ8EBAMCBPAwHQYDVR0lBBYwFAYIKwYBBQUHAwIG
+CCsGAQUFBwMEMBEGCWCGSAGG+EIBAQQEAwIFoDB1BgNVHSAEbjBsMGoGCCsGAQQB
+tWsCMF4wMQYIKwYBBQUHAgEWJWh0dHBzOi8vYWNnNC5hY2VwdGEuY29tL0NQUy1B
+Y2VwdGFjb20wKQYIKwYBBQUHAgIwHTAWFg9BY2VwdGEuY29tIFMuQS4wAwIBCRoD
+VEJEMFoGA1UdEgRTMFGgGAYIKwYBBAHBAQKgDBYKOTY5MTkwNTAtOKAkBggrBgEF
+BQcIA6AYMBYMCjk2OTE5MDUwLTgGCCsGAQQBwQECgQ9pbmZvQGFjZXB0YS5jb20w
+YQYDVR0RBFowWKAYBggrBgEEAcEBAaAMFgoyMzg0MTE5NC03oCQGCCsGAQUFBwgD
+oBgwFgwKMjM4NDExOTQtNwYIKwYBBAHBAQKBFmRhbmllbEBibGFuY29tYXJ0aW4u
+Y2wwRwYIKwYBBQUHAQEEOzA5MDcGCCsGAQUFBzABhitodHRwczovL2FjZzQuYWNl
+cHRhLmNvbS9hY2c0L29jc3AvQ2xhc2UyLUc0MD8GA1UdHwQ4MDYwNKAyoDCGLmh0
+dHBzOi8vYWNnNC5hY2VwdGEuY29tL2FjZzQvY3JsL0NsYXNlMi1HNC5jcmwwDQYJ
+KoZIhvcNAQELBQADggEBACHvynJ7KjgiebxUJoLwSjyJ1tjgMe3ws0P0b5cLeHhR
+6eCNH5SbKu2pUm0BMYFstYJkZuul4PuK6ikJbfyKhJNJfYgCgWebkPpYsMrz/N9q
+J3o2iMsudubXejtTmMjCK8ZM3cjyad54f3DjhHz4xy/wmmsnV8NFlm3v/ad5hEhO
+ESDm4q16YGxYaxsX2CtVj1QzzeYbl/2fO+UwNFnXUxTx1rOPzWIPzWtEknKebgFe
+HuWwHV9WmxbyBgLWugYxQcF3JR6es1kt3bjstHOlYPZAzXDhuALO+7KBeBPeKYCY
+YspX9gzPK8z1YHQC9eq63FR7DvhFgegG/4fmcpZMdoQ=</X509Certificate></X509Data></KeyInfo></Signature></EnvioDTE>

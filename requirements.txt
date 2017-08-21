@@ -1,4 +1,5 @@
 bs4
+cchardet
 cryptography==1.9
 # hashlib
 logging

@@ -15,3 +15,13 @@ import pysiidte
 def test_char_replace():
     total = pysiidte.char_replace(u'á')
     assert total == 'a'
+
+
+def test_check_digest():
+    testtype = ['0', '1', '20']
+    for t in testtype:
+        fileuri = 'testdata/dte%s.xml' % t
+        file = open(fileuri, 'r')
+        xml = file.read()
+        assert pysiidte.check_digest(xml)
+

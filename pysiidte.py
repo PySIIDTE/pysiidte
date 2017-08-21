@@ -11,10 +11,12 @@
 # for more details.
 from __future__ import print_function
 import base64
+import cchardet
 import collections
 import hashlib
 import logging
 import ssl
+
 
 from bs4 import BeautifulSoup as bs
 from lxml import etree
@@ -185,6 +187,34 @@ connection_status = {
     'Otro': 'Error Interno.', }
 
 
+def convert_encoding(data, new_coding='UTF-8'):
+    """
+    Funcion auxiliar para conversion de codificacion de strings
+    @author: Daniel Blanco Martin (daniel[at]blancomartin.cl)
+    @version: 2014-12-01 - actualizada 2017-08-20
+    """
+    try:
+        encoding = cchardet.detect(data)['encoding']
+        _logger.info('Encoding:')
+        _logger.info(encoding)
+    except:
+        encoding = 'ascii'
+    if new_coding.upper() != encoding.upper():
+        try:
+            data = data.decode(encoding=encoding, errors='ignore')
+        except:
+            try:
+                data = data.decode(encoding='UTF-8', errors='ignore')
+            except:
+                try:
+                    data = data.decode(
+                        encoding='ISO-8859-9', errors='replace')
+                except:
+                    pass
+        data = data.encode(encoding=new_coding, errors='ignore')
+    return data
+
+
 def soup_text(xml, type_tag):
     """
     :param xml: xml obtenido
@@ -242,7 +272,17 @@ def digest(data):
     return sha1.digest()
 
 
-def get_tag_digest(xml, tag, coding='ISO-8859-1'):
+def search_digest(xml, tag):
+    """
+    Busca el digest de un xml (primero que encuentra?)
+    :param xml:
+    :param tag:
+    :return:
+    """
+    pass
+
+
+def get_tag_digest(xml, coding='iso-8859-1'):
     """
     Función para obtener el digest del tag EnvioDTE
     :param xml: el documento a extraer el tag
@@ -252,11 +292,18 @@ def get_tag_digest(xml, tag, coding='ISO-8859-1'):
     @author: Daniel Blanco Martin (daniel[at]blancomartin.cl)
     @version: 2017-08-07
     """
-    xmle = etree.fromstring(xml.decode(coding).replace(
-        '<?xml version="1.0" encoding="{}"?>'.format(coding), ''))
-    root = etree.tostring(xmle[tag])
-    return base64.b64encode(
-        digest(etree.tostring(etree.fromstring(root), method="c14n")))
+    parser = etree.XMLParser(ns_clean=True, recover=True, encoding=coding)
+    root = etree.fromstring(xml, parser=parser)
+    if root.tag == '{http://www.sii.cl/SiiDte}EnvioDTE':
+        setdte = etree.tostring(root[0])
+        xmlm = etree.tostring(etree.fromstring(setdte), method='c14n')
+    elif root.tag == '{http://www.sii.cl/SiiDte}DTE':
+        doc = etree.tostring(
+            root.find("{http://www.sii.cl/SiiDte}Documento"))
+        xmlm = etree.tostring(
+            etree.fromstring(doc), method="c14n").replace(
+            ' xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"', '')
+    return base64.b64encode(digest(xmlm))
 
 
 def check_digest(xml):
@@ -269,7 +316,7 @@ def check_digest(xml):
     """
     rdig = str(bs(xml, 'xml').find_all('DigestValue')[-1].text)
     _logger.info('Remote Digest: {}'.format(rdig))
-    ldig = get_tag_digest(xml, 0)
+    ldig = get_tag_digest(xml)
     _logger.info('Local Digest: {}'.format(ldig))
     return rdig == ldig
 
@@ -397,7 +444,6 @@ def analyze_sii_result(sii_result, sii_message, sii_receipt):
         return sii_result
     except:
         return False
-
 
 
 def remove_plurals_xml(xml):
