@@ -43,6 +43,9 @@ server_url = {
 BC = '''-----BEGIN CERTIFICATE-----\n'''
 EC = '''\n-----END CERTIFICATE-----\n'''
 
+clean1 = ' xmlns:SII="http://www.sii.cl/XMLSchema"'
+clean2 = '<?xml version="1.0" encoding="UTF-8"?>'
+clean3 = ' xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"'
 
 normalize_tags = collections.OrderedDict()
 normalize_tags['RutEmisor'] = [10]
@@ -301,8 +304,7 @@ def get_tag_digest(xml, coding='iso-8859-1'):
         doc = etree.tostring(
             root.find("{http://www.sii.cl/SiiDte}Documento"))
         xmlm = etree.tostring(
-            etree.fromstring(doc), method="c14n").replace(
-            ' xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"', '')
+            etree.fromstring(doc), method="c14n").replace(clean3, '')
     return base64.b64encode(digest(xmlm))
 
 
@@ -383,6 +385,9 @@ def get_token(seed, mode):
             i -= 1
     return soup_text(aa, 'TOKEN')
 
+# from ctest.certs import *
+# privkey, cert = pk, ct
+
 
 def sii_token(mode, privkey, cert):
     @sign_seed(privkey, cert)
@@ -406,8 +411,8 @@ def sii_token(mode, privkey, cert):
                 continue
             finally:
                 i -= 1
-        return seed_xml
-    return soup_text(get_token(get_seed(mode), mode), 'TOKEN')
+        return soup_text(seed_xml, 'SEMILLA')
+    return get_token(get_seed(mode), mode)
 
 
 def analyze_sii_result(sii_result, sii_message, sii_receipt):
@@ -480,6 +485,3 @@ tag_replace02 = ['CodIVANoRec', 'MntIVANoRec', 'IVANoRetenido', 'IVARetTotal',
 tag_replace_2 = ['TpoDocRef', 'FolioDocRef', 'TpoImp', 'TasaImp',
                  'IVANoRec', 'OtrosImp']
 tag_round = ['MntExe', 'MntNeto', 'MntIva', 'MntImp']
-
-# from ctest.certs import *
-# print sii_token('SIIHOMO', pk, ct)

@@ -10,6 +10,11 @@
 # or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
 # for more details.
 import pysiidte
+try:
+    from ctest.certs import *
+except ImportError:
+    pk, ct = False, False
+    pass
 
 
 def test_char_replace():
@@ -25,3 +30,9 @@ def test_check_digest():
         xml = file.read()
         assert pysiidte.check_digest(xml)
 
+
+def test_sii_token():
+    if pk and ct:
+        assert len(pysiidte.sii_token('SIIHOMO', pk, ct)) == 13
+    else:
+        assert True

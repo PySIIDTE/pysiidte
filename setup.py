@@ -41,6 +41,7 @@ setup(
         # 'hashlib',
         'cchardet',
         'cryptography == 1.9',
+        'lxml',
         'pyOpenSSL == 0.15.1',
         # 'certifi >= 2015.11.20.1',
         'signxml >= 2.4',
