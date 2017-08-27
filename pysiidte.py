@@ -416,7 +416,8 @@ def sii_token(mode, privkey, cert):
 
 
 def analyze_sii_result(sii_result, sii_message, sii_receipt):
-    _logger.info('analizando sii result')
+    _logger.info('pysiidte.analyze_sii_result. sii_result: %s' % sii_result)
+    _logger.info('pysiidte.analyze_sii_result. sii_receipt: %s' % sii_receipt)
     result_dict = {
         'Proceso': ['SOK', 'CRT', 'PDR', 'FOK', '-11'],
         'Rechazado': ['RCH', 'RFR', 'RSC', 'RCT'],
