@@ -15,10 +15,12 @@ import cchardet
 import collections
 import hashlib
 import logging
+import os
+import pytz
 import ssl
 
-
 from bs4 import BeautifulSoup as bs
+from datetime import datetime, timedelta
 from lxml import etree
 from signxml import XMLSigner, methods
 from suds.client import Client
@@ -188,6 +190,46 @@ connection_status = {
     '8': 'Firma del Documento',
     '9': 'Sistema Bloqueado',
     'Otro': 'Error Interno.', }
+xsdpath = os.path.dirname(os.path.realpath(__file__))+'/xsd/'
+
+def time_stamp(format='%Y-%m-%dT%H:%M:%S'):
+    tz = pytz.timezone('America/Santiago')
+    return datetime.now(tz).strftime(format)
+
+
+def xml_validator(some_xml_string, validacion='doc'):
+    """
+    Funcion para validar los xml generados contra el esquema que le
+    corresponda segun el tipo de documento.
+    @author: Daniel Blanco Martin (daniel[at]blancomartin.cl)
+    @version: 2016-06-01. Se agregó validación para boletas
+    Modificada por Daniel Santibañez 2016-08-01
+    """
+    if validacion == 'bol':
+        return True
+    validacion_type = {
+        'doc': 'DTE_v10.xsd',
+        'env': 'EnvioDTE_v10.xsd',
+        'env_boleta': 'EnvioBOLETA_v11.xsd',
+        'recep': 'Recibos_v10.xsd',
+        'env_recep': 'EnvioRecibos_v10.xsd',
+        'env_resp': 'RespuestaEnvioDTE_v10.xsd',
+        'sig': 'xmldsignature_v10.xsd',
+        'book': 'LibroCV_v10.xsd', }
+    xsd_file = xsdpath + validacion_type[validacion]
+    try:
+        xmlschema_doc = etree.parse(xsd_file)
+        xmlschema = etree.XMLSchema(xmlschema_doc)
+        xml_doc = etree.fromstring(some_xml_string)
+        result = xmlschema.validate(xml_doc)
+        if not result:
+            xmlschema.assert_(xml_doc)
+        return result
+    except AssertionError as e:
+        _logger.info(etree.tostring(xml_doc))
+        raise UserError(
+            _(u'Error de formación del XML: {} - Validación: {}').format(
+                e.args, validacion))
 
 
 def convert_encoding(data, new_coding='UTF-8'):
@@ -385,8 +427,54 @@ def get_token(seed, mode):
             i -= 1
     return soup_text(aa, 'TOKEN')
 
-# from ctest.certs import *
-# privkey, cert = pk, ct
+
+def signrsa(self, MESSAGE, KEY, digst=''):
+    """
+    Funcion usada en SII
+    para firma del timbre (dio errores de firma para el resto de los doc)
+    @author: Daniel Blanco Martin (daniel[at]blancomartin.cl)
+    @version: 2015-03-01
+    """
+    KEY = KEY.encode('ascii')
+    rsa = M2Crypto.EVP.load_key_string(KEY)
+    rsa.reset_context(md='sha1')
+    rsa_m = rsa.get_rsa()
+    rsa.sign_init()
+    rsa.sign_update(MESSAGE)
+    FRMT = base64.b64encode(rsa.sign_final())
+    if digst == '':
+        return {
+            'firma': FRMT, 'modulus': base64.b64encode(rsa_m.n),
+            'exponent': base64.b64eDigesncode(rsa_m.e)}
+    else:
+        return {
+            'firma': FRMT, 'modulus': base64.b64encode(rsa_m.n),
+            'exponent': base64.b64encode(rsa_m.e),
+            'digest': base64.b64encode(self.digest(MESSAGE))}
+
+
+def signmessage(self, MESSAGE, KEY, pubk='', digst=''):
+    """
+    Funcion usada en SII
+    para firma del timbre (dio errores de firma para el resto de los doc)
+     @author: Daniel Blanco Martin (daniel[at]blancomartin.cl)
+     @version: 2015-03-01
+    """
+    rsa = M2Crypto.EVP.load_key_string(KEY)
+    rsa.reset_context(md='sha1')
+    rsa_m = rsa.get_rsa()
+    rsa.sign_init()
+    rsa.sign_update(MESSAGE)
+    FRMT = base64.b64encode(rsa.sign_final())
+    if digst == '':
+        return {
+            'firma': FRMT, 'modulus': base64.b64encode(rsa_m.n),
+            'exponent': base64.b64encode(rsa_m.e), }
+    else:
+        return {
+            'firma': FRMT, 'modulus': base64.b64encode(rsa_m.n),
+            'exponent': base64.b64encode(rsa_m.e),
+            'digest': base64.b64encode(self.digest(MESSAGE)), }
 
 
 def sii_token(mode, privkey, cert):
@@ -415,6 +503,55 @@ def sii_token(mode, privkey, cert):
     return get_token(get_seed(mode), mode)
 
 
+def split_cert(cert):
+    certf, j = '', 0
+    for i in range(0, 29):
+        certf += cert[76 * i:76 * (i + 1)] + '\n'
+    return certf
+
+
+def sign_seed(message, privkey, cert):
+    """
+    @author: Daniel Blanco Martin (daniel[at]blancomartin.cl)
+    @version: 2016-06-01
+    """
+    _logger.info('SIGNING WITH SIGN_SEED ##### ------ #####')
+    doc = etree.fromstring(message)
+    # signed_node = Signer.sign(
+    #    doc, key=privkey.encode('ascii'), cert=cert, key_info=None)
+    signed_node = XMLSigner(
+        method=methods.enveloped, signature_algorithm=u'rsa-sha1',
+        digest_algorithm=u'sha1').sign(
+        doc, key=privkey.encode('ascii'), passphrase=None, cert=cert,
+        key_name=None, key_info=None, id_attribute=None)
+    msg = etree.tostring(
+        signed_node, pretty_print=True).replace('ds:', '')
+    _logger.info('message: {}'.format(msg))
+    return msg
+
+
+def pdf417bc(ted):
+    """
+    Funcion creacion de imagen pdf417 basada en biblioteca elaphe
+     @author: Daniel Blanco Martin (daniel[at]blancomartin.cl)
+     @version: 2016-05-01
+    """
+    bc = barcode(
+        'pdf417',
+        ted,
+        options=dict(
+            compact=False,
+            eclevel=5,
+            columns=13,
+            rowmult=2,
+            rows=3
+        ),
+        margin=20,
+        scale=1
+    )
+    return bc
+
+
 def analyze_sii_result(sii_result, sii_message, sii_receipt):
     _logger.info('pysiidte.analyze_sii_result. sii_result: %s' % sii_result)
     _logger.info('pysiidte.analyze_sii_result. sii_receipt: %s' % sii_receipt)
@@ -425,7 +562,7 @@ def analyze_sii_result(sii_result, sii_message, sii_receipt):
         'check_receipt': ['EPR', 'DNK'],
         'check_glosa': ['2'], }
     status = False
-    try:
+    if True:
         soup_message = bs(sii_message, 'xml')
         _logger.info(soup_message)
         for key, values in result_dict.iteritems():
@@ -433,7 +570,7 @@ def analyze_sii_result(sii_result, sii_message, sii_receipt):
                 status = key
                 break
         if status == 'check_receipt':
-            try:
+            if True:
                 soup_receipt = bs(sii_receipt, 'xml')
                 _logger.info(soup_receipt)
                 if soup_receipt.ACEPTADOS.text == soup_receipt.INFORMADOS.text:
@@ -442,13 +579,13 @@ def analyze_sii_result(sii_result, sii_message, sii_receipt):
                     return 'Reparo'
                 if soup_receipt.RECHAZADOS.text >= '1':
                     return 'Rechazado'
-            except:
+            else:  # except:
                 pass
         elif status == 'check_glosa':
             raise ValueError(
                 'Error code: 2: {}'.format(soup_message.GLOSA_ERR.text))
         return sii_result
-    except:
+    else:  # except:
         return False
 
 
