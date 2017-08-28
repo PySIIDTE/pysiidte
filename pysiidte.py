@@ -562,7 +562,7 @@ def analyze_sii_result(sii_result, sii_message, sii_receipt):
         'check_receipt': ['EPR', 'DNK'],
         'check_glosa': ['2'], }
     status = False
-    if True:
+    try:
         soup_message = bs(sii_message, 'xml')
         _logger.info(soup_message)
         for key, values in result_dict.iteritems():
@@ -585,7 +585,9 @@ def analyze_sii_result(sii_result, sii_message, sii_receipt):
             raise ValueError(
                 'Error code: 2: {}'.format(soup_message.GLOSA_ERR.text))
         return sii_result
-    else:  # except:
+    except TypeError:
+        _logger.info(
+            'pysiidte.analyze_sii_result: sii_message (bool) Retornando Falso')
         return False
 
 
