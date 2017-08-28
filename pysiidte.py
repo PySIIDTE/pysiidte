@@ -510,24 +510,24 @@ def split_cert(cert):
     return certf
 
 
-def sign_seed(message, privkey, cert):
-    """
-    @author: Daniel Blanco Martin (daniel[at]blancomartin.cl)
-    @version: 2016-06-01
-    """
-    _logger.info('SIGNING WITH SIGN_SEED ##### ------ #####')
-    doc = etree.fromstring(message)
-    # signed_node = Signer.sign(
-    #    doc, key=privkey.encode('ascii'), cert=cert, key_info=None)
-    signed_node = XMLSigner(
-        method=methods.enveloped, signature_algorithm=u'rsa-sha1',
-        digest_algorithm=u'sha1').sign(
-        doc, key=privkey.encode('ascii'), passphrase=None, cert=cert,
-        key_name=None, key_info=None, id_attribute=None)
-    msg = etree.tostring(
-        signed_node, pretty_print=True).replace('ds:', '')
-    _logger.info('message: {}'.format(msg))
-    return msg
+#def sign_seed(message, privkey, cert):
+#    """
+#    @author: Daniel Blanco Martin (daniel[at]blancomartin.cl)
+#    @version: 2016-06-01
+#    """
+#    _logger.info('SIGNING WITH SIGN_SEED ##### ------ #####')
+#    doc = etree.fromstring(message)
+#    # signed_node = Signer.sign(
+#    #    doc, key=privkey.encode('ascii'), cert=cert, key_info=None)
+#    signed_node = XMLSigner(
+#        method=methods.enveloped, signature_algorithm=u'rsa-sha1',
+#        digest_algorithm=u'sha1').sign(
+#        doc, key=privkey.encode('ascii'), passphrase=None, cert=cert,
+#        key_name=None, key_info=None, id_attribute=None)
+#    msg = etree.tostring(
+#        signed_node, pretty_print=True).replace('ds:', '')
+#    _logger.info('message: {}'.format(msg))
+#    return msg
 
 
 def pdf417bc(ted):
