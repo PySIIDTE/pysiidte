@@ -585,7 +585,8 @@ def analyze_sii_result(sii_result, sii_message, sii_receipt):
         return sii_result
     except TypeError:
         _logger.info(
-            'pysiidte.analyze_sii_result: sii_message (bool) Retornando Falso')
+            'pysiidte.analyze_sii_result: \
+            sii_message Retornando Valor Original')
         return sii_result
 
 
