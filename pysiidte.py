@@ -224,10 +224,10 @@ def xml_validator(some_xml_string, validacion='doc'):
         result = xmlschema.validate(xml_doc)
         if not result:
             xmlschema.assert_(xml_doc)
-        return {'error': 'OK', 'msg': result}
+        return {'result': 'OK', 'msg': result}
     except AssertionError as e:
         _logger.info(etree.tostring(xml_doc))
-        return {'error': e.args, 'msg': validacion}
+        return {'result': e.args, 'msg': validacion}
 
 
 def convert_encoding(data, new_coding='UTF-8'):
