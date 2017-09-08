@@ -588,7 +588,7 @@ def analyze_sii_result(sii_result, sii_message, sii_receipt):
     except TypeError:
         _logger.info(
             'pysiidte.analyze_sii_result: sii_message (bool) Retornando Falso')
-        return False
+        return sii_result
 
 
 def remove_plurals_xml(xml):
