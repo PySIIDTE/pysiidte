@@ -192,6 +192,23 @@ connection_status = {
     'Otro': 'Error Interno.', }
 xsdpath = os.path.dirname(os.path.realpath(__file__))+'/xsd/'
 
+
+def set_headers(token, referer):
+    headers = {
+        'Accept': 'image/gif, image/x-xbitmap, image/jpeg, \
+image/pjpeg, application/vnd.ms-powerpoint, application/ms-excel, \
+application/msword, */*',
+        'Accept-Language': 'es-cl',
+        'Accept-Encoding': 'gzip, deflate',
+        'User-Agent': 'Mozilla/4.0 (compatible; PROG 1.0; Windows NT 5.0; \
+YComp 5.0.2.4)',
+        'Referer': '{}'.format(referer),
+        'Connection': 'Keep-Alive',
+        'Cache-Control': 'no-cache',
+        'Cookie': 'TOKEN={}'.format(token), }
+    return headers
+
+
 def time_stamp(format='%Y-%m-%dT%H:%M:%S'):
     tz = pytz.timezone('America/Santiago')
     return datetime.now(tz).strftime(format)
