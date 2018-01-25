@@ -40,7 +40,7 @@ setup(
         # 'pyOpenSSL == 17.0.0',
         # 'hashlib',
         'cchardet',
-        'cryptography == 1.9',
+        'cryptography == 2.1.4',
         'lxml',
         'pyOpenSSL == 0.15.1',
         # 'certifi >= 2015.11.20.1',
@@ -48,6 +48,7 @@ setup(
         'logging',
         'suds',
         'bs4',
+        'pytz'
     ],
     extras_require={
         ':python_version == "2.7"': ['enum34 >= 1.0.4'],
