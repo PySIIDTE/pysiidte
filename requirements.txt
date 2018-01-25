@@ -1,6 +1,6 @@
 bs4
 cchardet
-cryptography==1.9
+cryptography==2.1.4
 # hashlib
 logging
 lxml
