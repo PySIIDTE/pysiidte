@@ -45,7 +45,7 @@ setup(
         'pyOpenSSL == 0.15.1',
         # 'certifi >= 2015.11.20.1',
         'signxml >= 2.4',
-        'logging',
+        # 'logging',
         'suds',
         'bs4',
         'pytz'

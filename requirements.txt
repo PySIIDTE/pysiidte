@@ -2,7 +2,7 @@ bs4
 cchardet
 cryptography==2.1.4
 # hashlib
-logging
+# logging
 lxml
 pyOpenSSL==0.15.1
 signxml>=2.4
