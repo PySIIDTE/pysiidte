@@ -3,7 +3,7 @@ cchardet
 cryptography==2.1.4
 # hashlib
 # logging
-lxml
+# lxml
 pyOpenSSL==0.15.1
 signxml>=2.4
 suds
