@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/PySIIDTE/pysiidte.svg?branch=master)](https://travis-ci.org/PySIIDTE/pysiidte)
+[![Build Status](https://travis-ci.org/PySIIDTE/pysiidte.svg?branch=3.5)](https://travis-ci.org/PySIIDTE/pysiidte)
 [![Code Climate](https://codeclimate.com/github/PySIIDTE/pysiidte/badges/gpa.svg)](https://codeclimate.com/github/PySIIDTE/pysiidte)
 
 
