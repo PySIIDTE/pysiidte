@@ -11,13 +11,16 @@
 # for more details.
 from __future__ import print_function
 import base64
+import cchardet
+import collections
 import hashlib
 import logging
-from datetime import datetime
-
-import cchardet
+import os
 import pytz
+import ssl
+
 from bs4 import BeautifulSoup as bs
+from datetime import datetime, timedelta
 from lxml import etree
 from signxml import XMLSigner, methods
 from suds.client import Client
@@ -385,7 +388,7 @@ def sign_rsa(self, MESSAGE, KEY, digst=''):
     """
     def real_signer(method):
         def call(*args, **kwargs):
-            rsa = M2Crypto.EVP.load_key_string(KEY)
+            rsa = M2Crypto.EVP.load_key_string(method)
             rsa.reset_context(md='sha1')
             rsa_m = rsa.get_rsa()
             rsa.sign_init()
@@ -467,7 +470,7 @@ def get_token(seed, mode):
     return soup_text(aa, 'TOKEN')
 
 
-@sign_rsa()
+@sign_rsa
 def signrsa(self, MESSAGE, KEY, digst=''):
     """
     Funcion usada en SII
@@ -478,7 +481,7 @@ def signrsa(self, MESSAGE, KEY, digst=''):
     return KEY.encode('ascii')
 
 
-@sign_rsa()
+@sign_rsa
 def signmessage(self, MESSAGE, KEY, pubk='', digst=''):
     """
     Funcion usada en SII
