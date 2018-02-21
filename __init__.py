@@ -10,9 +10,10 @@
 # or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
 # for more details.
 
-"""Módulo auxiliares y para realizar conexión, firma y servicios
-   relacionados don Documentos Tributarios Electrónicos del SII
-   (Servicio de Impuestos Internos) de Chile
+"""
+Módulo auxiliares y para realizar conexión, firma y servicios
+relacionados don Documentos Tributarios Electrónicos del SII
+(Servicio de Impuestos Internos) de Chile
 """
 __author__ = "Daniel Blanco Martín (daniel@blancomartin.cl)"
 __copyright__ = "Copyright (C) 2015-2017 Blanco Martín y Asoc. EIRL - BMyA S.A."

@@ -11,19 +11,17 @@
 # for more details.
 from __future__ import print_function
 import base64
-import cchardet
-import collections
 import hashlib
 import logging
-import os
-import pytz
-import ssl
+from datetime import datetime
 
+import cchardet
+import pytz
 from bs4 import BeautifulSoup as bs
-from datetime import datetime, timedelta
 from lxml import etree
 from signxml import XMLSigner, methods
 from suds.client import Client
+
 
 """
 Módulo auxiliares y para realizar conexión, firma y servicios
@@ -380,6 +378,32 @@ def check_digest(xml):
     return rdig == ldig
 
 
+def sign_rsa(self, MESSAGE, KEY, digst=''):
+    """
+    Decorador para firmar RSA
+    :return:
+    """
+    def real_signer(method):
+        def call(*args, **kwargs):
+            rsa = M2Crypto.EVP.load_key_string(KEY)
+            rsa.reset_context(md='sha1')
+            rsa_m = rsa.get_rsa()
+            rsa.sign_init()
+            rsa.sign_update(MESSAGE)
+            FRMT = base64.b64encode(rsa.sign_final())
+            if digst == '':
+                return {
+                    'firma': FRMT, 'modulus': base64.b64encode(rsa_m.n),
+                    'exponent': base64.b64eDigesncode(rsa_m.e), }
+            else:
+                return {
+                    'firma': FRMT, 'modulus': base64.b64encode(rsa_m.n),
+                    'exponent': base64.b64encode(rsa_m.e),
+                    'digest': base64.b64encode(self.digest(MESSAGE)), }
+        return call
+    return real_signer
+
+
 def sign_seed(privkey, cert):
     """
     @author: Daniel Blanco Martin (daniel[at]blancomartin.cl)
@@ -443,6 +467,7 @@ def get_token(seed, mode):
     return soup_text(aa, 'TOKEN')
 
 
+@sign_rsa()
 def signrsa(self, MESSAGE, KEY, digst=''):
     """
     Funcion usada en SII
@@ -450,24 +475,10 @@ def signrsa(self, MESSAGE, KEY, digst=''):
     @author: Daniel Blanco Martin (daniel[at]blancomartin.cl)
     @version: 2015-03-01
     """
-    KEY = KEY.encode('ascii')
-    rsa = M2Crypto.EVP.load_key_string(KEY)
-    rsa.reset_context(md='sha1')
-    rsa_m = rsa.get_rsa()
-    rsa.sign_init()
-    rsa.sign_update(MESSAGE)
-    FRMT = base64.b64encode(rsa.sign_final())
-    if digst == '':
-        return {
-            'firma': FRMT, 'modulus': base64.b64encode(rsa_m.n),
-            'exponent': base64.b64eDigesncode(rsa_m.e)}
-    else:
-        return {
-            'firma': FRMT, 'modulus': base64.b64encode(rsa_m.n),
-            'exponent': base64.b64encode(rsa_m.e),
-            'digest': base64.b64encode(self.digest(MESSAGE))}
+    return KEY.encode('ascii')
 
 
+@sign_rsa()
 def signmessage(self, MESSAGE, KEY, pubk='', digst=''):
     """
     Funcion usada en SII
@@ -475,21 +486,7 @@ def signmessage(self, MESSAGE, KEY, pubk='', digst=''):
      @author: Daniel Blanco Martin (daniel[at]blancomartin.cl)
      @version: 2015-03-01
     """
-    rsa = M2Crypto.EVP.load_key_string(KEY)
-    rsa.reset_context(md='sha1')
-    rsa_m = rsa.get_rsa()
-    rsa.sign_init()
-    rsa.sign_update(MESSAGE)
-    FRMT = base64.b64encode(rsa.sign_final())
-    if digst == '':
-        return {
-            'firma': FRMT, 'modulus': base64.b64encode(rsa_m.n),
-            'exponent': base64.b64encode(rsa_m.e), }
-    else:
-        return {
-            'firma': FRMT, 'modulus': base64.b64encode(rsa_m.n),
-            'exponent': base64.b64encode(rsa_m.e),
-            'digest': base64.b64encode(self.digest(MESSAGE)), }
+    return KEY
 
 
 def sii_token(mode, privkey, cert):
