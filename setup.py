@@ -24,6 +24,16 @@ import warnings
 
 from setuptools import find_packages, setup
 
+data_files = [
+    ("xsd", ["xsd/ConsumoFolio_v10.xsd", "xsd/DTE_v10.xsd", "xsd/EnvioBOLETA_v11.xsd",
+             "xsd/EnvioDTE_v10.xsd", "xsd/EnvioRecibos_v10.xsd", "xsd/LceCal_v10.xsd",
+             "xsd/LceCoCertif_v10.xsd", "xsd/LceSiiTypes_v10.xsd", "xsd/LibroBOLETA_v10.xsd",
+             "xsd/LibroCVS_v10.xsd", "xsd/LibroCV_v10.xsd", "xsd/LibroGuia_v10.xsd",
+             "xsd/Recibos_v10.xsd", "xsd/RespSII_v10.xsd", "xsd/RespuestaEnvioDTE_v10.xsd",
+             "xsd/SiiTypes_v10.xsd", "xsd/xmldsignature_v10.xsd", ]),
+    ]
+
+
 setup(
     name='pysiidte',
     version='0.1',
@@ -59,6 +69,7 @@ setup(
     platforms=['MacOS X', 'Posix'],
     zip_safe=False,
     include_package_data=True,
+    data_files=data_files,
     classifiers=[
         'Intended Audience :: Developers',
         'License :: OSI Approved :: AGPL-3',
