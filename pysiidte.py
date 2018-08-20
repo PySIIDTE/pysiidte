@@ -423,7 +423,7 @@ def sign_seed(privkey, cert):
             # msg = etree.tostring(
             # signed_node, pretty_print=True).replace('ds:', '')
             msg = etree.tostring(
-                signed_node, pretty_print=True).decode().replace('ds: ', '')
+                signed_node, pretty_print=True).decode().replace('ds:', '')
             _logger.info('message: {}'.format(msg))
             return msg
         return call
