@@ -473,7 +473,7 @@ def get_token(seed, mode):
 
 
 @sign_rsa
-def signrsa(self, MESSAGE, KEY, digst=''):
+def signrsa(self, MESSAGE=False, KEY=False, digst=''):
     """
     Funcion usada en SII
     para firma del timbre (dio errores de firma para el resto de los doc)
