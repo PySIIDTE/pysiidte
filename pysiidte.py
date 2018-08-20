@@ -381,7 +381,7 @@ def check_digest(xml):
     return rdig == ldig
 
 
-def sign_rsa(self, MESSAGE, KEY, digst=''):
+def sign_rsa(self, MESSAGE=False, KEY=False, digst=''):
     """
     Decorador para firmar RSA
     :return:

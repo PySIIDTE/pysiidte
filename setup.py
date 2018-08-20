@@ -52,7 +52,7 @@ setup(
         'cchardet',
         'cryptography == 2.1.4',
         'lxml',
-        'pyOpenSSL == 0.15.1',
+        'pyOpenSSL == 16.2.0',
         # 'certifi >= 2015.11.20.1',
         'signxml >= 2.4',
         'suds-jurko == 0.6',
