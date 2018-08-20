@@ -420,8 +420,10 @@ def sign_seed(privkey, cert):
                 digest_algorithm=u'sha1').sign(
                 doc, key=privkey.encode('ascii'), passphrase=None, cert=cert,
                 key_name=None, key_info=None, id_attribute=None)
+            # msg = etree.tostring(
+            # signed_node, pretty_print=True).replace('ds:', '')
             msg = etree.tostring(
-                signed_node, pretty_print=True).replace('ds:', '')
+                signed_node, pretty_print=True).decode().replace('ds: ', '')
             _logger.info('message: {}'.format(msg))
             return msg
         return call
