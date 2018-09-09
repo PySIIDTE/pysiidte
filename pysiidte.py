@@ -400,7 +400,7 @@ def check_digest(xml):
     return rdig == ldig
 
 
-def sign_rsa(self, MESSAGE, KEY, digst=''):
+def sign_rsa(self, MESSAGE=False, KEY=False, digst=''):
     """
     Decorador para firmar RSA
     :return:
@@ -439,8 +439,10 @@ def sign_seed(privkey, cert):
                 digest_algorithm=u'sha1').sign(
                 doc, key=privkey.encode('ascii'), passphrase=None, cert=cert,
                 key_name=None, key_info=None, id_attribute=None)
+            # msg = etree.tostring(
+            # signed_node, pretty_print=True).replace('ds:', '')
             msg = etree.tostring(
-                signed_node, pretty_print=True).replace('ds:', '')
+                signed_node, pretty_print=True).decode().replace('ds:', '')
             _logger.info('message: {}'.format(msg))
             return msg
         return call
@@ -490,7 +492,7 @@ def get_token(seed, mode):
 
 
 @sign_rsa
-def signrsa(self, MESSAGE, KEY, digst=''):
+def signrsa(self, MESSAGE=False, KEY=False, digst=''):
     """
     Funcion usada en SII
     para firma del timbre (dio errores de firma para el resto de los doc)
