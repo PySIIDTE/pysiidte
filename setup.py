@@ -36,7 +36,7 @@ data_files = [
 
 setup(
     name='pysiidte',
-    version='0.1',
+    version='0.2',
     url='https://bitbucket.org/hdblanco/pysiidte',
     license='AGPL-3',
     author='Daniel Blanco Martín',
