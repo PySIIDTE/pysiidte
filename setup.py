@@ -16,11 +16,11 @@ __author__ = "Daniel Blanco Martín (daniel@blancomartin.cl)"
 __copyright__ = "Copyright (C) 2015-2017 Blanco Martín y Asoc. EIRL - BMyA S.A."
 __license__ = "AGPL 3.0"
 
-import glob
-import os
-import subprocess
-import sys
-import warnings
+# import glob
+# import os
+# import subprocess
+# import sys
+# import warnings
 
 from setuptools import find_packages, setup
 
@@ -50,7 +50,7 @@ setup(
         # 'pyOpenSSL == 17.0.0',
         # 'hashlib',
         'cchardet',
-        'cryptography == 2.1.4',
+        'cryptography == 2.3',
         'lxml',
         'pyOpenSSL == 16.2.0',
         # 'certifi >= 2015.11.20.1',
