@@ -49,7 +49,7 @@ setup(
         'cryptography == 2.3.1',
         'pyOpenSSL == 16.2.0',
         'signxml >= 2.5.2',
-        'suds - jurko==0.6',
+        'suds - jurko ==0.6',
         'pytz == 2016.7',
     ],
     extras_require={
