@@ -43,6 +43,9 @@ ssl._create_default_https_context = ssl._create_unverified_context
 server_url = {
     'SIIHOMO': 'https://maullin.sii.cl/DTEWS/',
     'SII': 'https://palena.sii.cl/DTEWS/', }
+claim_url = {
+    'SIIHOMO': 'https://ws2.sii.cl/WSREGISTRORECLAMODTECERT/registroreclamodteservice',
+    'SII': 'https://ws1.sii.cl/WSREGISTRORECLAMODTE/registroreclamodteservice', }
 BC = '''-----BEGIN CERTIFICATE-----\n'''
 EC = '''\n-----END CERTIFICATE-----\n'''
 
