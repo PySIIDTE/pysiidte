@@ -643,7 +643,8 @@ def create_template_doc(doc):
     @version: 2016-06-01
     """
     xml = '''<DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
-    {}</DTE>'''.format(doc)
+    {}
+</DTE>'''.format(doc)
     return xml
 
 
