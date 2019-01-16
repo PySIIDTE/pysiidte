@@ -460,7 +460,9 @@ def create_template_seed(method):
     def call(mode):
         xml = u'''<getToken>
 <item>
-<Semilla>{}</Semilla>
+    <Semilla>
+        {}
+    </Semilla>
 </item>
 </getToken>
 '''.format(method(mode))
