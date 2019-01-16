@@ -232,6 +232,15 @@ YComp 5.0.2.4)',
     return headers
 
 
+def str_shorten(text, size=1):
+    c = 0
+    result_string = ""
+    while c < size and c < len(text):
+        result_string += text[c]
+        c += 1
+    return result_string
+
+
 def time_stamp(format='%Y-%m-%dT%H:%M:%S'):
     tz = pytz.timezone('America/Santiago')
     return datetime.now(tz).strftime(format)
@@ -637,6 +646,17 @@ def remove_plurals_xml(xml):
     for k in pluralizeds:
         print(k)
         xml = xml.replace('<%s>' % k, '').replace('</%s>' % k, '')
+    return xml
+
+
+def create_template_env(doc):
+    xml = '''<?xml version="1.0" encoding="ISO-8859-1"?>
+<EnvioDTE xmlns="http://www.sii.cl/SiiDte" \
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" \
+xsi:schemaLocation="http://www.sii.cl/SiiDte EnvioDTE_v10.xsd" \
+version="1.0">
+    {}
+</EnvioDTE>'''.format(doc)
     return xml
 
 
