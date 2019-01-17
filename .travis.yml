@@ -12,8 +12,8 @@ env:
 
 # command to run tests
 script:
-    - py.test
- #   - coverage run test.py
+#    - py.test
+#    - coverage run test.py
 
 after_success:
   - codecov
