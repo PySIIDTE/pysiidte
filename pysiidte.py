@@ -667,7 +667,7 @@ def create_template_doc(doc):
     @author: Daniel Blanco Martin (daniel[at]blancomartin.cl)
     """
     xml = '''<DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
-    {}</DTE>'''.format(doc)
+{}</DTE>'''.format(doc)
     return xml
 
 
