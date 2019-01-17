@@ -11,12 +11,12 @@ env:
     CODECLIMATE_REPO_TOKEN: 55ed01a01462b84bfc64eb958b07be5dc69c8c6f26fc47599846029a09e466c1
 
 # command to run tests
-# script:
-#    - py.test
-#    - coverage run test.py
+script:
+    - py.test
+    - coverage run test.py
 
 after_success:
-  - codecov
+    - codecov
 
 # lets see..
 
