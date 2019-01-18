@@ -1,12 +1,10 @@
 language: python
 python:
     - "2.7"
-    - "3.5"
 
 install:
     - pip install codecov
     - python setup.py install
-
 
 env:
     CODECLIMATE_REPO_TOKEN: 55ed01a01462b84bfc64eb958b07be5dc69c8c6f26fc47599846029a09e466c1
@@ -17,8 +15,4 @@ script:
     - coverage run test.py
 
 after_success:
-    - codecov
-
-# lets see..
-
-
+  - codecov
