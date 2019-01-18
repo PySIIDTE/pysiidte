@@ -36,7 +36,7 @@ data_files = [
 
 setup(
     name='pysiidte',
-    version='0.93',
+    version='0.94',
     url='https://github.com/PySIIDTE/pysiidte',
     license='AGPL-3',
     author='Daniel Blanco Martín',
@@ -45,7 +45,7 @@ setup(
     long_description=open('README.md').read(),
     install_requires=[
         'bs4 == 0.0.1',
-        'cchardet == 2.1.1',
+        'cchardet == 2.1.4',
         'cryptography == 2.4.2',
         'pyOpenSSL >= 17.5.0, < 19',
         'signxml >= 2.5.2',
@@ -54,7 +54,9 @@ setup(
     ],
     extras_require={
         ':python_version == "2.7"': ['enum34 >= 1.0.4'],
-        ':python_version == "3.3"': ['enum34 >= 1.0.4']
+        ':python_version == "3.3"': ['enum34 >= 1.0.4'],
+        ':python_version == "3.4"': ['enum34 >= 1.0.4'],
+        ':python_version == "3.5"': ['enum34 >= 1.0.4'],
     },
     # packages=find_packages(exclude=['test']),
     # packages=['pysiidte'],
@@ -68,6 +70,8 @@ setup(
         'License :: OSI Approved :: AGPL-3',
         'Operating System :: MacOS :: MacOS X',
         'Operating System :: POSIX',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
