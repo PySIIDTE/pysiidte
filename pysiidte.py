@@ -227,7 +227,6 @@ def xml_document_type(document_code, document_type):
     return
 
 
-
 def set_headers(token, referer):
     headers = {
         'Accept': 'image/gif, image/x-xbitmap, image/jpeg, \
@@ -317,6 +316,30 @@ def convert_encoding(data, new_coding='UTF-8'):
                     pass
         data = data.encode(encoding=new_coding, errors='ignore')
     return data
+
+
+def long_to_bytes(n, blocksize=0):
+    s = b''
+    # if USING_PYTHON2:
+    n = long(n)
+    pack = struct.pack
+    while n > 0:
+        s = pack(b'>I', n & 0xffffffff) + s
+        n = n >> 32
+    # strip off leading zeros
+    for i in range(len(s)):
+        if s[i] != b'\000'[0]:
+            break
+    else:
+        # only happens when n == 0
+        s = b'\000'
+        i = 0
+    s = s[i:]
+    # add back some pad bytes.  this could be done more efficiently w.r.t. the
+    # de-padding being done above, but sigh...
+    if blocksize > 0 and len(s) % blocksize:
+        s = (blocksize - len(s) % blocksize) * b'\000' + s
+    return s
 
 
 def soup_text(xml, type_tag):
