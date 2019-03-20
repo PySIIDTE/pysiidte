@@ -18,7 +18,7 @@ import logging
 import os
 import pytz
 import ssl
-
+import sys
 from bs4 import BeautifulSoup as bs
 from datetime import datetime, timedelta
 from lxml import etree
@@ -320,8 +320,8 @@ def convert_encoding(data, new_coding='UTF-8'):
 
 def long_to_bytes(n, blocksize=0):
     s = b''
-    # if USING_PYTHON2:
-    n = long(n)
+    if sys.version_info < (3, 0):
+        n = long(n)
     pack = struct.pack
     while n > 0:
         s = pack(b'>I', n & 0xffffffff) + s
