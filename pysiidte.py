@@ -113,9 +113,9 @@ normalize_tags['TasaIVA'] = [5]
 normalize_tags['IVA'] = [18]
 normalize_tags['IVAProp'] = [18]
 normalize_tags['IVATerc'] = [18]
-normalize_tags['TipoImp'] = [3] #Parece estar repetido con TpoImp
+normalize_tags['TipoImp'] = [3]  # Parece estar repetido con TpoImp
 normalize_tags['TasaImp'] = [5]
-normalize_tags['MntImp'] = [18] #Parece estar repetido con MontoImp
+normalize_tags['MntImp'] = [18]  # Parece estar repetido con MontoImp
 normalize_tags['MontoImp'] = [18]
 normalize_tags['IVARetTotal'] = [18]
 normalize_tags['IVARetParcial'] = [18]
@@ -215,6 +215,18 @@ connection_status = {
     'Otro': 'Error Interno.', }
 xsdpath = os.path.dirname(os.path.realpath(__file__))+'/xsd/'
 
+document_type = {
+    'Liquidacion': [43],
+    'Exportaciones': [110, 111, 112],
+}
+
+def xml_document_type(document_code, document_type):
+    for k, v in document_type.items():
+        if document_code in v:
+            return k
+    return
+
+
 
 def set_headers(token, referer):
     headers = {
@@ -241,9 +253,9 @@ def str_shorten(text, size=1):
     return result_string
 
 
-def time_stamp(format='%Y-%m-%dT%H:%M:%S'):
+def time_stamp(date_format='%Y-%m-%dT%H:%M:%S'):
     tz = pytz.timezone('America/Santiago')
-    return datetime.now(tz).strftime(format)
+    return datetime.now(tz).strftime(date_format)
 
 
 def xml_validator(some_xml_string, validacion='doc'):
