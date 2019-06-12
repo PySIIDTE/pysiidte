@@ -49,8 +49,8 @@ setup(
         'cryptography == 2.4.2',
         'pyOpenSSL >= 17.5.0, < 19',
         'signxml >= 2.5.2',
-        'suds-jurko == 0.6',
         'pytz == 2016.7',
+        'zeep == 3.1.0',
     ],
     extras_require={
         ':python_version == "2.7"': ['enum34 >= 1.0.4'],

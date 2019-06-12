@@ -5,3 +5,5 @@ pyOpenSSL>=17.5.0,<19
 signxml>=2.5.2
 suds-jurko==0.6
 pytz==2016.7
+zeep==3.1.0
+

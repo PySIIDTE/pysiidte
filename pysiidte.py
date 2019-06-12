@@ -23,7 +23,7 @@ from bs4 import BeautifulSoup as bs
 from datetime import datetime, timedelta
 from lxml import etree
 from signxml import XMLSigner, methods
-from suds.client import Client
+from zeep.client import Client
 
 
 """
