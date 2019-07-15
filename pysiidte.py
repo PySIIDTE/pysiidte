@@ -15,7 +15,9 @@ import cchardet
 import collections
 import hashlib
 import logging
+import M2Crypto
 import os
+import pdf417gen
 import pytz
 import ssl
 import sys
@@ -32,7 +34,7 @@ relacionados don Documentos Tributarios Electrónicos del SII
 (Servicio de Impuestos Internos) de Chile
 """
 __author__ = "Daniel Blanco Martín (daniel@blancomartin.cl)"
-__copyright__ = "Copyright (C) 2015-2017 Blanco Martín y Asoc. EIRL - BMyA S.A."
+__copyright__ = "Copyright (C) 2015-2017 Blanco Martín y Asoc. EIRL"
 __license__ = "AGPL 3.0"
 
 
@@ -44,8 +46,10 @@ server_url = {
     'SIIHOMO': 'https://maullin.sii.cl/DTEWS/',
     'SII': 'https://palena.sii.cl/DTEWS/', }
 claim_url = {
-    'SIIHOMO': 'https://ws2.sii.cl/WSREGISTRORECLAMODTECERT/registroreclamodteservice',
-    'SII': 'https://ws1.sii.cl/WSREGISTRORECLAMODTE/registroreclamodteservice', }
+    'SIIHOMO': 'https://ws2.sii.cl/WSREGISTRORECLAMODTECERT/\
+registroreclamodteservice',
+    'SII': 'https://ws1.sii.cl/WSREGISTRORECLAMODTE/\
+registroreclamodteservice', }
 BC = '''-----BEGIN CERTIFICATE-----\n'''
 EC = '''\n-----END CERTIFICATE-----\n'''
 
@@ -463,7 +467,7 @@ def sign_rsa(self, MESSAGE=False, KEY=False, digst=''):
             if digst == '':
                 return {
                     'firma': FRMT, 'modulus': base64.b64encode(rsa_m.n),
-                    'exponent': base64.b64eDigesncode(rsa_m.e), }
+                    'exponent': base64.b64encode(rsa_m.e), }
             else:
                 return {
                     'firma': FRMT, 'modulus': base64.b64encode(rsa_m.n),
@@ -614,27 +618,39 @@ def split_cert(cert):
 #    _logger.info('message: {}'.format(msg))
 #    return msg
 
-
 def pdf417bc(ted):
-    """
-    Funcion creacion de imagen pdf417 basada en biblioteca elaphe
-     @author: Daniel Blanco Martin (daniel[at]blancomartin.cl)
-     @version: 2016-05-01
-    """
-    bc = barcode(
-        'pdf417',
+    bc = pdf417gen.encode(
         ted,
-        options=dict(
-            compact=False,
-            eclevel=5,
-            columns=13,
-            rowmult=2,
-            rows=3
-        ),
-        margin=20,
-        scale=1
+        security_level=5,
+        columns=13,
     )
-    return bc
+    image = pdf417gen.render_image(
+        bc,
+        padding=15,
+        scale=1,
+    )
+    return image
+
+# def pdf417bc(ted):
+#     """
+#     Funcion creacion de imagen pdf417 basada en biblioteca elaphe
+#      @author: Daniel Blanco Martin (daniel[at]blancomartin.cl)
+#      @version: 2016-05-01
+#     """
+#     bc = barcode(
+#         'pdf417',
+#         ted,
+#         options=dict(
+#             compact=False,
+#             eclevel=5,
+#             columns=13,
+#             rowmult=2,
+#             rows=3
+#         ),
+#         margin=20,
+#         scale=1
+#     )
+#     return bc
 
 
 def analyze_sii_result(sii_result, sii_message, sii_receipt):

@@ -47,8 +47,10 @@ setup(
         'bs4 == 0.0.1',
         'cchardet == 2.1.4',
         'cryptography == 2.7',
+        'M2Crypto == 0.29.0',
         'pyOpenSSL >= 17.5.0, <= 19',
-        'signxml >= 2.5.2',
+        'pdf417gen',
+        # 'signxml >= 2.5.2',
         'suds-jurko == 0.6',
         'pytz == 2016.7',
     ],
@@ -58,6 +60,9 @@ setup(
         ':python_version == "3.4"': ['enum34 >= 1.0.4'],
         ':python_version == "3.5"': ['enum34 >= 1.0.4'],
     },
+    dependency_links=[
+        'http://github.com/bmya/signxml.git'
+    ]
     # packages=find_packages(exclude=['test']),
     # packages=['pysiidte'],
     py_modules=['pysiidte'],
