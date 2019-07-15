@@ -62,7 +62,7 @@ setup(
     },
     dependency_links=[
         'http://github.com/bmya/signxml.git'
-    ]
+    ],
     # packages=find_packages(exclude=['test']),
     # packages=['pysiidte'],
     py_modules=['pysiidte'],
