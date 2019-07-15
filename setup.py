@@ -51,7 +51,7 @@ setup(
         'M2Crypto == 0.29.0',
         'pyOpenSSL >= 17.5.0, <= 19',
         'pdf417gen',
-        # 'signxml >= 2.5.2',
+        'signxml >= 2.5.2',
         'suds-jurko == 0.6',
         'pytz == 2016.7',
     ],
