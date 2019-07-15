@@ -47,6 +47,7 @@ setup(
         'bs4 == 0.0.1',
         'cchardet == 2.1.4',
         'cryptography == 2.7',
+        'lxml >= 4.2.1 , <5',
         'M2Crypto == 0.29.0',
         'pyOpenSSL >= 17.5.0, <= 19',
         'pdf417gen',
