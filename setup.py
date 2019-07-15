@@ -36,7 +36,7 @@ data_files = [
 
 setup(
     name='pysiidte',
-    version='0.95',
+    version='0.97',
     url='https://github.com/PySIIDTE/pysiidte',
     license='AGPL-3',
     author='Daniel Blanco Martín',
@@ -46,7 +46,7 @@ setup(
     install_requires=[
         'bs4 == 0.0.1',
         'cchardet == 2.1.4',
-        'cryptography == 2.4.2',
+        'cryptography == 2.7',
         'pyOpenSSL >= 17.5.0, < 19',
         'signxml >= 2.5.2',
         'suds-jurko == 0.6',
