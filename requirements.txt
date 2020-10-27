@@ -1,6 +1,6 @@
 bs4
 cchardet
-cryptography==2.1.4
+cryptography==3.2
 pyOpenSSL==16.2.0
 signxml>=2.4
 suds-jurko==0.6
