@@ -50,7 +50,7 @@ setup(
         # 'pyOpenSSL == 17.0.0',
         # 'hashlib',
         'cchardet',
-        'cryptography == 2.1.4',
+        'cryptography == 3.2',
         'lxml',
         'pyOpenSSL == 16.2.0',
         # 'certifi >= 2015.11.20.1',
